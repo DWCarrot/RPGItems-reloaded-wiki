@@ -170,10 +170,9 @@ Teleports player in the direction (s)he is looking in.
 Fires active TNT on right click.
 ## Torch ##
 **Command:**  
-`/rpgitem [Item] power torch [Cooldown] [Torches]`  
+`/rpgitem [Item] power torch [Cooldown]`  
 **Variables:**  
 - Cooldown: integer, in ticks, no default
-- Torches: integer, no default
 
 **Effect:**  
 Shoots torches on right click.
