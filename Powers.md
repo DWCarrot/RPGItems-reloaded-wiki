@@ -33,7 +33,7 @@ Runs command on left/right click, gives set permission for the command if a perm
 **No variables**  
 **Effect:**  
 Removes the item on right click.
-## Fireball 
+## Fire
 **Command:**  
 `/rpgitem [Item] power fire [Cooldown] [Distance] [Burnduration]`  
 **Variables:**  
