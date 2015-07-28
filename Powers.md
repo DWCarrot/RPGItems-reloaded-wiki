@@ -32,7 +32,17 @@ Runs command on left/right click, gives set permission for the command if a perm
  `/rpgitem [Item] power consume`  
 **No variables**  
 **Effect:**  
-Removes the item on right click.  
+Removes the item on right click.
+## Fireball 
+**Command:**  
+`/rpgitem [Item] power fire [Cooldown] [Distance] [Burnduration]`  
+**Variables:**  
+- Cooldown: integer, in ticks, no default 
+- Distance: integer, in blocks, no default
+- Burnduration: integer, in ticks, no default
+
+**Effects:**  
+Shoots fire on right click. 
 ## Fireball 
 **Command:**  
 `/rpgitem [Item] power fireball [Cooldown]`  
@@ -158,3 +168,12 @@ Teleports player in the direction (s)he is looking in.
 
 **Effect:**  
 Fires active TNT on right click.
+## Torch ##
+**Command:**  
+`/rpgitem [Item] power torch [Cooldown] [Torches]`  
+**Variables:**  
+- Cooldown: integer, in ticks, no default
+- Torches: integer, no default
+
+**Effect:**  
+Shoots torches on right click.
