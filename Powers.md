@@ -27,6 +27,9 @@ Version 2:
 
 **Effect:**  
 Runs command on left/right click, gives set permission for the command if a permission is set.  
+
+You can use `{player}` to specify the player using the item in command string.
+
 ## Consume 
 **Command:**  
  `/rpgitem [Item] power consume`  
