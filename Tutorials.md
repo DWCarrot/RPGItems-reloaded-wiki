@@ -11,6 +11,7 @@
 We are now going to create a spell card, on player use it shoots ice and then consumes itself.
 
 Commands:
+
 1. `/rpgitem icecard create`
 2. `/rpgitem icecard item paper`
 3. `/rpgitem icecard display &bICE &dSPELL CARD`
@@ -23,6 +24,7 @@ Commands:
 That's it. Now use `/rpgitem icecard give` to get one and test its power.
 
 Explaination:
+
 1. Create the RPGitem and save into config file.
 2. Change the item texture to paper (show as paper)
 3. Change the item name to `&bICE &dSPELL CARD`
