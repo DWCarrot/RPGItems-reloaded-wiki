@@ -1,4 +1,3 @@
-
 `/rpgitem help [String]`
 ------------------------
 
@@ -56,14 +55,15 @@ Sets the line `[Integer]` to `[String]` on the item `[Item]`.
 Removes the line `[Integer]` on the item `[Item]`.  
 
 ``
-----
+
+
 `/rpgitem [Item] description add [String]`
 ----
 
 Adds the line `[String]` to the item `[Item]`.  
 .  
-``
-----
+
+
 `/rpgitem [Item] display`
 ----
 
