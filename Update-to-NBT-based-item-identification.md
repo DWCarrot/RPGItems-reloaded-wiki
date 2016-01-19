@@ -1,6 +1,15 @@
 Related commit e4b687dc718ada75375d35c24ddd37918effea99  
 Related issue #24
 
+# Caution
+Bukkit has no native support for NBT.  
+Using NBT may lead to compatibility problem, item corruption or other obscure issues  
+We try to avoid these situations but no guarantee.  
+
+Bukkit没有对NBT的原生支持
+使用NBT可能会导致诸如兼容性，物品失效之类的诡异问题。
+我们尽力避免这些情况，但是我们不能保证绝对不出错。
+
 # 新命令 /rpgitemupdate
 所有存在的RPGItem将会失效  
 将失效的物品拿在手中，并执行`/rpgitemupdate`命令，即可更新物品  
