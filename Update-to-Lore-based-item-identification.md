@@ -1,5 +1,5 @@
-Related commit 7604687e69f43527ba1c043552818aa14ecd61b8  
-Related issue #24
+Related commit [7604687](https://github.com/NyaaCat/RPGitems-reloaded/commit/7604687e69f43527ba1c043552818aa14ecd61b8)  
+Related issue [#24](https://github.com/NyaaCat/RPGitems-reloaded/issues/24)
 
 # 新命令 /rpgitemupdate
 所有存在的RPGItem将会失效  
