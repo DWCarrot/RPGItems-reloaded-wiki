@@ -1,14 +1,5 @@
-Related commit e4b687dc718ada75375d35c24ddd37918effea99  
+Related commit 7604687e69f43527ba1c043552818aa14ecd61b8  
 Related issue #24
-
-# Caution
-Bukkit has no native support for NBT.  
-Using NBT may lead to compatibility problem, item corruption or other obscure issues  
-We try to avoid these situations but no guarantee.  
-
-Bukkit没有对NBT的原生支持
-使用NBT可能会导致诸如兼容性，物品失效之类的诡异问题。
-我们尽力避免这些情况，但是我们不能保证绝对不出错。
 
 # 新命令 /rpgitemupdate
 所有存在的RPGItem将会失效  
@@ -18,15 +9,13 @@ Bukkit没有对NBT的原生支持
 
 有三个只有OP可以执行的子命令用于调试：
 
-
 - /rpgitemupdate inspect
 - /rpgitemupdate upgrade
 - /rpgitemupdate downgrade
 
 # 可能的问题
 
-- 一些插件可能错误地处理Metadata导致NBT损坏
-- 仍有信息存储在Lore中。有权限的玩家依然可以修改。
+- 信息存储在Lore中。有权限的玩家依然可以修改。
 
 # New Command /rpgitemupdate
 All existed rpgitems will become invalid.  
@@ -40,7 +29,6 @@ There are three sub-command which only OPs can execute, they are for debug purpo
 - /rpgitemupdate upgrade
 - /rpgitemupdate downgrade
 
-# Possible Issus
+# Possible Issues
 
-- Some plugins may handle metadata incorrectly thus break the NBT tag
-- There are still data stored in lore. Players with permissions can still modify them.
+- Data are stored in lore. Players with permissions can still modify them.
