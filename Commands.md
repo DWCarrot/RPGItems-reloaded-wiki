@@ -54,8 +54,6 @@ Sets the line `[Integer]` to `[String]` on the item `[Item]`.
 
 Removes the line `[Integer]` on the item `[Item]`.  
 
-``
-
 
 `/rpgitem [Item] description add [String]`
 ----
@@ -106,6 +104,26 @@ Toggles the display of the tooltip based durability bar.
 
 Sets the durability for the item. The durability is the number of times the item can be used to attack, block damage(armor) or mine.  
 .  
+
+
+`/rpgitem [Item] enchantment`
+----
+
+Listing attached enchantments for `[Item]`. 
+
+
+`/rpgitem [Item] enchantment clone`
+----
+
+Clone the enchantments of the item in hand to `[Item]`.  
+
+
+`/rpgitem [Item] enchantment clear`
+----
+
+Remove all attached enchantments from `[Item]`.  
+.  
+
 
 `/rpgitem [Item] give`
 ----
@@ -160,7 +178,7 @@ Sets the  `[Item]`’s item to `[ItemID] : [Integer]`.
 
 Sets the `[Item]`’s item to `[ItemID]`.  
 
-``
+
 ----
 `/rpgitem [Item] item [Material] [Integer]`
 ----
@@ -179,7 +197,7 @@ Sets the item [Item]’s item to [Material].
 
 Sets the item [Item]’s lore to [String].  
 
-``
+
 ----
 `/rpgitem [Item] lore`
 ----
