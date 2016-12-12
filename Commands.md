@@ -13,7 +13,7 @@ Prints item `[Item]`’s tool-tip to chat.
 
 Create an item with the name `[String]`. The name is what you use to identify the item for later commands e.g: Give. It is not the name of the item on the tool-tip, that is set with `display` instead.  
 
-`/rpgitem [Item] armor [Integer(0-100)]`
+`/rpgitem [Item] armour [Integer(0-100)]`
 ----------------------------------------
 
 Sets the item `[Item]`’s armor to `[Integer]`.  
