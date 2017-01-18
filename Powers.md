@@ -6,6 +6,7 @@
   
 **Effect:**  
 Fires an arrow on right click.  
+
 ## Command 
 **Command:**  
 Version 1:  
@@ -28,7 +29,43 @@ Version 2:
 **Effect:**  
 Runs command on left/right click, gives set permission for the command if a permission is set.  
 
-You can use `{player}` to specify the player using the item in command string.
+You can use some template in command string. e.g. `{player}` for the player using the item.
+Templates supported now:
+* `player` player's name
+* `yaw` player's eye's yaw, Decimal
+* `pitch` player's eye's pitch， Decimal
+
+## CommandHit
+**Command:**  
+`/rpgitem [Item] power commandhit [Cooldown] [Display] [Command] [Permission]`  
+**Variables:**  
+- Cooldown: integer, no default  
+
+- Display: string, sets tooltip display, no default  
+
+- Command: string, no default  
+
+- Permission: string, default none 
+
+**Effect:**  
+Runs command when player hits a LivingEntity, gives set permission for the command if a permission is set.  
+
+You can use some template in command string. e.g. `{player}` for the player using the item.
+Templates supported now:
+* `entity` entity's name
+* `entity.uuid` entity's UUID
+* `entity.x` entity's X coordinate, integral
+* `entity.y` entity's Y coordinate, integral
+* `entity.z` entity's Z coordinate, integral
+* `entity.yaw` entity's eye's yaw, Decimal
+* `entity.pitch` entity's eye's pitch， Decimal
+
+* `player` player's name
+* `player.x` player's X coordinate, integral
+* `player.y` player's Y coordinate, integral
+* `player.z` player's Z coordinate, integral
+* `player.yaw` player's eye's yaw, Decimal
+* `player.pitch` player's eye's pitch， Decimal
 
 ## Consume 
 **Command:**  
