@@ -59,7 +59,6 @@ Templates supported now:
 * `entity.z` entity's Z coordinate, integral
 * `entity.yaw` entity's eye's yaw, Decimal
 * `entity.pitch` entity's eye's pitch， Decimal
-
 * `player` player's name
 * `player.x` player's X coordinate, integral
 * `player.y` player's Y coordinate, integral
@@ -200,6 +199,19 @@ Hooks onto set material, similar to Bishock's skyhook.
 
 **Effect:**  
 Teleports player in the direction (s)he is looking in.  
+
+## Tipped Arrow 
+**Command:**  
+`/rpgitem [Item] power tippedarrow [Cooldown] [Effect] [Duration] [Amplifier]`  
+**Variables:**  
+- Cooldown: integer,no default
+- Effect: string, no default, [possible effects](https://github.com/TheCreeperOfRedstone/RPG-Items-2/wiki/Potion-Effects)  
+- Duration: integer, no default, in ticks  
+- Amplifier: integer, no default, level of the effect  
+
+**Effect:**  
+Fires an tipped arrow with specified effect on right click.  
+
 ## TNT Cannon ##
 **Command:**  
 `/rpgitem [Item] power tntcannon [Cooldown]`  
