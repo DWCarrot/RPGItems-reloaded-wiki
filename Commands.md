@@ -359,7 +359,7 @@ Adds the runble power to `[Item]` with a cooldown of `[Cooldown]` ticks and a po
 
 Adds the skyhook power to `[Item]`. The skyhook power will allow the user to hook on to `[Material]` up to `[Integer]` blocks away
 
-`/rpgitem [Item] power teleport [Cooldown-Integer] [Distanc-[Integer]`
+`/rpgitem [Item] power teleport [Cooldown-Integer] [Distance-Integer]`
 ----
 
 Adds the teleport power to `[Item]` with a cooldown of `[Cooldown]` ticks (1 second) and teleport distance of `[Distance]` blocks. The teleport will teleport you in the direction you’re looking in.  
