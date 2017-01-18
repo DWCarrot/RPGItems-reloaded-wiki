@@ -229,18 +229,27 @@ Adds the command power to `[Item]` with a cooldown of `[Integer]` ticks. The too
 Adds the command power to `[Item]` with a cooldown of `[Integer]` ticks. The tooltip will display `[Display]`. The item will run `[Command]` on `[left/right]` click.  
 
 
-
 `/rpgitem [Item] power command [Integer] [left/right] [String]`
 ----
 
 Runs the command on `[left/right]` click. `[String]` is a `|` seperated list of `[display] | [command] | [permission]`. The tool-tip displays `[display]`. `display` and `command` must be separated a `|` symbol. If permission is provided the player will be given the permission just for the use of the item and then it will be removed.  
 
 
+`/rpgitem [Item] power commandhit [Integer] [Display-String] [Command-String]`
+----
+
+Adds the command-when-hit power to `[Item]` with a cooldown of `[Cooldown]` ticks. The tooltip will display `[Dispaly]`. The item will run `[Command]` when player hits something. 
+
+
+`/rpgitem [Item] power commandhit [Integer] [Display-String] [Command-String] [Permission-String]`
+----
+
+Adds the command-when-hit power to `[Item]` with a cooldown of `[Cooldown]` ticks. The tooltip will display `[Dispaly]`. The item will run `[Command]` when player hits something giving the permission `[Permission]` just for the use of the command. 
+
 `/rpgitem [Item] power consume`
 ----
 
 Adds the consume power to `[Item]`. The consume power will remove the item on right click.  
-
 
 
 `/rpgitem [Item] power fireball`
@@ -360,6 +369,12 @@ Adds the teleport power to `[Item]` with a cooldown of `[Cooldown]` ticks (1 sec
 ----
 
 Adds the teleport power to `[Item]` with a default cooldown of 20 ticks (1 second) and teleport distance of 5 blocks. The teleport will teleport you in the direction you’re looking in.  
+
+
+`/rpgitem [Item] power tippedarrow [Cooldown-Integer] [Effect-String] [Duration-Integer] [Amplifier-Integer]`
+----
+ 
+Adds the tipped arrow power to `[Item]` with a cooldown of `[Cooldown]` ticks and `[Effect]` for `[Duration]` ticks at power `[Amplifier]`.The list of valid effects can be found [[here|https://github.com/TheCreeperOfRedstone/RPG-Items-2/wiki/Potion-Effects]]
 
 
 `/rpgitem [Item] power tntcannon`
