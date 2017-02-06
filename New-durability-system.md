@@ -4,7 +4,7 @@ An item will lose durability when:
 * some power will reduce durability according to power.consumption (or some power specified way)
 * armor be hit will reduce 1 durability
 
-Consumption an be negative, item will increase durability after use that power.
+Consumption can be negative, item will increase durability after use that power.
 
 Default value of power.consumption is 0 (1 for projectile-related power for compatibility), you can set it using
  `/rpgitem item set somepower number consumption value` 
