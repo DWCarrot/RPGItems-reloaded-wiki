@@ -4,6 +4,8 @@ An item will lose durability when:
 * some power will reduce durability according to power.consumption (or some power specified way)
 * armor be hit will reduce 1 durability
 
+Consumption an be negative, item will increase durability after use that power.
+
 Default value of power.consumption is 0 (1 for projectile-related power for compatibility), you can set it using
  `/rpgitem item set somepower number consumption value` 
 e.g.
@@ -19,9 +21,11 @@ If the item have PowerUnbreakable, it won't lost its last 1 durability. When som
 * 触发某些技能，按照技能的属性降低耐久（或者技能自身的设定）
 * 护甲受到攻击，降低1
 
+耐久消耗可以为负数，也就是触发技能后增长耐久。
+
 耐久消耗默认值为0（弹射物相关的消耗为1以保持兼容）。可以通过 `/rpgitem item set somepower number consumption value` 设置。
 如：
-`/rpgitem imba_item set arrow 1 consumption 1`设置“imba_item”的第一个PowerArrow的耐久消耗为1
+`/rpgitem imba_item set arrow 1 consumption 1`设置“imba_item”的第一个PowerArrow的耐久消耗为1。
 
 触发事件后，若物品的耐久低于0，物品就会消耗掉。
 
