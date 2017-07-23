@@ -27,7 +27,7 @@ Version 2:
 - Arguments: string, | seperated list of display,command, and permission variables from version 1  
 
 **Effect:**  
-Runs command on left/right click, gives set permission for the command if a permission is set.  
+Runs specified command on left/right click, gives set permission for the command if a permission is set.  
 
 You can use some template in command string. e.g. `{player}` for the player using the item.
 Templates supported now:
@@ -48,7 +48,7 @@ Templates supported now:
 - Permission: string, default none 
 
 **Effect:**  
-Runs command when player hits a LivingEntity, gives set permission for the command if a permission is set.  
+Runs specified command when player hits a LivingEntity, gives set permission for the command if a permission is set.  
 
 You can use some template in command string. e.g. `{player}` for the player using the item.
 Templates supported now:
@@ -97,7 +97,7 @@ Fires a fireball on right click.
 - Burntime: integer, in ticks, default 20 ticks     
 
 **Effect:**   
-Sets target on fire on hit.  
+Sets the target on fire on hit.  
 ## Food 
 **Command:**  
 `/rpgitem [Item] power food [Food Points]`  
@@ -105,7 +105,7 @@ Sets target on fire on hit.
 - Food Points: integer, default 5 food points
   
 **Effect:**  
-Consume the item and adds [Food Points] food points to the player. (As if we ate food).
+Consumes the item and adds [Food Points] food points to the player. (As if we they food).
 ## Ice ##
 **Command:**  
 `/rpgitem [Item] power ice [Cooldown]`  
@@ -198,7 +198,7 @@ Hooks onto set material, similar to Bishock's skyhook.
 - Distance: integer, how many blocks to teleport, default 5 blocks  
 
 **Effect:**  
-Teleports player in the direction (s)he is looking in.  
+Teleports the player in the direction that it's are looking at.  
 
 ## Tipped Arrow 
 **Command:**  
