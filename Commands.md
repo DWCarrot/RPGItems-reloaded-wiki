@@ -400,10 +400,10 @@ Sets the item `[Item]`’s quality to `[Quality]`.
 Shows the item `[Item]`’s current quality.  
 
 
-`/rpgitem [Item] recipe`
+`/rpgitem [Item] recipe [Chance-Integer]`
 ----
 
-Sets the `[Item]`’s recipe.  
+Sets the `[Item]`’s recipe. 1/chance to get the item and (chance-1)/chance for the material only.
 
 
 `/rpgitem [Item] removerecipe`
