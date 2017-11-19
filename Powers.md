@@ -96,6 +96,37 @@
 **示例**
 `/rpgitem testarrow power attract 20 0.1`
 
+## Color 
+**指令：**  
+`/rpgitem {Item} power color [Cooldown] [glass] [clay] [wool]`  
+
+**效果：**
+ 改变粘土，玻璃和羊毛的颜色 ([Cooldown] 秒冷却)
+
+**属性**  
+- Cooldown: 
+  -类型：long
+  -设定状态：可选
+  -作用：设定技能冷却时间
+- glass: 
+  -类型：boolean
+  -设定状态：可选
+  -作用：设定是否作用于玻璃
+- clay: 
+  -类型：boolean
+  -设定状态：可选
+  -作用：设定是否作用于黏土
+- wool: 
+  -类型：boolean
+  -设定状态：可选
+  -作用：设定是否作用于羊毛
+- consumption：
+  - 类型：int
+  - 设定状态：附加
+  - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
+
+**示例**
+`/rpgitem testarrow power color 100 true false true`
 
 ## Command 
 **Command:**  
