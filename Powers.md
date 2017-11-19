@@ -77,6 +77,26 @@
 **示例**
 `/rpgitem testarrow power arrow 20`
 
+## Attract
+**指令：**  
+`/rpgitem {Item} power attract {radius} {maxspeed}`  
+
+**效果：**
+为 {Item} 添加技能。拿在手上时将生物拉扯到玩家附近。半径 {radius} 格子，最大速度 {maxspeed}
+
+**属性**  
+- radius: 
+  -类型：int
+  -设定状态：必选
+  -作用：设定技能拉扯最大半径
+- maxspeed: 
+  -类型：double
+  -设定状态：必选
+  -作用：设定技能最大拉扯速度
+**示例**
+`/rpgitem testarrow power attract 20 0.1`
+
+
 ## Command 
 **Command:**  
 Version 1:  
