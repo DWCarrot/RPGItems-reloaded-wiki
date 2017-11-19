@@ -1,11 +1,81 @@
+# 指令集
+`/rpgitem [item] power [power] [attributes……]`
+**属性**
+- item：道具id e.g.： testitem->一个id为testitem的道具
+- power：技能id  e.g.： potionself->给自己一个buff
+- attributes：
+  - 分类：
+    - 必选：必须在创建power的时候就指定，用`{}`表示
+    - 可选：可以在创建power的时候指定，用`[]`表示
+    - 附加：只能通过set设置,不会显示在指令设定的属性中
+  - 作用：技能初始化可配参数 e.g.：以上面potionself为例 可配参数有[cooldown] [duration] [amplifier] [effect],整条指令类似这样：`/rpgitem testpotionself power 20 100 1 speed` 右键使用之后给玩家一个持续5秒的等级2的速度buff（cd：1s）。各个参数单位请看下方详细power变量设定。
+
+# 普通技能
+## AOE
+**指令：**
+`/rpgitem [item] power aoe {cooldown} {range} {effect} {duration} {amlifier} [selfapplication]`
+
+**效果：**
+为 [Item]添加范围效果，冷却时间为 [Cooldown]ticks 右键使用将应用效果 [Effect] 到 [range]# 范围内的所有实体，时长为 [Duration]ticks，效果等级为 [Amplifier]. 如果 [Self] 没有设置，默认此效果也将应用到释放者
+
+**静态成员变量**
+- cooldown：
+  - 类型：long
+  - 设定状态：必选
+  - 作用：设定技能冷却时间
+- range：
+  - 类型：int
+  - 设定状态：必选
+  - 作用：设定范围
+- effect：
+  - 类型：String
+  - 设定状态：必选
+  - 作用：设定效果字符，字符详见 [药水系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/%E8%8D%AF%E6%B0%B4%E6%95%88%E6%9E%9C)章节
+- duration:
+  - 类型：int
+  - 设定状态：必选
+  - 作用：设定持续时间
+- amlifier：
+  - 类型：int
+  - 设定状态：必选
+  - 作用：设定技能效果等级，等级=amlifier+1
+- selfapplication：
+  - 类型：boolean
+  - 设定状态：可选
+  - 作用：是否设定效果作用于自身
+- name：
+  - 类型：String
+  - 设定状态：附加
+  - 作用: 设定显示名称
+- consumption：
+  - 类型：int
+  - 设定状态：附加
+  - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
+
+**示例**
+`/rpgitem testaoe power aoe 10 10 speed 100 0 true`
+
+
+
 ## Arrow 
-**Command:**  
+**指令：**  
 `/rpgitem [Item] power arrow [Cooldown]`  
-**Variables:**  
-- Cooldown: integer, default 20 ticks
-  
-**Effect:**  
-Fires an arrow on right click.  
+
+**效果：**
+给 [Item] 添加火箭技能, 冷却时间 [Cooldown]ticks. 右键发射
+
+**属性**  
+- Cooldown: 
+  -类型：long
+  -设定状态：可选
+  -作用：设定技能冷却时间
+- consumption：
+  - 类型：int
+  - 设定状态：附加
+  - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
+
+**示例**
+`/rpgitem testarrow power arrow 20`
 
 ## Command 
 **Command:**  
