@@ -1,5 +1,5 @@
 # 指令集
-`/rpgitem [item] power [power] [attributes……]`
+`/rpgitem {item} power {power} [attributes……]`
 **属性**
 - item：道具id e.g.： testitem->一个id为testitem的道具
 - power：技能id  e.g.： potionself->给自己一个buff
@@ -13,7 +13,7 @@
 # 普通技能
 ## AOE
 **指令：**
-`/rpgitem [item] power aoe {cooldown} {range} {effect} {duration} {amlifier} [selfapplication]`
+`/rpgitem {item} power aoe {cooldown} {range} {effect} {duration} {amlifier} [selfapplication]`
 
 **效果：**
 为 [Item]添加范围效果，冷却时间为 [Cooldown]ticks 右键使用将应用效果 [Effect] 到 [range]# 范围内的所有实体，时长为 [Duration]ticks，效果等级为 [Amplifier]. 如果 [Self] 没有设置，默认此效果也将应用到释放者
@@ -59,7 +59,7 @@
 
 ## Arrow 
 **指令：**  
-`/rpgitem [Item] power arrow [Cooldown]`  
+`/rpgitem {Item} power arrow [Cooldown]`  
 
 **效果：**
 给 [Item] 添加火箭技能, 冷却时间 [Cooldown]ticks. 右键发射
