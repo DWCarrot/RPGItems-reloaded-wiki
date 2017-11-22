@@ -3,7 +3,7 @@
 **属性**
 - item：道具id e.g.： testitem->一个id为testitem的道具
 - power：技能id  e.g.： potionself->给自己一个buff
-- attributes：
+- attributes
   - 分类：
     - 必选：必须在创建power的时候就指定，用`{}`表示
     - 可选：可以在创建power的时候指定，用`[]`表示
@@ -19,35 +19,35 @@
 为 [Item]添加范围效果，冷却时间为 [Cooldown]ticks 右键使用将应用效果 [Effect] 到 [range]# 范围内的所有实体，时长为 [Duration]ticks，效果等级为 [Amplifier]. 如果 [Self] 没有设置，默认此效果也将应用到释放者
 
 **静态成员变量**
-- cooldown：
+- cooldown
   - 类型：long
   - 设定状态：必选
   - 作用：设定技能冷却时间
-- range：
+- range
   - 类型：int
   - 设定状态：必选
   - 作用：设定范围
-- effect：
+- effect
   - 类型：String
   - 设定状态：必选
   - 作用：设定效果字符，字符详见 [药水系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/%E8%8D%AF%E6%B0%B4%E6%95%88%E6%9E%9C)章节
-- duration:
+- duration
   - 类型：int
   - 设定状态：必选
   - 作用：设定持续时间
-- amlifier：
+- amlifier
   - 类型：int
   - 设定状态：必选
   - 作用：设定技能效果等级，等级=amlifier+1
-- selfapplication：
+- selfapplication
   - 类型：boolean
   - 设定状态：可选
   - 作用：是否设定效果作用于自身
-- name：
+- name
   - 类型：String
   - 设定状态：附加
   - 作用: 设定显示名称
-- consumption：
+- consumption
   - 类型：int
   - 设定状态：附加
   - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
@@ -65,11 +65,11 @@
 给 [Item] 添加火箭技能, 冷却时间 [Cooldown]ticks. 右键发射
 
 **属性**  
-- Cooldown: 
+- Cooldown
   -类型：long
   -设定状态：可选
   -作用：设定技能冷却时间
-- consumption：
+- consumption
   - 类型：int
   - 设定状态：附加
   - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
@@ -85,11 +85,11 @@
 为 {Item} 添加技能。拿在手上时将生物拉扯到玩家附近。半径 {radius} 格子，最大速度 {maxspeed}
 
 **属性**  
-- radius: 
+- radius
   - 类型：int
   - 设定状态：必选
   - 作用：设定技能拉扯最大半径
-- maxspeed: 
+- maxSpeed
   - 类型：double
   - 设定状态：必选
   - 作用：设定技能最大拉扯速度
@@ -104,29 +104,157 @@
  改变粘土，玻璃和羊毛的颜色 ([Cooldown] 秒冷却)
 
 **属性**  
-- Cooldown: 
+- Cooldown
   - 类型：long
   - 设定状态：可选
   - 作用：设定技能冷却时间
-- glass: 
+- glass
   - 类型：boolean
   - 设定状态：可选
   - 作用：设定是否作用于玻璃
-- clay: 
+- clay
   - 类型：boolean
   - 设定状态：可选
   - 作用：设定是否作用于黏土
-- wool: 
+- wool
   - 类型：boolean
   - 设定状态：可选
   - 作用：设定是否作用于羊毛
-- consumption：
+- consumption
   - 类型：int
   - 设定状态：附加
   - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
 
 **示例**
 `/rpgitem testarrow power color 100 true false true`
+
+## Consume
+** 指令：**
+`/rpgitem testconsume {Item} power consume`
+
+** 效果： **
+  设置 [Item]为消耗品. 冷却时间默认为0，可通过setter修改。默认右键消耗该物品，可通过setter更改为左键
+
+** 属性： **
+- cooldownTime
+  - 类型：int
+  - 设定状态：附加
+  - 作用：设定技能冷却时间
+- isRight
+  - 类型：boolean
+  - 设定状态：附加
+  - 作用：是否应用为左键
+- consumption
+  - 类型：int
+  - 设定状态：附加
+  - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
+
+**示例**
+`/rpgitem testconsume power consume`
+
+## Consume
+** 指令：**
+`/rpgitem testconsume {Item} power consume`
+
+** 效果： **
+  设置 [Item]为消耗品. 冷却时间默认为0，可通过setter修改。默认右键消耗该物品，可通过setter更改为左键
+
+** 属性： **
+- cooldownTime
+  - 类型：int
+  - 设定状态：附加
+  - 作用：设定技能冷却时间
+- isRight
+  - 类型：boolean
+  - 设定状态：附加
+  - 作用：是否应用为左键
+- consumption
+  - 类型：int
+  - 设定状态：附加
+  - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
+
+**示例**
+`/rpgitem testconsume power consume`
+
+## ConsumeHit(后期期望整合入consume)
+**指令：**
+`/rpgitem {item} power consumehit`
+
+** 效果： **
+  设置 [Item]为攻击时的消耗品. 冷却时间默认为0，可通过setter修改。
+
+**属性**
+- cooldownTime
+  - 类型：int
+  - 设定状态:附加
+  - 作用：设定技能冷却时间
+
+**示例**
+`/rpgitem testconsumehit power consumehit`
+
+## Deflect
+**指令：**
+`/rpgitem {item} power deflect [facing] [initiative] [cooldownTime] [passive] [cooldownTimePassive]`
+
+**效果：**
+  反弹射来的箭与火球（弹反）！
+
+  当参数设定[initiative]为true，[passive]为false并且在技能已经冷却（[cooldownTime]归零）状态下可以根据<isRight>设定左右键触发在[duration]时间内将飞行道具反射到当前玩家正在朝向的方向上
+
+  当参数设定[initiative]为false，[passive]为true的状态下可以在技能触发间隔时间[cooldownTimePassive]归零的状态下将飞行道具反射到当前玩家正在朝向的方向上
+  
+
+**属性：**
+- facing
+  - 类型：double
+  - 默认：30
+  - 设定状态：可选
+  - 作用：最大捕获角度（当前视线与飞行道具之间的夹角）
+- initiative
+  - 类型：initiative
+  - 默认：true
+  - 设定状态：可选
+  - 作用：主动模式（是否需要主动触发）
+- cooldownTime
+  - 类型：int
+  - 默认：20刻
+  - 设定状态：可选
+  - 作用：技能冷却时间(当主动模式为true的时候)
+- passive
+  - 类型：boolean
+  - 默认：false
+  - 设定状态：可选
+  - 作用：是否启用被动模式
+- cooldownTimePassive 
+  - 类型：int
+  - 默认：20刻
+  - 设定状态：可选
+  - 作用：技能触发间隔时间（被动模式下即passive为true的情况下的触发间隔）
+- chance
+  - 类型：int
+  - 默认：50
+  - 设定状态：附加
+  - 作用：设定技能在被动模式下触发的几率（<chance>%）
+- isRight
+  - 类型：boolean
+  - 默认：true
+  - 设定状态：附加
+  - 作用：主动模式下为左键还是右键触发，true为右键
+- duration
+  - 类型：int
+  - 默认：50刻
+  - 设定状态：附加
+  - 作用：设定主动模式下的弹反有效时间
+- consumption
+  - 类型：int
+  - 默认：0
+  - 设定状态：附加
+  - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
+
+**示例**
+`/rpgitem testdeflect  power deflect`
+
+
 
 ## Command 
 **Command:**  
