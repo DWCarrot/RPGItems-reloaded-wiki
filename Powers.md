@@ -201,7 +201,7 @@
 
   当参数设定[initiative]为true，[passive]为false并且在技能已经冷却（[cooldownTime]归零）状态下可以根据<isRight>设定左右键触发在[duration]时间内将飞行道具反射到当前玩家正在朝向的方向上
 
-  当参数设定[initiative]为false，[passive]为true的状态下可以在技能触发间隔时间[cooldownTimePassive]归零的状态下将飞行道具反射到当前玩家正在朝向的方向上
+  当参数设定[initiative]为false，[passive]为true的状态下可以在技能触发间隔时间[cooldownTimePassive]归零的状态下有<chance>%的概率将飞行道具反射到当前玩家正在朝向的方向上
   
 
 **属性：**
