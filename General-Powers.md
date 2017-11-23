@@ -1,4 +1,4 @@
-# 指令集
+# 通用技能指令集
 `/rpgitem {item} power {power} [attributes……]`
 **属性**
 - item：道具id e.g.： testitem->一个id为testitem的道具
