@@ -7,7 +7,7 @@
   - 分类：
     - 必选：必须在创建power的时候就指定，用`{}`表示
     - 可选：可以在创建power的时候指定，用`[]`表示
-    - 附加：只能通过set设置,不会显示在指令设定的属性中
+    - 附加：只能通过set设置,不会显示在指令设定的属性中，使用`<>`表示
   - 作用：技能初始化可配参数 e.g.：以上面potionself为例 可配参数有[cooldown] [duration] [amplifier] [effect],整条指令类似这样：`/rpgitem testpotionself power 20 100 1 speed` 右键使用之后给玩家一个持续5秒的等级2的速度buff（cd：1s）。各个参数单位请看下方详细power变量设定。
 
 # 普通技能
