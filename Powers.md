@@ -130,7 +130,7 @@
 
 ## Consume
 ** 指令：**
-`/rpgitem testconsume {Item} power consume`
+`/rpgitem {Item} power consume`
 
 ** 效果： **
   设置 [Item]为消耗品. 冷却时间默认为0，可通过setter修改。默认右键消耗该物品，可通过setter更改为左键
@@ -253,6 +253,142 @@
 
 **示例**
 `/rpgitem testdeflect  power deflect`
+
+## Fire
+** 指令：**
+`/rpgitem {Item} power fire {cooldownTime} {distance} {burnduration} `
+
+** 效果： **
+  给 {item} 添加火焰技能，能在右键时候发射火焰，并在接触第一个方块时候造成一条距离为{distance}持续时间为{burnduration}火墙，冷却时间 {cooldownTime}ticks. 
+
+** 属性： **
+- cooldownTime
+  - 类型：long
+  - 默认：20
+  - 设定状态：必选
+  - 作用：设定技能冷却时间
+- distance
+  - 类型：int
+  - 类型：15
+  - 设定状态：必选
+  - 作用：火墙的距离
+- burnduration
+  - 类型：int
+  - 类型：40
+  - 设定状态：必选
+  - 作用：火墙的持续时间
+- consumption
+  - 类型：int
+  - 设定状态：附加
+  - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
+
+**示例**
+`/rpgitem testfire power fire 10 10 20`
+
+
+## Fireball
+** 指令：**
+`/rpgitem {Item} power fireball [cooldownTime] `
+
+** 效果： **
+  发射小火球 [cooldownTime]tick冷却时间。
+
+** 属性： **
+- cooldownTime
+  - 类型：long
+  - 默认：20
+  - 设定状态：必选
+  - 作用：设定技能冷却时间
+- consumption
+  - 类型：int
+  - 默认：0
+  - 设定状态：附加
+  - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
+
+**示例**
+`/rpgitem testfire power fireball`
+
+## Flame
+** 指令：**
+`/rpgitem {Item} power Flame [burnTime] `
+
+** 效果： **
+  对目标造成 [burnTime]tick的点燃时间。
+
+** 属性： **
+- burnTime
+  - 类型：int
+  - 默认：20
+  - 设定状态：可选
+  - 作用：点燃时间
+- consumption
+  - 类型：int
+  - 默认：0
+  - 设定状态：附加
+  - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
+
+**示例**
+`/rpgitem testflame power Flame`
+
+## Food
+** 指令：**
+`/rpgitem {Item} power food {foodpoints} `
+
+** 效果： **
+   给 {Item} 添加可食用功能, 吃掉时变化 {foodpoints}点饥饿值.
+
+** 属性： **
+- foodpoints
+  - 类型：int
+  - 默认：无
+  - 设定状态：必选
+  - 作用：变化的饥饿值
+
+**示例**
+`/rpgitem testflame power food 10`
+
+## ForceField
+** 指令：**
+`/rpgitem {Item} power forcefield {cooldownTime} {radius} {height} {base} {ttl}`
+
+** 效果： **
+   在你周围设置可以阻止一切实体进入的一个半径 {radius}，高度 {height}，深度 {base} 并持续 {ttl}秒的力场，冷却时间{cooldownTime}tick的由屏障组成的空心圆柱。
+
+** 属性： **
+- cooldownTime
+  - 类型：int
+  - 默认：200
+  - 设定状态：必选
+  - 作用：技能冷却时间
+- radius
+  - 类型：int
+  - 默认：5
+  - 设定状态：必选
+  - 作用：设定圆柱半径
+- height
+  - 类型:int
+  - 默认：30
+  - 设定状态：必选
+  - 作用：设定圆柱高度
+- base
+  - 类型：int
+  - 默认：-15
+  - 设定状态：必选
+  - 作用：设定圆柱的深度偏移
+- ttl
+  - 类型：int
+  - 默认：100
+  - 设定状态：必选
+  - 作用：设定持续时间
+- consumption
+  - 类型：int
+  - 默认：0
+  - 设定状态：附加
+  - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
+
+
+**示例**
+`/rpgitem testforcefield power forcefield 10 10 10 0 40`
 
 
 
