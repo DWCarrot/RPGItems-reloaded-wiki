@@ -1,9 +1,9 @@
 # 通用技能指令集
-`/rpgitem {item} power {power} [attributes……]`
+`/rpgitem {item} power {power} [properties……]`
 **属性**
 - item：道具id e.g.： testitem->一个id为testitem的道具
 - power：技能id  e.g.： potionself->给自己一个buff
-- attributes
+- properties
   - 分类：
     - 必选：必须在创建power的时候就指定，用`{}`表示
     - 可选：可以在创建power的时候指定，用`[]`表示
