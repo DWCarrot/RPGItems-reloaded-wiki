@@ -411,9 +411,35 @@
 
 
 **示例**
-`/rpgitem testice power ice 10`
+`/rpgitem testice power knockup 10`
+
+## Knockup
+** 指令：**
+`/rpgitem {Item} power ice [cooldownTime]`
+
+** 效果： **
+   给 {Item} 添加冰块射击技能 冷却时间 [cooldownTime]tick. 右键发射冰块, 制造出大量冰块冲击目标, 冰块会慢慢消失
+
+** 属性： **
+- chance 
+  - 类型：int 
+  - 默认：20
+  - 设定状态：可选
+  - 作用：技能几率
+- power
+  - 类型：double 
+  - 默认：2
+  - 设定状态：可选
+  - 作用：技能威力
+- consumption
+  - 类型：int
+  - 默认：0
+  - 设定状态：附加
+  - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
 
 
+**示例**
+`/rpgitem testknockup power knockup`
 
 
 //TODO
