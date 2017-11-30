@@ -413,12 +413,12 @@
 **示例**
 `/rpgitem testice power knockup 10`
 
-## Knockup
+## Knockup（失效待修复）
 ** 指令：**
-`/rpgitem {Item} power ice [cooldownTime]`
+`/rpgitem {Item} power knockup [chance] [power]`
 
 ** 效果： **
-   给 {Item} 添加冰块射击技能 冷却时间 [cooldownTime]tick. 右键发射冰块, 制造出大量冰块冲击目标, 冰块会慢慢消失
+   给 {Item} 添加击飞技能, 几率为 1/[chance] 威力为[power]. 击飞技能会把目标击飞
 
 ** 属性： **
 - chance 
@@ -440,6 +440,54 @@
 
 **示例**
 `/rpgitem testknockup power knockup`
+
+## LifeSteal
+** 指令：**
+`/rpgitem {Item} power lifesteal [chance]`
+
+** 效果： **
+   给 {Item} 添加生命偷取技能, 偷取几率为 [chance]
+
+** 属性： **
+- chance 
+  - 类型：int 
+  - 默认：20
+  - 设定状态：可选
+  - 作用：技能几率
+- consumption
+  - 类型：int
+  - 默认：0
+  - 设定状态：附加
+  - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
+
+
+**示例**
+`/rpgitem testlifesteal power lifesteal`
+
+## Lightning
+** 指令：**
+`/rpgitem {Item} power lightning [chance]`
+
+** 效果： **
+   给 {Item} 添加闪电技能, 默认几率为1/[chance]. 攻击目标时一定几率生成闪电
+
+** 属性： **
+- chance 
+  - 类型：int 
+  - 默认：20
+  - 设定状态：可选
+  - 作用：技能几率
+- consumption
+  - 类型：int
+  - 默认：0
+  - 设定状态：附加
+  - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
+
+
+**示例**
+`/rpgitem testlightning power lifesteal`
+
+
 
 
 //TODO
