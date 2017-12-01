@@ -129,13 +129,13 @@
 `/rpgitem testarrow power color 100 true false true`
 
 ## Consume
-** 指令：**
+**指令：**
 `/rpgitem {Item} power consume`
 
-** 效果： **
+**效果：**
   设置 [Item]为消耗品. 冷却时间默认为0，可通过setter修改。默认右键消耗该物品，可通过setter更改为左键
 
-** 属性： **
+**属性：**
 - cooldownTime
   - 类型：int
   - 设定状态：附加
@@ -153,13 +153,13 @@
 `/rpgitem testconsume power consume`
 
 ## Consume
-** 指令：**
+**指令：**
 `/rpgitem testconsume {Item} power consume`
 
-** 效果： **
+**效果：**
   设置 [Item]为消耗品. 冷却时间默认为0，可通过setter修改。默认右键消耗该物品，可通过setter更改为左键
 
-** 属性： **
+**属性：**
 - cooldownTime
   - 类型：int
   - 设定状态：附加
@@ -180,7 +180,7 @@
 **指令：**
 `/rpgitem {item} power consumehit`
 
-** 效果： **
+**效果：**
   设置 [Item]为攻击时的消耗品. 冷却时间默认为0，可通过setter修改。
 
 **属性**
@@ -255,13 +255,13 @@
 `/rpgitem testdeflect  power deflect`
 
 ## Fire
-** 指令：**
+**指令：**
 `/rpgitem {Item} power fire {cooldownTime} {distance} {burnduration} `
 
-** 效果： **
+**效果：**
   给 {item} 添加火焰技能，能在右键时候发射火焰，并在接触第一个方块时候造成一条距离为{distance}持续时间为{burnduration}火墙，冷却时间 {cooldownTime}ticks. 
 
-** 属性： **
+**属性：**
 - cooldownTime
   - 类型：long
   - 默认：20
@@ -287,13 +287,13 @@
 
 
 ## Fireball
-** 指令：**
+**指令：**
 `/rpgitem {Item} power fireball [cooldownTime] `
 
-** 效果： **
+**效果：**
   发射小火球 [cooldownTime]tick冷却时间。
 
-** 属性： **
+**属性：**
 - cooldownTime
   - 类型：long
   - 默认：20
@@ -309,13 +309,13 @@
 `/rpgitem testfire power fireball`
 
 ## Flame
-** 指令：**
+**指令：**
 `/rpgitem {Item} power Flame [burnTime] `
 
-** 效果： **
+**效果：**
   对目标造成 [burnTime]tick的点燃时间。
 
-** 属性： **
+**属性：**
 - burnTime
   - 类型：int
   - 默认：20
@@ -331,13 +331,13 @@
 `/rpgitem testflame power Flame`
 
 ## Food
-** 指令：**
+**指令：**
 `/rpgitem {Item} power food {foodpoints} `
 
-** 效果： **
+**效果：**
    给 {Item} 添加可食用功能, 吃掉时变化 {foodpoints}点饥饿值.
 
-** 属性： **
+**属性：**
 - foodpoints
   - 类型：int
   - 默认：无
@@ -348,13 +348,13 @@
 `/rpgitem testflame power food 10`
 
 ## ForceField
-** 指令：**
+**指令：**
 `/rpgitem {Item} power forcefield {cooldownTime} {radius} {height} {base} {ttl}`
 
-** 效果： **
+**效果：**
    在你周围设置可以阻止一切实体进入的一个半径 {radius}，高度 {height}，深度 {base} 并持续 {ttl}秒的力场，冷却时间{cooldownTime}tick的由屏障组成的空心圆柱。
 
-** 属性： **
+**属性：**
 - cooldownTime
   - 类型：int
   - 默认：200
@@ -391,13 +391,13 @@
 `/rpgitem testforcefield power forcefield 10 10 10 0 40`
 
 ## Ice
-** 指令：**
+**指令：**
 `/rpgitem {Item} power ice [cooldownTime]`
 
-** 效果： **
+**效果：**
    给 {Item} 添加冰块射击技能 冷却时间 [cooldownTime]tick. 右键发射冰块, 制造出大量冰块冲击目标, 冰块会慢慢消失
 
-** 属性： **
+**属性：**
 - cooldownTime
   - 类型：long
   - 默认：20
@@ -414,13 +414,13 @@
 `/rpgitem testice power knockup 10`
 
 ## Knockup（失效待修复）
-** 指令：**
+**指令：**
 `/rpgitem {Item} power knockup [chance] [power]`
 
-** 效果： **
+**效果：**
    给 {Item} 添加击飞技能, 几率为 1/[chance] 威力为[power]. 击飞技能会把目标击飞
 
-** 属性： **
+**属性：**
 - chance 
   - 类型：int 
   - 默认：20
@@ -445,10 +445,10 @@
 ** 指令：**
 `/rpgitem {Item} power lifesteal [chance]`
 
-** 效果： **
+**效果：**
    给 {Item} 添加生命偷取技能, 偷取几率为 [chance]
 
-** 属性： **
+**属性：**
 - chance 
   - 类型：int 
   - 默认：20
@@ -465,13 +465,13 @@
 `/rpgitem testlifesteal power lifesteal`
 
 ## Lightning
-** 指令：**
+**指令：**
 `/rpgitem {Item} power lightning [chance]`
 
-** 效果： **
+**效果：**
    给 {Item} 添加闪电技能, 默认几率为1/[chance]. 攻击目标时一定几率生成闪电
 
-** 属性： **
+**属性：**
 - chance 
   - 类型：int 
   - 默认：20
@@ -488,13 +488,13 @@
 `/rpgitem testlightning power lifesteal`
 
 ## Particle
-** 指令：**
+**指令：**
 `/rpgitem {Item} power particle {effect}`
 
-** 效果： **
+**效果：**
    向 {Item}添加粒子效果. 当右键时，在玩家周围产生粒子。 {effect} 可以是 SMOKE/ENDER_SIGNAL/MOBSPAWNER_FLAMES 之一
 
-** 属性： **
+**属性：**
 - effect 
   - 类型：String
   - 默认：FLAME
@@ -511,13 +511,13 @@
 `/rpgitem testparticle  power particle FLAME`
 
 ## ParticleTick
-** 指令：**
+**指令：**
 `/rpgitem {Item} power particletick {effect} [interval]`
 
-** 效果： **
+**效果：**
   向 {Item} 添加粒子效果. 当持有时，在玩家周围产生粒子。  间隔为[interval]tick。{effect} 可以是 SMOKE/ENDER_SIGNAL/MOBSPAWNER_FLAMES 之一。
 
-** 属性： **
+**属性：**
 - effect 
   - 类型：String
   - 默认：FLAME
