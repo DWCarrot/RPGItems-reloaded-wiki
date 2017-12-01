@@ -487,6 +487,56 @@
 **示例**
 `/rpgitem testlightning power lifesteal`
 
+## Particle
+** 指令：**
+`/rpgitem {Item} power particle {effect}`
+
+** 效果： **
+   向 {Item}添加粒子效果. 当右键时，在玩家周围产生粒子。 {effect} 可以是 SMOKE/ENDER_SIGNAL/MOBSPAWNER_FLAMES 之一
+
+** 属性： **
+- effect 
+  - 类型：String
+  - 默认：FLAME
+  - 设定状态：必填
+  - 作用：粒子类型
+- consumption
+  - 类型：int
+  - 默认：0
+  - 设定状态：附加
+  - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
+
+
+**示例**
+`/rpgitem testparticle  power particle FLAME`
+
+## ParticleTick
+** 指令：**
+`/rpgitem {Item} power particletick {effect} [interval]`
+
+** 效果： **
+  向 {Item} 添加粒子效果. 当持有时，在玩家周围产生粒子。  间隔为[interval]tick。{effect} 可以是 SMOKE/ENDER_SIGNAL/MOBSPAWNER_FLAMES 之一。
+
+** 属性： **
+- effect 
+  - 类型：String
+  - 默认：FLAME
+  - 设定状态：必填
+  - 作用：粒子类型
+- interval
+  - 类型：int 
+  - 默认：15
+  - 设定状态：可选
+  - 作用：触发间隔时间
+- consumption
+  - 类型：int
+  - 默认：0
+  - 设定状态：附加
+  - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
+
+
+**示例**
+`/rpgitem testparticle  power particletick FLAME 20`
 
 
 
