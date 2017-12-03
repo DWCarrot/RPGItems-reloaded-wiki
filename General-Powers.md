@@ -719,7 +719,6 @@
 **示例**
 `/rpgitem testprojectile power projectile 1 true arrow 10 10 2 `
 
-
 ## Pumpkin
 **指令：**
 `/rpgitem {Item} power pumpkin {chance} {drop}`
@@ -746,6 +745,292 @@
 
 **示例**
 `/rpgitem testpumpkin power pumpkin 1 1`
+
+## Rainbow
+**指令：**
+`/rpgitem {Item} power rainbow [cooldownTime] [count] [isFire]`
+
+**效果：**
+  给 {Item} 添加彩虹技能,[cooldownTime]为游戏刻. [count]为发射彩色羊毛方块数量. [isFire]为是否发射火焰方块替代羊毛
+
+**属性：**
+- cooldownTime
+  - 类型：int 
+  - 默认：20
+  - 设定状态：可选
+  - 作用：冷却时间
+- count
+  - 类型：int
+  - 默认：5
+  - 设定状态：可选
+  - 作用：发射数量
+- isFire
+  - 类型：boolean
+  - 默认：false
+  - 设定状态：可选
+  - 作用：是否替换发射物为火焰
+- consumption
+  - 类型：int
+  - 默认：0
+  - 设定状态：附加
+  - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
+
+**示例**
+`/rpgitem testpumpkin power rainbow`
+
+## RealDamage
+**指令：**
+`/rpgitem {Item} power realdamage {cooldownTime} {realDamage}`
+
+**效果：**
+  给 {Item} 添加真实伤害技能, {cooldownTime}为游戏刻. 被击中的生物将受到{realDamage}真实伤害但至少会剩<minDamage>点生命值.
+
+**属性：**
+- cooldownTime
+  - 类型：int 
+  - 默认：20
+  - 设定状态：必填
+  - 作用：冷却时间
+- realDamage
+  - 类型：double
+  - 默认：0
+  - 设定状态：必填
+  - 作用：真实伤害数值
+- minDamage
+  - 类型：double
+  - 默认：0
+  - 设定状态：附加
+  - 作用：目标最小残留血量
+- consumption
+  - 类型：int
+  - 默认：0
+  - 设定状态：附加
+  - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
+
+**示例**
+`/rpgitem testrealdamage power realdamage 1 10`
+
+## Rescue
+**指令：**
+`/rpgitem {Item} power rescue [cooldownTime] [healthTrigger] [useBed] [inPlace]`
+
+**效果：**
+  给 {Item} 添加拯救技能，冷却时间为[cooldownTime]游戏刻，在玩家血量低于[healthTrigger]触发，[useBed]为true的时候拯救传送回出身点，[inPlace]为true的时候原地复活并无敌。优先级[inPlace]>[useBed]
+
+**属性：**
+- cooldownTime
+  - 类型：int 
+  - 默认：20
+  - 设定状态：可选
+  - 作用：冷却时间
+- healthTrigger
+  - 类型：int
+  - 默认：4
+  - 设定状态：可选
+  - 作用：拯救触发最小血量
+- useBed
+  - 类型：boolean
+  - 默认：true
+  - 设定状态：可选
+  - 作用：是否传送回出身点
+- inPlace
+  - 类型：boolean
+  - 默认：false
+  - 设定状态：可选
+  - 作用：是否原地复活
+- damageTrigger
+  - 类型：double
+  - 默认：1024
+  - 设定状态：附加
+  - 作用：多少伤害以上触发
+- consumption
+  - 类型：int
+  - 默认：0
+  - 设定状态：附加
+  - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
+
+**示例**
+`/rpgitem testrescue power rescue`
+
+## Rumble
+**指令：**
+`/rpgitem {Item} power rumble {cooldownTime} {power} {distance}`
+
+**效果：**
+  给 {Item} 添加添加土遁技能，冷却时间为{cooldownTime},有效推进范围为{distance}，将土遁推进范围内触碰到的第一个实体周围产生爆炸并将周围小范围内的相同实体以{power}的击飞等级击飞上天
+
+**属性：**
+- cooldownTime
+  - 类型：int 
+  - 默认：20
+  - 设定状态：必填
+  - 作用：冷却时间
+- power
+  - 类型：int
+  - 默认：2
+  - 设定状态：必填
+  - 作用：击飞等级
+- distance
+  - 类型：int
+  - 默认：15
+  - 设定状态：必填
+  - 作用：推进距离
+- consumption
+  - 类型：int
+  - 默认：0
+  - 设定状态：附加
+  - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
+
+**示例**
+`/rpgitem testrumble power rumble 100 4 10`
+
+## SkyHook
+**指令：**
+`/rpgitem {Item} power skyhook {railMaterial} {hookDistance}`
+
+**效果：**
+ 给 {Item}添加天钩技能. 天钩技能允许使用者钩到{hookDistance}距离以内的指定{railMaterial}材质方块并向那个方向突进
+
+**属性：**
+- railMaterial
+  - 类型：String 
+  - 默认：无
+  - 设定状态：必填
+  - 作用：可以指向的材质id
+- hookDistance
+  - 类型：int 
+  - 默认：10
+  - 设定状态：必填
+  - 作用：改材质方块距离玩家的最小距离
+- cooldownTime
+  - 类型：int 
+  - 默认：20
+  - 设定状态：必填
+  - 作用：冷却时间
+- hookingTickCost
+  - 类型：int
+  - 默认：0
+  - 设定状态：附加
+  - 作用：每次勾取过程中飞行1游戏刻的消耗量
+- consumption
+  - 类型：int
+  - 默认：0
+  - 设定状态：附加
+  - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
+
+**示例**
+`/rpgitem testskyhook power skyhook 1 10`
+
+## TNTCannon
+**指令：**
+`/rpgitem {Item} power tntcannon [cooldownTime]`
+
+**效果：**
+ 给 {Item}添加发射tnt的功能，冷却时间为[cooldownTime]
+
+**属性：**
+- cooldownTime
+  - 类型：long 
+  - 默认：20
+  - 设定状态：可选
+  - 作用：冷却时间
+- consumption
+  - 类型：int
+  - 默认：0
+  - 设定状态：附加
+  - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
+
+**示例**
+`/rpgitem testtntcannon power tntcannon`
+
+## Teleport
+**指令：**
+`/rpgitem {Item} power teleport [cooldownTime] [distance]`
+
+**效果：**
+ 给{Item}添加传送技能, 冷却时间[cooldownTime]游戏刻 右键传送距离为[distance]格. 传送方向为你所面向的方向
+
+**feture**
+ 这个技能当载体的材质为弓箭的时候，会变成传送到射出去的箭矢落地的位置，并且若弓箭落地的位置和玩家的距离大于[distance]会提示太远了
+
+**属性：**
+- cooldownTime
+  - 类型：long 
+  - 默认：20
+  - 设定状态：可选
+  - 作用：冷却时间
+- distance
+  - 类型：int 
+  - 默认：5
+  - 设定状态：可选
+  - 作用：传送距离
+- consumption
+  - 类型：int
+  - 默认：0
+  - 设定状态：附加
+  - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
+
+**示例**
+`/rpgitem testteleport power teleport 20 10`
+
+## TippedArrow
+**指令：**
+`/rpgitem {Item} power tippedarrow {cooldownTime} {type} {duration} {amplifier} `
+
+**效果：**
+ 给 {Item} 添加药箭技能, 效果{type}时长{duration}为游戏刻, 等级为{amplifier},冷却时间{cooldownTime}游戏刻. 右键发射. 有效的药水效果：详见[药水系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/%E8%8D%AF%E6%B0%B4%E6%95%88%E6%9E%9C)章节
+
+**属性：**
+- cooldownTime
+  - 类型：long 
+  - 默认：20
+  - 设定状态：必选
+  - 作用：冷却时间
+- type
+  - 类型：String 
+  - 默认：null
+  - 设定状态：必选
+  - 作用：药水效果类型
+- duration
+  - 类型：int 
+  - 默认：15
+  - 设定状态：必选
+  - 作用：持续时间
+- amplifier
+  - 类型：int 
+  - 默认：1
+  - 设定状态：必选
+  - 作用：效果等级
+- consumption
+  - 类型：int
+  - 默认：0
+  - 设定状态：附加
+  - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
+
+**示例**
+`/rpgitem testtippedarrow power tippedarrow 20 speed 40 1`
+
+## Torch
+**指令：**
+`/rpgitem {Item} power torch {cooldownTime}`
+
+**效果：**
+ 给 {Item} 添加照亮技能，冷却时间为{cooldownTime}，对着指向的区域扔一堆火把，火把会投掷到对应的方块上
+
+**属性：**
+- cooldownTime
+  - 类型：long 
+  - 默认：20
+  - 设定状态：必选
+  - 作用：冷却时间
+- consumption
+  - 类型：int
+  - 默认：0
+  - 设定状态：附加
+  - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
+
+**示例**
+`/rpgitem testtorch power torch 20`
 
 
 
