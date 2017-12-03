@@ -536,7 +536,216 @@
 
 
 **示例**
-`/rpgitem testparticle  power particletick FLAME 20`
+`/rpgitem testparticletick power particletick FLAME 20`
+
+## PotionHit
+**指令：**
+`/rpgitem {Item} power potionhit {chance} {dration} {amplifier} {type}`
+
+**效果：**
+  '攻击时有 1/{chance}% 的几率使目标获得药水效果. {type} 为药水效果  {dration}为持续时间单位为游戏刻, {amplifier}
+      为整数。 可用药水效果:详见[药水系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/%E8%8D%AF%E6%B0%B4%E6%95%88%E6%9E%9C)章节
+
+**属性：**
+- chance 
+  - 类型：int
+  - 默认：20
+  - 设定状态：必填
+  - 作用：触发几率
+- dration
+  - 类型：int
+  - 默认：20
+  - 设定状态：必填
+  - 作用：持续时间
+- amplifier
+  - 类型：int
+  - 默认：1
+  - 设定状态：必填
+  - 作用：药水效果等级
+- type 
+  - 类型：String
+  - 默认：HARM
+  - 设定状态：必填
+  - 作用：药水效果：详见[药水系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/%E8%8D%AF%E6%B0%B4%E6%95%88%E6%9E%9C)章节
+- consumption
+  - 类型：int
+  - 默认：0
+  - 设定状态：附加
+  - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
+
+**示例**
+`/rpgitem testpotionhit power potionhit 1 100 1 speed `
+
+## PotionSelf
+**指令：**
+`/rpgitem {Item} power potionself {cooldownTime} {duration} {amplifier} {type}`
+
+**效果：**
+  右键获得等级{amplifier}的{type}药水效果持续{duration}游戏刻{cooldownTime}游戏刻，冷却时间。 可用药水效果:详见[药水系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/%E8%8D%AF%E6%B0%B4%E6%95%88%E6%9E%9C)章节
+
+**属性：**
+- cooldownTime 
+  - 类型：long
+  - 默认：20
+  - 设定状态：必填
+  - 作用：冷却时间
+- dration
+  - 类型：int
+  - 默认：20
+  - 设定状态：必填
+  - 作用：持续时间
+- amplifier
+  - 类型：int
+  - 默认：1
+  - 设定状态：必填
+  - 作用：药水效果等级
+- type 
+  - 类型：String
+  - 默认：HARM
+  - 设定状态：必填
+  - 作用：药水效果：详见[药水系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/%E8%8D%AF%E6%B0%B4%E6%95%88%E6%9E%9C)章节
+- consumption
+  - 类型：int
+  - 默认：0
+  - 设定状态：附加
+  - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
+
+**示例**
+`/rpgitem testpotionself power potionself 100 100 1 speed `
+
+## PotionTick
+**指令：**
+`/rpgitem {Item} power potiontick {amplifier} {effect} [interval] [duration]`
+
+**效果：**
+  持有/穿戴时获得时长为[duration]游戏刻的等级为{amplifier}的{effect}效果并每次经过[interval]游戏刻再次赋予。 可用药水效果:详见[药水系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/%E8%8D%AF%E6%B0%B4%E6%95%88%E6%9E%9C)章节
+
+**属性：**
+- amplifier
+  - 类型：int
+  - 默认：1
+  - 设定状态：必填
+  - 作用：药水效果等级
+- effect
+  - 类型：String
+  - 默认：SPEED
+  - 设定状态：必填
+  - 作用：药水效果：详见[药水系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/%E8%8D%AF%E6%B0%B4%E6%95%88%E6%9E%9C)章节
+- interval
+  - 类型：int
+  - 默认：0
+  - 设定状态：可选
+  - 作用：药水效果循环触发间隔
+- duration
+  - 类型：int
+  - 默认：60
+  - 设定状态：可选
+  - 作用：药水效果持续时间
+- consumption
+  - 类型：int
+  - 默认：0
+  - 设定状态：附加
+  - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
+
+**示例**
+`/rpgitem testpotiontick power potiontick 1 speed `
+
+## Projectile
+**指令：**
+`/rpgitem {Item} power projectile {cooldownTime} {cone} {projectileType} [range] [amount] [speed]`
+
+**效果：**
+{cone}为true： 为 {Item} 添加发射实体技能，冷却时间为{cooldownTime} 游戏刻。右键发射[amount] 个以[speed]速度飞行的 {projectileType}类型的实体。以玩家方向为中心，角度 [range] 呈圆锥形随机分散。可接受的类型：skull, fireball, snowball, smallfireball, arrow, llamaspit
+
+{cone}为false:为 {Item} 添加发射实体技能,冷却时间为{cooldownTime} 游戏刻。右键发射[amount] 个以[speed]速度飞行的 {projectileType}类型的实体。可接受的类型：skull, fireball, snowball, smallfireball, arrow, llamaspit
+
+**属性：**
+- cooldownTime
+  - 类型：long
+  - 默认：20
+  - 设定状态：必填
+  - 作用：冷却时间
+- cone
+  - 类型：boolean
+  - 默认：false
+  - 设定状态：必填
+  - 作用：发射区间是否为圆锥型
+- cone
+  - 类型：boolean
+  - 默认：false
+  - 设定状态：必填
+  - 作用：发射区间是否为圆锥型
+- projectileType
+  - 类型：String
+  - 默认：Snowball
+  - 设定状态：必填
+  - 作用：发射物类型
+- range
+  - 类型：int
+  - 默认：15
+  - 设定状态：可选
+  - 作用：发射区间角度范围
+- amount
+  - 类型：int
+  - 默认：5
+  - 设定状态：可选
+  - 作用：发射物数量
+- speed
+  - 类型：double
+  - 默认：1
+  - 设定状态：可选
+  - 作用：发射物速度
+- gravity
+  - 类型：boolean
+  - 默认：true
+  - 设定状态：附加
+  - 作用：是否受重力影响
+- burstCount
+  - 类型：int
+  - 默认：1
+  - 设定状态：附加
+  - 作用：一次释放连续触发的技能次数
+- burstInterval
+  - 类型：int
+  - 默认：1
+  - 设定状态：附加
+  - 作用：一次释放连续触发的技能时间间隔
+- consumption
+  - 类型：int
+  - 默认：0
+  - 设定状态：附加
+  - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
+
+**示例**
+`/rpgitem testprojectile power projectile 1 true arrow 10 10 2 `
+
+
+## Pumpkin
+**指令：**
+`/rpgitem {Item} power pumpkin {chance} {drop}`
+
+**效果：**
+   1/{chance}% 几率使敌人戴上南瓜头，南瓜头有1/{drop}%几率掉落
+
+**属性：**
+- chance
+  - 类型：int 
+  - 默认：20
+  - 设定状态：必填
+  - 作用：触发几率
+- drop
+  - 类型：double
+  - 默认：0
+  - 设定状态：必填
+  - 作用：南瓜掉落几率
+- consumption
+  - 类型：int
+  - 默认：0
+  - 设定状态：附加
+  - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
+
+**示例**
+`/rpgitem testpumpkin power pumpkin 1 1`
 
 
 
