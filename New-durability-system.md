@@ -1,3 +1,12 @@
+**To set durability like the old way:**
+
+```
+/rpgitem some_item durability 100
+/rpgitem some_item durabilitybound 0 100
+/rpgitem some_item defaultdurability 100
+```
+-------
+
 An item will lose durability when:
 * break a block will reduce item.blockBreakingCost(default 1) durability 
 * damage a entity will reduce item.hittingCost(default 1) durability 
