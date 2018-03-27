@@ -1,3 +1,47 @@
+Here is the document for RPGitems plugin.
+
+Documents now under construction, please check origin files for now.
+
+## Updated to Lore based item identification
+
+Related commit [7604687](https://github.com/NyaaCat/RPGitems-reloaded/commit/7604687e69f43527ba1c043552818aa14ecd61b8)  
+Related issue [#24](https://github.com/NyaaCat/RPGitems-reloaded/issues/24)
+
+# New Command /rpgitemupdate
+All existed rpgitems will become invalid.  
+Taking the item you want to update in hand then type the command.  
+A notification about whether the process success or fail will appear.  
+Player need permission node `rpgitemupdate.command` to execute this.
+
+There are three sub-command which only OPs can execute, they are for debug purpose only.
+
+- /rpgitemupdate inspect
+- /rpgitemupdate upgrade
+- /rpgitemupdate downgrade
+
+# Possible Issues
+
+- Data are stored in lore. Players with permissions can still modify them.
+
+# 新命令 /rpgitemupdate
+所有存在的RPGItem将会失效  
+将失效的物品拿在手中，并执行`/rpgitemupdate`命令，即可更新物品  
+会有提示显示更新是否成功  
+需要有权限`rpgitemupdate.command`才可执行命令
+
+有三个只有OP可以执行的子命令用于调试：
+
+- /rpgitemupdate inspect
+- /rpgitemupdate upgrade
+- /rpgitemupdate downgrade
+
+# 可能的问题
+
+- 信息存储在Lore中。有权限的玩家依然可以修改。
+
+
+## New durability system
+
 **To set durability like the old way:**
 
 ```
@@ -22,7 +66,8 @@ e.g.
 
 After some event be handled, if item's durability is below or equal 0, it will consume itself.
 
-If the item have PowerUnbreakable, it won't lost its last 1 durability. When some tried to reduce durability more or equal to current durability, it will cancel the event (can't break blocks, can't damage entities or fail to trigger powers, and your armour with its last durability can't protect you from damage). 
+If the item have PowerUnbreakable, it won't lost its last 1 durability. When some tried to reduce durability more or equal to current durability, it will cancel the event 
+(can't break blocks, can't damage entities or fail to trigger powers, and your armour with its last durability can't protect you from damage). 
 
 物品会在以下时候丢失耐久：
 * 破坏方块，降低item.blockBreakingCost(默认1)耐久
@@ -39,3 +84,4 @@ If the item have PowerUnbreakable, it won't lost its last 1 durability. When som
 触发事件后，若物品的耐久等于低于0，物品就会消耗掉。
 
 如果物品有PowerUnbreakable，物品将不会消耗自己的最后一点耐久。当试图消耗的耐久大于等于当前耐久，事件将被取消（无法破坏方块、伤害实体或触发技能，以及仅有最后一点耐久的护甲无法减伤）。
+
