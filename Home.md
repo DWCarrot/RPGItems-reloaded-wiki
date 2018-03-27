@@ -2,12 +2,14 @@ Here is the document for RPGitems plugin.
 
 Documents now under construction, please check origin files for now.
 
+***
+
 ## Updated to Lore based item identification
 
 Related commit [7604687](https://github.com/NyaaCat/RPGitems-reloaded/commit/7604687e69f43527ba1c043552818aa14ecd61b8)  
 Related issue [#24](https://github.com/NyaaCat/RPGitems-reloaded/issues/24)
 
-# New Command /rpgitemupdate
+#### New Command /rpgitemupdate
 All existed rpgitems will become invalid.  
 Taking the item you want to update in hand then type the command.  
 A notification about whether the process success or fail will appear.  
@@ -19,11 +21,11 @@ There are three sub-command which only OPs can execute, they are for debug purpo
 - /rpgitemupdate upgrade
 - /rpgitemupdate downgrade
 
-# Possible Issues
+#### Possible Issues
 
 - Data are stored in lore. Players with permissions can still modify them.
 
-# 新命令 /rpgitemupdate
+#### 新命令 /rpgitemupdate
 所有存在的RPGItem将会失效  
 将失效的物品拿在手中，并执行`/rpgitemupdate`命令，即可更新物品  
 会有提示显示更新是否成功  
@@ -35,10 +37,11 @@ There are three sub-command which only OPs can execute, they are for debug purpo
 - /rpgitemupdate upgrade
 - /rpgitemupdate downgrade
 
-# 可能的问题
+#### 可能的问题
 
 - 信息存储在Lore中。有权限的玩家依然可以修改。
 
+***
 
 ## New durability system
 
