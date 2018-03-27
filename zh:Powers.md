@@ -1049,8 +1049,7 @@
   - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
 
 **示例**
-`/rpgitem power testprojectile projectile 1 true arrow 10 10 2 `
-
+`/rpgitem power testthrow throw ThrowCreeper 20 right 2 creeper {ignited:1,Fuse:5}`
 
 # 特殊技能（command系列）
 
