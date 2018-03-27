@@ -1,7 +1,8 @@
-# Skill instruction set
 
 `/rpgitem power {item} {power} [properties......]`
+
 **Attributes**
+
 - item: item id e.g.: testitem-> an item with id testitem
 - power: skill id e.g.: potionself-> give yourself a buff
 - properties
@@ -31,7 +32,7 @@ Add a range effect to [Item] with a cooldown of [Cooldown] ticks. Right-click on
 - effect
   - Type: String
   - Set status: Required
-  - Role: Sets the effect character. Please refer to [Potion System] for details (https://github.com/NyaaCat/RPGitems-reloaded/wiki/%E8%8D%AF%E6%B0%B4%E6%95%88 %E6%9E%9C) chapter
+  - Role: Sets the effect character. Please refer to [Potion Effects](/NyaaCat/RPGitems-reloaded/wiki/en:Potion-Effects) for details
 - duration
   - Type: int
   - Set status: Required
@@ -39,7 +40,7 @@ Add a range effect to [Item] with a cooldown of [Cooldown] ticks. Right-click on
 - amlifier
   - Type: int
   - Set status: Required
-  - Role: Set skill level, level = amlifier +1
+  - Role: Set skill level, level = amplifier +1
 - selfapplication
   - Type: boolean
   - Setting status: optional
@@ -51,12 +52,10 @@ Add a range effect to [Item] with a cooldown of [Cooldown] ticks. Right-click on
 - consumption
   - Type: int
   - Set status: additional
-  - Role: Consumption, see the [New Consumption System] (https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
+  - Role: Consumption, see the [New Consumption System](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
 
 **Example**
 `/rpgitem power testaoe aoe 10 10 speed 100 0 true`
-
-
 
 ## Arrow
 **Instructions:**
@@ -73,7 +72,7 @@ Add Rocket ability to [Item], cooldown [Cooldown] ticks.
 - consumption
   - Type: int
   - Set status: additional
-  - Role: Consumption, see the [New Consumption System] (https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
+  - Role: Consumption, see the [New Consumption System](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
 
 **Example**
 `/rpgitem power testarrow arrow 20`
@@ -124,7 +123,7 @@ Add skills for {Item}. When you hold it in your hand, pull the creature near the
 - consumption
   - Type: int
   - Set status: additional
-  - Role: Consumption, see the [New Consumption System] (https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
+  - Role: Consumption, see the [New Consumption System](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
 
 **Example**
 `/rpgitem power testarrow color 100 true false true`
@@ -148,7 +147,7 @@ Add skills for {Item}. When you hold it in your hand, pull the creature near the
 - consumption
   - Type: int
   - Set status: additional
-  - Role: Consumption, see the [New Consumption System] (https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
+  - Role: Consumption, see the [New Consumption System](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
 
 **Example**
 `/rpgitem power testconsume consume`
@@ -226,7 +225,7 @@ Add skills for {Item}. When you hold it in your hand, pull the creature near the
   - Type: int
   - Default: 0
   - Set status: additional
-  - Role: Consumption, see the [New Consumption System] (https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
+  - Role: Consumption, see the [New Consumption System](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
 
 **Example**
 `/rpgitem power testdeflect deflect`
@@ -257,7 +256,7 @@ Add skills for {Item}. When you hold it in your hand, pull the creature near the
 - consumption
   - Type: int
   - Set status: additional
-  - Role: Consumption, see the [New Consumption System] (https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
+  - Role: Consumption, see the [New Consumption System](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
 
 **Example**
 `/rpgitem power testfire fire 10 10 20`
@@ -280,7 +279,7 @@ Add skills for {Item}. When you hold it in your hand, pull the creature near the
   - Type: int
   - Default: 0
   - Set status: additional
-  - Role: Consumption, see the [New Consumption System] (https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
+  - Role: Consumption, see the [New Consumption System](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
 
 **Example**
 `/rpgitem power testfire fireball`
@@ -302,7 +301,7 @@ Add skills for {Item}. When you hold it in your hand, pull the creature near the
   - Type: int
   - Default: 0
   - Set status: additional
-  - Role: Consumption, see the [New Consumption System] (https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
+  - Role: Consumption, see the [New Consumption System](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
 
 **Example**
 `/rpgitem power testflame Flame`
@@ -361,7 +360,7 @@ Add skills for {Item}. When you hold it in your hand, pull the creature near the
   - Type: int
   - Default: 0
   - Set status: additional
-  - Role: Consumption, see the [New Consumption System] (https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
+  - Role: Consumption, see the [New Consumption System](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
 
 
 **Example**
@@ -384,7 +383,7 @@ Add skills for {Item}. When you hold it in your hand, pull the creature near the
   - Type: int
   - Default: 0
   - Set status: additional
-  - Role: Consumption, see the [New Consumption System] (https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
+  - Role: Consumption, see the [New Consumption System](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
 
 
 **Example**
@@ -412,7 +411,7 @@ Add skills for {Item}. When you hold it in your hand, pull the creature near the
   - Type: int
   - Default: 0
   - Set status: additional
-  - Role: Consumption, see the [New Consumption System] (https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
+  - Role: Consumption, see the [New Consumption System](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
 
 
 **Example**
@@ -435,7 +434,7 @@ Add skills for {Item}. When you hold it in your hand, pull the creature near the
   - Type: int
   - Default: 0
   - Set status: additional
-  - Role: Consumption, see the [New Consumption System] (https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
+  - Role: Consumption, see the [New Consumption System](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
 
 
 **Example**
@@ -458,7 +457,7 @@ Add skills for {Item}. When you hold it in your hand, pull the creature near the
   - Type: int
   - Default: 0
   - Set status: additional
-  - Role: Consumption, see the [New Consumption System] (https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
+  - Role: Consumption, see the [New Consumption System](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
 
 
 **Example**
@@ -481,7 +480,7 @@ Add skills for {Item}. When you hold it in your hand, pull the creature near the
   - Type: int
   - Default: 0
   - Set status: additional
-  - Role: Consumption, see the [New Consumption System] (https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
+  - Role: Consumption, see the [New Consumption System](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
 
 
 **Example**
@@ -509,7 +508,7 @@ Add skills for {Item}. When you hold it in your hand, pull the creature near the
   - Type: int
   - Default: 0
   - Set status: additional
-  - Role: Consumption, see the [New Consumption System] (https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
+  - Role: Consumption, see the [New Consumption System](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
 
 
 **Example**
@@ -521,7 +520,7 @@ Add skills for {Item}. When you hold it in your hand, pull the creature near the
 
 **effect:**
   There is a 1/{chance}% chance of attack to get a potion effect. {type} is a potion effect {dration} is the duration in gameplay, {amplifier}
-      Is an integer. Potions available: See the [Pharmacy System] for details (https://github.com/NyaaCat/RPGitems-reloaded/wiki/%E8%8D%AF%E6%B0%B4%E6%95%88%E6%9E% 9C) Chapter
+      Is an integer. Potions available: See the [Potion Effect](/NyaaCat/RPGitems-reloaded/wiki/en:Potion-Effects) for details.
 
 **Attributes:**
 - chance
@@ -543,12 +542,12 @@ Add skills for {Item}. When you hold it in your hand, pull the creature near the
   - Type: String
   - Default: HARM
   - Set Status: Required
-  - Role: Potion effect: See [Potion System] for details (https://github.com/NyaaCat/RPGitems-reloaded/wiki/%E8%8D%AF%E6%B0%B4%E6%95%88%E6% 9E%9C) chapter
+  - Role: Potion effect: See [Potion Effects](/NyaaCat/RPGitems-reloaded/wiki/en:Potion-Effects) for details
 - consumption
   - Type: int
   - Default: 0
   - Set status: additional
-  - Role: Consumption, see the [New Consumption System] (https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
+  - Role: Consumption, see the [New Consumption System](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
 
 **Example**
 `/rpgitem power testpotionhit potionhit 1 100 1 speed `
@@ -558,7 +557,7 @@ Add skills for {Item}. When you hold it in your hand, pull the creature near the
 `/rpgitem power {Item} potionself {cooldownTime} {duration} {amplifier} {type}`
 
 **effect:**
-  Right-click on the {type} potion effect of level {amplifier} for {duration} game moments, and cooldown time. Potions available: See the [Pharmacy System] for details (https://github.com/NyaaCat/RPGitems-reloaded/wiki/%E8%8D%AF%E6%B0%B4%E6%95%88%E6%9E% 9C) Chapter
+  Right-click on the {type} potion effect of level {amplifier} for {duration} game moments, and cooldown time. Potions available: See the [Potion Effects](/NyaaCat/RPGitems-reloaded/wiki/en:Potion-Effects) for details
 
 **Attributes:**
 - cooldownTime
@@ -580,12 +579,12 @@ Add skills for {Item}. When you hold it in your hand, pull the creature near the
   - Type: String
   - Default: HARM
   - Set Status: Required
-  - Role: Potion effect: See [Potion System] for details (https://github.com/NyaaCat/RPGitems-reloaded/wiki/%E8%8D%AF%E6%B0%B4%E6%95%88%E6% 9E%9C) chapter
+  - Role: Potion effect: See [Potion System](/NyaaCat/RPGitems-reloaded/wiki/en:Potion-Effects) for details
 - consumption
   - Type: int
   - Default: 0
   - Set status: additional
-  - Role: Consumption, see the [New Consumption System] (https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
+  - Role: Consumption, see the [New Consumption System](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
 
 **Example**
 `/rpgitem power testpotionself potionself 100 100 1 speed `
@@ -595,7 +594,7 @@ Add skills for {Item}. When you hold it in your hand, pull the creature near the
 `/rpgitem power {Item} potiontick {amplifier} {effect} [interval] [duration]`
 
 **effect:**
-  When the player holds/wears, the {effect} effect with the duration of [duration] game engraved with {amplifier} is given again each time [interval] game is engraved. Potions available: See the [Pharmacy System] for details (https://github.com/NyaaCat/RPGitems-reloaded/wiki/%E8%8D%AF%E6%B0%B4%E6%95%88%E6%9E% 9C) Chapter
+  When the player holds/wears, the {effect} effect with the duration of [duration] game engraved with {amplifier} is given again each time [interval] game is engraved. Potions available: See the [Potion Effect](/NyaaCat/RPGitems-reloaded/wiki/en:Potion-Effects) for details
 
 **Attributes:**
 - amplifier
@@ -607,7 +606,7 @@ Add skills for {Item}. When you hold it in your hand, pull the creature near the
   - Type: String
   - Default: SPEED
   - Set Status: Required
-  - Role: Potion effect: See [Potion System] for details (https://github.com/NyaaCat/RPGitems-reloaded/wiki/%E8%8D%AF%E6%B0%B4%E6%95%88%E6% 9E%9C) chapter
+  - Role: Potion effect: See [Potion System](/NyaaCat/RPGitems-reloaded/wiki/en:Potion-Effects) for details
 - interval
   - Type: int
   - Default: 0
@@ -622,7 +621,7 @@ Add skills for {Item}. When you hold it in your hand, pull the creature near the
   - Type: int
   - Default: 0
   - Set status: additional
-  - Role: Consumption, see the [New Consumption System] (https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
+  - Role: Consumption, see the [New Consumption System](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
 
 **Example**
 `/rpgitem power testpotiontick potiontick 1 speed `
@@ -686,7 +685,7 @@ Add skills for {Item}. When you hold it in your hand, pull the creature near the
   - Type: int
   - Default: 0
   - Set status: additional
-  - Role: Consumption, see the [New Consumption System] (https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
+  - Role: Consumption, see the [New Consumption System](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
 
 **Example**
 `/rpgitem power testprojectile projectile 1 true arrow 10 10 2 `
@@ -713,7 +712,7 @@ Add skills for {Item}. When you hold it in your hand, pull the creature near the
   - Type: int
   - Default: 0
   - Set status: additional
-  - Role: Consumption, see the [New Consumption System] (https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
+  - Role: Consumption, see the [New Consumption System](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
 
 **Example**
 `/rpgitem power testpumpkin pumpkin 1 1`
@@ -745,7 +744,7 @@ Add skills for {Item}. When you hold it in your hand, pull the creature near the
   - Type: int
   - Default: 0
   - Set status: additional
-  - Role: Consumption, see the [New Consumption System] (https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
+  - Role: Consumption, see the [New Consumption System](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
 
 **Example**
 `/rpgitem power testpumpkin rainbow`
@@ -777,7 +776,7 @@ Add skills for {Item}. When you hold it in your hand, pull the creature near the
   - Type: int
   - Default: 0
   - Set status: additional
-  - Role: Consumption, see the [New Consumption System] (https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
+  - Role: Consumption, see the [New Consumption System](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
 
 **Example**
 `/rpgitem power testrealdamage realdamage 1 10`
@@ -819,7 +818,7 @@ Add skills for {Item}. When you hold it in your hand, pull the creature near the
   - Type: int
   - Default: 0
   - Set status: additional
-  - Role: Consumption, see the [New Consumption System] (https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
+  - Role: Consumption, see the [New Consumption System](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
 
 **Example**
 `/rpgitem power testrescue rescue`
@@ -851,7 +850,7 @@ Add skills for {Item}. When you hold it in your hand, pull the creature near the
   - Type: int
   - Default: 0
   - Set status: additional
-  - Role: Consumption, see the [New Consumption System] (https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
+  - Role: Consumption, see the [New Consumption System](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
 
 **Example**
 `/rpgitem power testrumble rumble 100 4 10`
@@ -888,7 +887,7 @@ Add skills for {Item}. When you hold it in your hand, pull the creature near the
   - Type: int
   - Default: 0
   - Set status: additional
-  - Role: Consumption, see the [New Consumption System] (https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
+  - Role: Consumption, see the [New Consumption System](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
 
 **Example**
 `/rpgitem power testskyhook skyhook 1 10`
@@ -910,7 +909,7 @@ Add skills for {Item}. When you hold it in your hand, pull the creature near the
   - Type: int
   - Default: 0
   - Set status: additional
-  - Role: Consumption, see the [New Consumption System] (https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
+  - Role: Consumption, see the [New Consumption System](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
 
 **Example**
 `/rpgitem power testtntcannon tntcannon`
@@ -940,7 +939,7 @@ Add skills for {Item}. When you hold it in your hand, pull the creature near the
   - Type: int
   - Default: 0
   - Set status: additional
-  - Role: Consumption, see the [New Consumption System] (https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
+  - Role: Consumption, see the [New Consumption System](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
 
 **Example**
 `/rpgitem power testteleport teleport 20 10`
@@ -950,7 +949,7 @@ Add skills for {Item}. When you hold it in your hand, pull the creature near the
 `/rpgitem power {Item} tippedarrow {cooldownTime} {type} {duration} {amplifier} `
 
 **effect:**
- Adds drug arrow skill to {Item}, effect {type} duration{duration} is game engraved, level is {amplifier}, cooldown time is {cooldownTime} game moment. Right shot launch. Effective potion effect: see [Potion system] for details ( https://github.com/NyaaCat/RPGitems-reloaded/wiki/%E8%8D%AF%E6%B0%B4%E6%95%88%E6%9E%9C) Chapter
+ Adds drug arrow skill to {Item}, effect {type} duration{duration} is game engraved, level is {amplifier}, cooldown time is {cooldownTime} game moment. Right shot launch. Effective potion effect: see [Potion Effect](/NyaaCat/RPGitems-reloaded/wiki/en:Potion-Effects) for details
 
 **Attributes:**
 - cooldownTime
@@ -977,7 +976,7 @@ Add skills for {Item}. When you hold it in your hand, pull the creature near the
   - Type: int
   - Default: 0
   - Set status: additional
-  - Role: Consumption, see the [New Consumption System] (https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
+  - Role: Consumption, see the [New Consumption System](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
 
 **Example**
 `/rpgitem power testtippedarrow tippedarrow 20 speed 40 1`
@@ -999,7 +998,7 @@ Add skills for {Item}. When you hold it in your hand, pull the creature near the
   - Type: int
   - Default: 0
   - Set status: additional
-  - Role: Consumption, see the [New Consumption System] (https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
+  - Role: Consumption, see the [New Consumption System](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
 
 **Example**
 `/rpgitem power testtorch torch 20`
@@ -1090,7 +1089,7 @@ Add AOE command skill to {Item}. Cooling time is {cooldown}. If {isRight} is rig
 - consumption
   - Type: int
   - Set status: additional
-  - Role: Consumption, see the [New Consumption System] (https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
+  - Role: Consumption, see the [New Consumption System](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
 
 **Example**
 ```
@@ -1136,7 +1135,7 @@ Adds a command skill to {Item} with a cooldown of {cooldown}. The tooltip is {di
 - consumption
   - Type: int
   - Set status: additional
-  - Role: Consumption, see the [New Consumption System] (https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
+  - Role: Consumption, see the [New Consumption System](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
 
 **Example**
 ```
@@ -1195,7 +1194,7 @@ Add a hit command skill to {Item}. The cooldown is {cooldown}. The tooltip is {d
 - consumption
   - Type: int
   - Set status: additional
-  - Role: Consumption, see the [New Consumption System] (https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
+  - Role: Consumption, see the [New Consumption System](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
 
 **Example**
 ```
