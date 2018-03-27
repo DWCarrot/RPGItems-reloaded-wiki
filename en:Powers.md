@@ -1,1208 +1,1206 @@
-[English is to be translated]
+# Skill instruction set
 
-# 技能(Power)指令集
-
-`/rpgitem power {item} {power} [properties……]`
-**属性**
-- item：道具id e.g.： testitem->一个id为testitem的道具
-- power：技能id  e.g.： potionself->给自己一个buff
+`/rpgitem power {item} {power} [properties......]`
+**Attributes**
+- item: item id e.g.: testitem-> an item with id testitem
+- power: skill id e.g.: potionself-> give yourself a buff
 - properties
-  - 分类：
-    - 必选：必须在创建power的时候就指定，用`{}`表示
-    - 可选：可以在创建power的时候指定，用`[]`表示
-    - 附加：只能通过set设置,不会显示在指令设定的属性中，使用`<>`表示
-  - 作用：技能初始化可配参数 e.g.：以上面potionself为例 可配参数有[cooldown] [duration] [amplifier] [effect],整条指令类似这样：`/rpgitem power testpotionself 20 100 1 speed` 右键使用之后给玩家一个持续5秒的等级2的速度buff（cd：1s）。各个参数单位请看下方详细power变量设定。
+  - Category:
+    - Required: Must be specified when power is created, denoted by `{}`
+    - Optional: Can be specified when power is created, denoted by `[]`
+    - Additional: Can only be set by set, not displayed in the properties set by the instruction, using `<>`
+  - Function: The skill can be initialized with the parameters eg: Take potionself as an example. Available parameters are [cooldown] [duration] [amplifier] [effect]. The entire command is similar to this: `/rpgitem power testpotionself 20 100 1 speed` The player is then given a level 2 speed buff (cd:1s) for 5 seconds. See the detailed power variable settings below for each parameter unit.
 
-# 普通技能
+# Ordinary skills
 ## AOE
-**指令：**
+**instruction:**
 `/rpgitem power {Item} aoe {cooldown} {range} {effect} {duration} {amlifier} [selfapplication]`
 
-**效果：**
-为 [Item]添加范围效果，冷却时间为 [Cooldown]ticks 右键使用将应用效果 [Effect] 到 [range]# 范围内的所有实体，时长为 [Duration]ticks，效果等级为 [Amplifier]. 如果 [Self] 没有设置，默认此效果也将应用到释放者
+**effect:**
+Add a range effect to [Item] with a cooldown of [Cooldown] ticks. Right-click on all entities in the range [Effect] to [range]# that will apply [Duration] ticks and the effect level is [Amplifier]. If [ Self] is not set, this effect is also applied to the release by default
 
-**属性**
+**Attributes**
 - cooldownTime
-  - 类型：long
-  - 设定状态：必选
-  - 作用：设定技能冷却时间
+  - Type: long
+  - Set status: Required
+  - Role: Set skill cooldown
 - range
-  - 类型：int
-  - 设定状态：必选
-  - 作用：设定范围
+  - Type: int
+  - Set status: Required
+  - Role: Setting range
 - effect
-  - 类型：String
-  - 设定状态：必选
-  - 作用：设定效果字符，字符详见 [药水系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/%E8%8D%AF%E6%B0%B4%E6%95%88%E6%9E%9C)章节
+  - Type: String
+  - Set status: Required
+  - Role: Sets the effect character. Please refer to [Potion System] for details (https://github.com/NyaaCat/RPGitems-reloaded/wiki/%E8%8D%AF%E6%B0%B4%E6%95%88 %E6%9E%9C) chapter
 - duration
-  - 类型：int
-  - 设定状态：必选
-  - 作用：设定持续时间
+  - Type: int
+  - Set status: Required
+  - Role: Set duration
 - amlifier
-  - 类型：int
-  - 设定状态：必选
-  - 作用：设定技能效果等级，等级=amlifier+1
+  - Type: int
+  - Set status: Required
+  - Role: Set skill level, level = amlifier +1
 - selfapplication
-  - 类型：boolean
-  - 设定状态：可选
-  - 作用：是否设定效果作用于自身
+  - Type: boolean
+  - Setting status: optional
+  - Role: whether to set effect on itself
 - name
-  - 类型：String
-  - 设定状态：附加
-  - 作用: 设定显示名称
+  - Type: String
+  - Set status: additional
+  - Function: Set display name
 - consumption
-  - 类型：int
-  - 设定状态：附加
-  - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
+  - Type: int
+  - Set status: additional
+  - Role: Consumption, see the [New Consumption System] (https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
 
-**示例**
+**Example**
 `/rpgitem power testaoe aoe 10 10 speed 100 0 true`
 
 
 
-## Arrow 
-**指令：**  
-`/rpgitem power {Item} arrow [Cooldown]`  
+## Arrow
+**Instructions:**
+`/rpgitem power {Item} arrow [Cooldown]`
 
-**效果：**
-给 [Item] 添加火箭技能, 冷却时间 [Cooldown]ticks. 右键发射
+**effect:**
+Add Rocket ability to [Item], cooldown [Cooldown] ticks.
 
-**属性**  
+**Attributes** 
 - cooldownTime
-  - 类型：long
-  - 设定状态：可选
-  - 作用：设定技能冷却时间
+  - Type: long
+  - Setting status: optional
+  - Role: Set skill cooldown
 - consumption
-  - 类型：int
-  - 设定状态：附加
-  - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
+  - Type: int
+  - Set status: additional
+  - Role: Consumption, see the [New Consumption System] (https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
 
-**示例**
+**Example**
 `/rpgitem power testarrow arrow 20`
 
 ## Attract
-**指令：**  
-`/rpgitem power {Item} attract {radius} {maxspeed}`  
+**Instructions:**
+`/rpgitem power {Item} attract {radius} {maxspeed}`
 
-**效果：**
-为 {Item} 添加技能。拿在手上时将生物拉扯到玩家附近。半径 {radius} 格子，最大速度 {maxspeed}
+**effect:**
+Add skills for {Item}. When you hold it in your hand, pull the creature near the player. Radius {radius} grid, max speed {maxspeed}
 
-**属性**  
+**Attributes** 
 - radius
-  - 类型：int
-  - 设定状态：必选
-  - 作用：设定技能拉扯最大半径
+  - Type: int
+  - Set status: Required
+  - Role: Set the maximum radius of skill pull
 - maxSpeed
-  - 类型：double
-  - 设定状态：必选
-  - 作用：设定技能最大拉扯速度
-**示例**
-`/rpgitem power testarrow attract 20 0.1`
+  - Type: double
+  - Set status: Required
+  - Role: Set the maximum pulling speed of the skill
+**Example**
+`/rpgitem power testarrow attract 20 0.1
 
-## Color 
-**指令：**  
-`/rpgitem power {Item} color [Cooldown] [glass] [clay] [wool]`  
+## Color
+**Instructions:**
+`/rpgitem power {Item} color [Cooldown] [glass] [clay] [wool]`
 
-**效果：**
- 改变粘土，玻璃和羊毛的颜色 ([Cooldown] 秒冷却)
+**effect:**
+ Change the color of clay, glass and wool ([Cooldown] seconds cool)
 
-**属性**  
+**Attributes** 
 - cooldownTime
-  - 类型：long
-  - 设定状态：可选
-  - 作用：设定技能冷却时间
+  - Type: long
+  - Setting status: optional
+  - Role: Set skill cooldown
 - glass
-  - 类型：boolean
-  - 设定状态：可选
-  - 作用：设定是否作用于玻璃
+  - Type: boolean
+  - Setting status: optional
+  - Function: setting whether to act on glass
 - clay
-  - 类型：boolean
-  - 设定状态：可选
-  - 作用：设定是否作用于黏土
+  - Type: boolean
+  - Setting status: optional
+  - Role: Set whether to act on clay
 - wool
-  - 类型：boolean
-  - 设定状态：可选
-  - 作用：设定是否作用于羊毛
+  - Type: boolean
+  - Setting status: optional
+  - Role: setting whether to act on wool
 - consumption
-  - 类型：int
-  - 设定状态：附加
-  - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
+  - Type: int
+  - Set status: additional
+  - Role: Consumption, see the [New Consumption System] (https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
 
-**示例**
+**Example**
 `/rpgitem power testarrow color 100 true false true`
 
 ## Consume
-**指令：**
+**instruction:**
 `/rpgitem power {Item} consume`
 
-**效果：**
-  设置 [Item]为消耗品. 按键按下后消耗该物品
+**effect:**
+  Set [Item] as a consumable item. Press this button to consume the item
 
-**属性：**
+**Attributes:**
 - cooldownTime
-  - 类型：int
-  - 设定状态：附加
-  - 作用：设定技能冷却时间
+  - Type: int
+  - Set status: additional
+  - Role: Set skill cooldown
 - isRight
-  - 类型：boolean
-  - 设定状态：附加
-  - 作用：是否应用为左键
+  - Type: boolean
+  - Set status: additional
+  - Effect: Whether to apply as left button
 - consumption
-  - 类型：int
-  - 设定状态：附加
-  - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
+  - Type: int
+  - Set status: additional
+  - Role: Consumption, see the [New Consumption System] (https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
 
-**示例**
+**Example**
 `/rpgitem power testconsume consume`
 
 ## ConsumeHit
-**指令：**
+**instruction:**
 `/rpgitem power {Item} consumehit`
 
-**效果：**
-  设置 [Item]为攻击时的消耗品. 冷却时间默认为0，可通过setter修改。
+**effect:**
+  Set [Item] as the consumable when attacking. Cooling time defaults to 0, which can be modified via setter.
 
-**属性**
+**Attributes**
 - cooldownTime
-  - 类型：int
-  - 设定状态:附加
-  - 作用：设定技能冷却时间
+  - Type: int
+  - Set status: additional
+  - Role: Set skill cooldown
 
-**示例**
+**Example**
 `/rpgitem power testconsumehit consumehit`
 
 ## Deflect
-**指令：**
+**instruction:**
 `/rpgitem power {Item} deflect [facing] [initiative] [cooldownTime] [passive] [cooldownTimePassive]`
 
-**效果：**
-  反弹射来的箭与火球（弹反）！
+**effect:**
+  Bounced arrows and fireballs (rebound)!
 
-  当参数设定[initiative]为true，[passive]为false并且在技能已经冷却（[cooldownTime]归零）状态下可以根据<isRight>设定左右键触发在[duration]时间内将飞行道具反射到当前玩家正在朝向的方向上
+  When the parameter setting [initiative] is true and [passive] is false and the skill has been cooled ([cooldownTime] is zero), you can set the left and right keys to trigger reflection of the flying prop in [duration] time. The current player is heading
 
-  当参数设定[initiative]为false，[passive]为true的状态下可以在技能触发间隔时间[cooldownTimePassive]归零的状态下有<chance>%的概率将飞行道具反射到当前玩家正在朝向的方向上
-  
+  When the parameter setting [initiative] is false and [passive] is true, there is a probability of <chance>% when the skill trigger interval [cooldownTimePassive] returns to zero. The flight prop is reflected to the direction the current player is facing. on
+  
 
-**属性：**
+**Attributes:**
 - facing
-  - 类型：double
-  - 默认：30
-  - 设定状态：可选
-  - 作用：最大捕获角度（当前视线与飞行道具之间的夹角）
+  - Type: double
+  - Default: 30
+  - Setting status: optional
+  - Effect: Maximum capture angle (angle between current sight and flight prop)
 - initiative
-  - 类型：initiative
-  - 默认：true
-  - 设定状态：可选
-  - 作用：主动模式（是否需要主动触发）
+  - Type:initiative
+  - Default: true
+  - Setting status: optional
+  - Role: Active mode (need to trigger actively)
 - cooldownTime
-  - 类型：int
-  - 默认：20刻
-  - 设定状态：可选
-  - 作用：技能冷却时间(当主动模式为true的时候)
+  - Type: int
+  - Default: 20 moments
+  - Setting status: optional
+  - Role: skill cooldown (when active mode is true)
 - passive
-  - 类型：boolean
-  - 默认：false
-  - 设定状态：可选
-  - 作用：是否启用被动模式
-- cooldownTimePassive 
-  - 类型：int
-  - 默认：20刻
-  - 设定状态：可选
-  - 作用：技能触发间隔时间（被动模式下即passive为true的情况下的触发间隔）
+  - Type: boolean
+  - Default: false
+  - Setting status: optional
+  - Role: whether to enable passive mode
+- cooldownTimePassive
+  - Type: int
+  - Default: 20 moments
+  - Setting status: optional
+  - Effect: Interval for triggering the skill (in case of passive mode, if the passive is true)
 - chance
-  - 类型：int
-  - 默认：50
-  - 设定状态：附加
-  - 作用：设定技能在被动模式下触发的几率（<chance>%）
+  - Type: int
+  - Default: 50
+  - Set status: additional
+  - Role: Sets the chance for the skill to trigger in passive mode (<chance>%)
 - isRight
-  - 类型：boolean
-  - 默认：true
-  - 设定状态：附加
-  - 作用：主动模式下为左键还是右键触发，true为右键
+  - Type: boolean
+  - Default: true
+  - Set status: additional
+  - Role: active mode is left or right trigger, true is the right
 - duration
-  - 类型：int
-  - 默认：50刻
-  - 设定状态：附加
-  - 作用：设定主动模式下的弹反有效时间
+  - Type: int
+  - Default: 50 moments
+  - Set status: additional
+  - Function: setting the anti-active time in active mode
 - consumption
-  - 类型：int
-  - 默认：0
-  - 设定状态：附加
-  - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
+  - Type: int
+  - Default: 0
+  - Set status: additional
+  - Role: Consumption, see the [New Consumption System] (https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
 
-**示例**
-`/rpgitem power testdeflect  deflect`
+**Example**
+`/rpgitem power testdeflect deflect`
 
 ## Fire
-**指令：**
-`/rpgitem power {Item} fire {cooldownTime} {distance} {burnduration} `
+**instruction:**
+`/rpgitem power {Item} fire {cooldownTime} {distance} {burnduration}`
 
-**效果：**
-  给 {item} 添加火焰技能，能在右键时候发射火焰，并在接触第一个方块时候造成一条距离为{distance}持续时间为{burnduration}火墙，冷却时间 {cooldownTime}ticks. 
+**effect:**
+  Adds a fire ability to {item}, which fires the flame on the right and causes a {distance} duration {burnduration} wall and cooling time {cooldownTime} ticks when touching the first square.
 
-**属性：**
+**Attributes:**
 - cooldownTime
-  - 类型：long
-  - 默认：20
-  - 设定状态：必选
-  - 作用：设定技能冷却时间
+  - Type: long
+  - Default: 20
+  - Set status: Required
+  - Role: Set skill cooldown
 - distance
-  - 类型：int
-  - 类型：15
-  - 设定状态：必选
-  - 作用：火墙的距离
+  - Type: int
+  - Type: 15
+  - Set status: Required
+  - Role: The distance of the fire wall
 - burnduration
-  - 类型：int
-  - 类型：40
-  - 设定状态：必选
-  - 作用：火墙的持续时间
+  - Type: int
+  - Type: 40
+  - Set status: Required
+  - Role: The duration of the wall
 - consumption
-  - 类型：int
-  - 设定状态：附加
-  - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
+  - Type: int
+  - Set status: additional
+  - Role: Consumption, see the [New Consumption System] (https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
 
-**示例**
+**Example**
 `/rpgitem power testfire fire 10 10 20`
 
 
 ## Fireball
-**指令：**
+**instruction:**
 `/rpgitem power {Item} fireball [cooldownTime] `
 
-**效果：**
-  发射小火球 [cooldownTime]tick冷却时间。
+**effect:**
+  Fire small fireball [cooldownTime]tick cooling time.
 
-**属性：**
+**Attributes:**
 - cooldownTime
-  - 类型：long
-  - 默认：20
-  - 设定状态：必选
-  - 作用：设定技能冷却时间
+  - Type: long
+  - Default: 20
+  - Set status: Required
+  - Role: Set skill cooldown
 - consumption
-  - 类型：int
-  - 默认：0
-  - 设定状态：附加
-  - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
+  - Type: int
+  - Default: 0
+  - Set status: additional
+  - Role: Consumption, see the [New Consumption System] (https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
 
-**示例**
+**Example**
 `/rpgitem power testfire fireball`
 
 ## Flame
-**指令：**
-`/rpgitem power {Item} Flame [burnTime] `
+**instruction:**
+`/rpgitem power {Item} Flame [burnTime]`
 
-**效果：**
-  对目标造成 [burnTime]tick的点燃时间。
+**effect:**
+  Inflicts [burnTime]tick ignition time on the target.
 
-**属性：**
+**Attributes:**
 - burnTime
-  - 类型：int
-  - 默认：20
-  - 设定状态：可选
-  - 作用：点燃时间
+  - Type: int
+  - Default: 20
+  - Setting status: optional
+  - Role: Ignite time
 - consumption
-  - 类型：int
-  - 默认：0
-  - 设定状态：附加
-  - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
+  - Type: int
+  - Default: 0
+  - Set status: additional
+  - Role: Consumption, see the [New Consumption System] (https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
 
-**示例**
+**Example**
 `/rpgitem power testflame Flame`
 
 ## Food
-**指令：**
+**instruction:**
 `/rpgitem power {Item} food {foodpoints} `
 
-**效果：**
-   给 {Item} 添加可食用功能, 吃掉时变化 {foodpoints}点饥饿值.
+**effect:**
+   Add edible features to {Item} and change {foodpoints} to hunger when eaten.
 
-**属性：**
+**Attributes:**
 - foodpoints
-  - 类型：int
-  - 默认：无
-  - 设定状态：必选
-  - 作用：变化的饥饿值
+  - Type: int
+  - Default: None
+  - Set status: Required
+  - Role: Changing hunger
 
-**示例**
+**Example**
 `/rpgitem power testflame food 10`
 
 ## ForceField
-**指令：**
+**instruction:**
 `/rpgitem power {Item} forcefield {cooldownTime} {radius} {height} {base} {ttl}`
 
-**效果：**
-   在你周围设置可以阻止一切实体进入的一个半径 {radius}，高度 {height}，深度 {base} 并持续 {ttl}秒的力场，冷却时间{cooldownTime}tick的由屏障组成的空心圆柱。
+**effect:**
+   Set around you a circle {radius} that prevents all entities from entering, a height of {height}, a depth of {base} and a field of force of {ttl} seconds, and a cool cylinder of the cooldown time {cooldownTime}tick.
 
-**属性：**
+**Attributes:**
 - cooldownTime
-  - 类型：int
-  - 默认：200
-  - 设定状态：必选
-  - 作用：技能冷却时间
+  - Type: int
+  - Default: 200
+  - Set status: Required
+  - Role: Skill cooldown
 - radius
-  - 类型：int
-  - 默认：5
-  - 设定状态：必选
-  - 作用：设定圆柱半径
+  - Type: int
+  - Default: 5
+  - Set status: Required
+  - Function: Set the cylinder radius
 - height
-  - 类型:int
-  - 默认：30
-  - 设定状态：必选
-  - 作用：设定圆柱高度
+  - Type: int
+  - Default: 30
+  - Set status: Required
+  - Function: Set the cylinder height
 - base
-  - 类型：int
-  - 默认：-15
-  - 设定状态：必选
-  - 作用：设定圆柱的深度偏移
+  - Type: int
+  - Default: -15
+  - Set status: Required
+  - Function: Set the cylinder depth offset
 - ttl
-  - 类型：int
-  - 默认：100
-  - 设定状态：必选
-  - 作用：设定持续时间
+  - Type: int
+  - Default: 100
+  - Set status: Required
+  - Role: Set duration
 - consumption
-  - 类型：int
-  - 默认：0
-  - 设定状态：附加
-  - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
+  - Type: int
+  - Default: 0
+  - Set status: additional
+  - Role: Consumption, see the [New Consumption System] (https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
 
 
-**示例**
+**Example**
 `/rpgitem power testforcefield forcefield 10 10 10 0 40`
 
 ## Ice
-**指令：**
+**instruction:**
 `/rpgitem power {Item} ice [cooldownTime]`
 
-**效果：**
-   给 {Item} 添加冰块射击技能 冷却时间 [cooldownTime]tick. 右键发射冰块, 制造出大量冰块冲击目标, 冰块会慢慢消失
+**effect:**
+   Add ice cube shooting skills to {Item} CooldownTime tick. Right-click on the ice cube to create a mass of ice cubes that impact the target and the ice will slowly disappear.
 
-**属性：**
+**Attributes:**
 - cooldownTime
-  - 类型：long
-  - 默认：20
-  - 设定状态：可选
-  - 作用：技能冷却时间
+  - Type: long
+  - Default: 20
+  - Setting status: optional
+  - Role: Skill cooldown
 - consumption
-  - 类型：int
-  - 默认：0
-  - 设定状态：附加
-  - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
+  - Type: int
+  - Default: 0
+  - Set status: additional
+  - Role: Consumption, see the [New Consumption System] (https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
 
 
-**示例**
+**Example**
 `/rpgitem power testice knockup 10`
 
-## Knockup（失效待修复）
-**指令：**
+## Knockup (failed to be repaired)
+**instruction:**
 `/rpgitem power {Item} knockup [chance] [power]`
 
-**效果：**
-   给 {Item} 添加击飞技能, 几率为 1/[chance] 威力为[power]. 击飞技能会把目标击飞
+**effect:**
+   Add a flying skill to {Item} with a probability of 1/[chance] and a power of [power]. Flying a skill will fly the target.
 
-**属性：**
-- chance 
-  - 类型：int 
-  - 默认：20
-  - 设定状态：可选
-  - 作用：技能几率
+**Attributes:**
+- chance
+  - Type: int
+  - Default: 20
+  - Setting status: optional
+  - Role: Ability chance
 - power
-  - 类型：double 
-  - 默认：2
-  - 设定状态：可选
-  - 作用：技能威力
+  - Type: double
+  - Default: 2
+  - Setting status: optional
+  - Role: The power of skills
 - consumption
-  - 类型：int
-  - 默认：0
-  - 设定状态：附加
-  - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
+  - Type: int
+  - Default: 0
+  - Set status: additional
+  - Role: Consumption, see the [New Consumption System] (https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
 
 
-**示例**
+**Example**
 `/rpgitem power testknockup knockup`
 
 ## LifeSteal
-** 指令：**
+** Instruction: **
 `/rpgitem power {Item} lifesteal [chance]`
 
-**效果：**
-   给 {Item} 添加生命偷取技能, 偷取几率为 [chance]
+**effect:**
+   Add life stealing skills to {Item}, steal chance [chance]
 
-**属性：**
-- chance 
-  - 类型：int 
-  - 默认：20
-  - 设定状态：可选
-  - 作用：技能几率
+**Attributes:**
+- chance
+  - Type: int
+  - Default: 20
+  - Setting status: optional
+  - Role: Ability chance
 - consumption
-  - 类型：int
-  - 默认：0
-  - 设定状态：附加
-  - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
+  - Type: int
+  - Default: 0
+  - Set status: additional
+  - Role: Consumption, see the [New Consumption System] (https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
 
 
-**示例**
+**Example**
 `/rpgitem power testlifesteal lifesteal`
 
 ## Lightning
-**指令：**
+**instruction:**
 `/rpgitem power {Item} lightning [chance]`
 
-**效果：**
-   给 {Item} 添加闪电技能, 默认几率为1/[chance]. 攻击目标时一定几率生成闪电
+**effect:**
+   Lightning ability added to {Item}, the default chance is 1/[chance]. A chance to generate lightning when attacking a target.
 
-**属性：**
-- chance 
-  - 类型：int 
-  - 默认：20
-  - 设定状态：可选
-  - 作用：技能几率
+**Attributes:**
+- chance
+  - Type: int
+  - Default: 20
+  - Setting status: optional
+  - Role: Ability chance
 - consumption
-  - 类型：int
-  - 默认：0
-  - 设定状态：附加
-  - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
+  - Type: int
+  - Default: 0
+  - Set status: additional
+  - Role: Consumption, see the [New Consumption System] (https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
 
 
-**示例**
+**Example**
 `/rpgitem power testlightning lifesteal`
 
 ## Particle
-**指令：**
+**instruction:**
 `/rpgitem power {Item} particle {effect}`
 
-**效果：**
-   向 {Item}添加粒子效果. 当右键时，在玩家周围产生粒子。 {effect} 可以是 SMOKE/ENDER_SIGNAL/MOBSPAWNER_FLAMES 之一
+**effect:**
+   Add particle effects to {Item}. When right-clicking, particles are created around the player. {effect} can be one of SMOKE/ENDER_SIGNAL/MOBSPAWNER_FLAMES
 
-**属性：**
-- effect 
-  - 类型：String
-  - 默认：FLAME
-  - 设定状态：必填
-  - 作用：粒子类型
+**Attributes:**
+- effect
+  - Type: String
+  - Default: FLAME
+  - Set Status: Required
+  - Role: Particle type
 - consumption
-  - 类型：int
-  - 默认：0
-  - 设定状态：附加
-  - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
+  - Type: int
+  - Default: 0
+  - Set status: additional
+  - Role: Consumption, see the [New Consumption System] (https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
 
 
-**示例**
-`/rpgitem power testparticle  particle FLAME`
+**Example**
+`/rpgitem power testparticle particle FLAME`
 
 ## ParticleTick
-**指令：**
+**instruction:**
 `/rpgitem power {Item} particletick {effect} [interval]`
 
-**效果：**
-  向 {Item} 添加粒子效果. 当持有时，在玩家周围产生粒子。  间隔为[interval]tick。{effect} 可以是 SMOKE/ENDER_SIGNAL/MOBSPAWNER_FLAMES 之一。
+**effect:**
+  Add particle effects to {Item}. When held, creates particles around the player. The interval is [interval]tick. {effect} can be one of SMOKE/ENDER_SIGNAL/MOBSPAWNER_FLAMES.
 
-**属性：**
-- effect 
-  - 类型：String
-  - 默认：FLAME
-  - 设定状态：必填
-  - 作用：粒子类型
+**Attributes:**
+- effect
+  - Type: String
+  - Default: FLAME
+  - Set Status: Required
+  - Role: Particle type
 - interval
-  - 类型：int 
-  - 默认：15
-  - 设定状态：可选
-  - 作用：触发间隔时间
+  - Type: int
+  - Default: 15
+  - Setting status: optional
+  - Effect: Trigger interval
 - consumption
-  - 类型：int
-  - 默认：0
-  - 设定状态：附加
-  - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
+  - Type: int
+  - Default: 0
+  - Set status: additional
+  - Role: Consumption, see the [New Consumption System] (https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
 
 
-**示例**
+**Example**
 `/rpgitem power testparticletick particletick FLAME 20`
 
 ## PotionHit
-**指令：**
+**instruction:**
 `/rpgitem power {Item} potionhit {chance} {dration} {amplifier} {type}`
 
-**效果：**
-  '攻击时有 1/{chance}% 的几率使目标获得药水效果. {type} 为药水效果  {dration}为持续时间单位为游戏刻, {amplifier}
-      为整数。 可用药水效果:详见[药水系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/%E8%8D%AF%E6%B0%B4%E6%95%88%E6%9E%9C)章节
+**effect:**
+  There is a 1/{chance}% chance of attack to get a potion effect. {type} is a potion effect {dration} is the duration in gameplay, {amplifier}
+      Is an integer. Potions available: See the [Pharmacy System] for details (https://github.com/NyaaCat/RPGitems-reloaded/wiki/%E8%8D%AF%E6%B0%B4%E6%95%88%E6%9E% 9C) Chapter
 
-**属性：**
-- chance 
-  - 类型：int
-  - 默认：20
-  - 设定状态：必填
-  - 作用：触发几率
+**Attributes:**
+- chance
+  - Type: int
+  - Default: 20
+  - Set Status: Required
+  - Role: Trigger probability
 - dration
-  - 类型：int
-  - 默认：20
-  - 设定状态：必填
-  - 作用：持续时间
+  - Type: int
+  - Default: 20
+  - Set Status: Required
+  - Role: Duration
 - amplifier
-  - 类型：int
-  - 默认：1
-  - 设定状态：必填
-  - 作用：药水效果等级
-- type 
-  - 类型：String
-  - 默认：HARM
-  - 设定状态：必填
-  - 作用：药水效果：详见[药水系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/%E8%8D%AF%E6%B0%B4%E6%95%88%E6%9E%9C)章节
+  - Type: int
+  - Default: 1
+  - Set Status: Required
+  - Role: Potion effect level
+- type
+  - Type: String
+  - Default: HARM
+  - Set Status: Required
+  - Role: Potion effect: See [Potion System] for details (https://github.com/NyaaCat/RPGitems-reloaded/wiki/%E8%8D%AF%E6%B0%B4%E6%95%88%E6% 9E%9C) chapter
 - consumption
-  - 类型：int
-  - 默认：0
-  - 设定状态：附加
-  - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
+  - Type: int
+  - Default: 0
+  - Set status: additional
+  - Role: Consumption, see the [New Consumption System] (https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
 
-**示例**
+**Example**
 `/rpgitem power testpotionhit potionhit 1 100 1 speed `
 
 ## PotionSelf
-**指令：**
+**instruction:**
 `/rpgitem power {Item} potionself {cooldownTime} {duration} {amplifier} {type}`
 
-**效果：**
-  右键获得等级{amplifier}的{type}药水效果持续{duration}游戏刻{cooldownTime}游戏刻，冷却时间。 可用药水效果:详见[药水系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/%E8%8D%AF%E6%B0%B4%E6%95%88%E6%9E%9C)章节
+**effect:**
+  Right-click on the {type} potion effect of level {amplifier} for {duration} game moments, and cooldown time. Potions available: See the [Pharmacy System] for details (https://github.com/NyaaCat/RPGitems-reloaded/wiki/%E8%8D%AF%E6%B0%B4%E6%95%88%E6%9E% 9C) Chapter
 
-**属性：**
-- cooldownTime 
-  - 类型：long
-  - 默认：20
-  - 设定状态：必填
-  - 作用：冷却时间
+**Attributes:**
+- cooldownTime
+  - Type: long
+  - Default: 20
+  - Set Status: Required
+  - Role: Cooling time
 - dration
-  - 类型：int
-  - 默认：20
-  - 设定状态：必填
-  - 作用：持续时间
+  - Type: int
+  - Default: 20
+  - Set Status: Required
+  - Role: Duration
 - amplifier
-  - 类型：int
-  - 默认：1
-  - 设定状态：必填
-  - 作用：药水效果等级
-- type 
-  - 类型：String
-  - 默认：HARM
-  - 设定状态：必填
-  - 作用：药水效果：详见[药水系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/%E8%8D%AF%E6%B0%B4%E6%95%88%E6%9E%9C)章节
+  - Type: int
+  - Default: 1
+  - Set Status: Required
+  - Role: Potion effect level
+- type
+  - Type: String
+  - Default: HARM
+  - Set Status: Required
+  - Role: Potion effect: See [Potion System] for details (https://github.com/NyaaCat/RPGitems-reloaded/wiki/%E8%8D%AF%E6%B0%B4%E6%95%88%E6% 9E%9C) chapter
 - consumption
-  - 类型：int
-  - 默认：0
-  - 设定状态：附加
-  - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
+  - Type: int
+  - Default: 0
+  - Set status: additional
+  - Role: Consumption, see the [New Consumption System] (https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
 
-**示例**
+**Example**
 `/rpgitem power testpotionself potionself 100 100 1 speed `
 
 ## PotionTick
-**指令：**
+**instruction:**
 `/rpgitem power {Item} potiontick {amplifier} {effect} [interval] [duration]`
 
-**效果：**
-  持有/穿戴时获得时长为[duration]游戏刻的等级为{amplifier}的{effect}效果并每次经过[interval]游戏刻再次赋予。 可用药水效果:详见[药水系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/%E8%8D%AF%E6%B0%B4%E6%95%88%E6%9E%9C)章节
+**effect:**
+  When the player holds/wears, the {effect} effect with the duration of [duration] game engraved with {amplifier} is given again each time [interval] game is engraved. Potions available: See the [Pharmacy System] for details (https://github.com/NyaaCat/RPGitems-reloaded/wiki/%E8%8D%AF%E6%B0%B4%E6%95%88%E6%9E% 9C) Chapter
 
-**属性：**
+**Attributes:**
 - amplifier
-  - 类型：int
-  - 默认：1
-  - 设定状态：必填
-  - 作用：药水效果等级
+  - Type: int
+  - Default: 1
+  - Set Status: Required
+  - Role: Potion effect level
 - effect
-  - 类型：String
-  - 默认：SPEED
-  - 设定状态：必填
-  - 作用：药水效果：详见[药水系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/%E8%8D%AF%E6%B0%B4%E6%95%88%E6%9E%9C)章节
+  - Type: String
+  - Default: SPEED
+  - Set Status: Required
+  - Role: Potion effect: See [Potion System] for details (https://github.com/NyaaCat/RPGitems-reloaded/wiki/%E8%8D%AF%E6%B0%B4%E6%95%88%E6% 9E%9C) chapter
 - interval
-  - 类型：int
-  - 默认：0
-  - 设定状态：可选
-  - 作用：药水效果循环触发间隔
+  - Type: int
+  - Default: 0
+  - Setting status: optional
+  - Role: potion effect cycle trigger interval
 - duration
-  - 类型：int
-  - 默认：60
-  - 设定状态：可选
-  - 作用：药水效果持续时间
+  - Type: int
+  - Default: 60
+  - Setting status: optional
+  - Role: potency effect duration
 - consumption
-  - 类型：int
-  - 默认：0
-  - 设定状态：附加
-  - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
+  - Type: int
+  - Default: 0
+  - Set status: additional
+  - Role: Consumption, see the [New Consumption System] (https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
 
-**示例**
+**Example**
 `/rpgitem power testpotiontick potiontick 1 speed `
 
 ## Projectile
-**指令：**
+**instruction:**
 `/rpgitem power {Item} projectile {cooldownTime} {cone} {projectileType} [range] [amount] [speed]`
 
-**效果：**
-{cone}为true： 为 {Item} 添加发射实体技能，冷却时间为{cooldownTime} 游戏刻。右键发射[amount] 个以[speed]速度飞行的 {projectileType}类型的实体。以玩家方向为中心，角度 [range] 呈圆锥形随机分散。可接受的类型：skull, fireball, snowball, smallfireball, arrow, llamaspit
+**effect:**
+{cone} is true: Adds a spelling entity skill to {Item} with cooldown time of {cooldownTime}. Right-click to [amount] {projectileType} type entities flying at [speed] speed. Centered on the player's direction, the angle [range] is randomly distributed in a conical shape. Acceptable types: skull, fireball, snowball, smallfireball, arrow, llamaspit
 
-{cone}为false:为 {Item} 添加发射实体技能,冷却时间为{cooldownTime} 游戏刻。右键发射[amount] 个以[speed]速度飞行的 {projectileType}类型的实体。可接受的类型：skull, fireball, snowball, smallfireball, arrow, llamaspit
+{cone} is false: Add launch entity skills for {Item} with cooldown time of {cooldownTime}. Right-click to [amount] {projectileType} type entities flying at [speed] speed. Acceptable types: skull, fireball, snowball, smallfireball, arrow, llamaspit
 
-**属性：**
+**Attributes:**
 - cooldownTime
-  - 类型：long
-  - 默认：20
-  - 设定状态：必填
-  - 作用：冷却时间
+  - Type: long
+  - Default: 20
+  - Set Status: Required
+  - Role: Cooling time
 - cone
-  - 类型：boolean
-  - 默认：false
-  - 设定状态：必填
-  - 作用：发射区间是否为圆锥型
+  - Type: boolean
+  - Default: false
+  - Set Status: Required
+  - Role: Is the transmission range cone-shaped?
 - projectileType
-  - 类型：String
-  - 默认：Snowball
-  - 设定状态：必填
-  - 作用：发射物类型
+  - Type: String
+  - Default: Snowball
+  - Set Status: Required
+  - Role: Type of Launcher
 - range
-  - 类型：int
-  - 默认：15
-  - 设定状态：可选
-  - 作用：发射区间角度范围
+  - Type: int
+  - Default: 15
+  - Setting status: optional
+  - Role: Range of emission range angle
 - amount
-  - 类型：int
-  - 默认：5
-  - 设定状态：可选
-  - 作用：发射物数量
+  - Type: int
+  - Default: 5
+  - Setting status: optional
+  - Role: The number of launches
 - speed
-  - 类型：double
-  - 默认：1
-  - 设定状态：可选
-  - 作用：发射物速度
-- gravity
-  - 类型：boolean
-  - 默认：true
-  - 设定状态：附加
-  - 作用：是否受重力影响
+  - Type: double
+  - Default: 1
+  - Setting status: optional
+  - Role: Launch speed
+- Gravity
+  - Type: boolean
+  - Default: true
+  - Set status: additional
+  - Role: whether it is affected by gravity
 - burstCount
-  - 类型：int
-  - 默认：1
-  - 设定状态：附加
-  - 作用：一次释放连续触发的技能次数
+  - Type: int
+  - Default: 1
+  - Set status: additional
+  - Role: Number of consecutive triggered skills
 - burstInterval
-  - 类型：int
-  - 默认：1
-  - 设定状态：附加
-  - 作用：一次释放连续触发的技能时间间隔
+  - Type: int
+  - Default: 1
+  - Set status: additional
+  - Role: Releases consecutive triggered skill intervals at once
 - consumption
-  - 类型：int
-  - 默认：0
-  - 设定状态：附加
-  - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
+  - Type: int
+  - Default: 0
+  - Set status: additional
+  - Role: Consumption, see the [New Consumption System] (https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
 
-**示例**
+**Example**
 `/rpgitem power testprojectile projectile 1 true arrow 10 10 2 `
 
 ## Pumpkin
-**指令：**
+**instruction:**
 `/rpgitem power {Item} pumpkin {chance} {drop}`
 
-**效果：**
-   1/{chance}% 几率使敌人戴上南瓜头，南瓜头有1/{drop}%几率掉落
+**effect:**
+   1/{chance}% Chance to put the enemy on a pumpkin head, with a 1/{drop}% chance to drop the pumpkin head
 
-**属性：**
+**Attributes:**
 - chance
-  - 类型：int 
-  - 默认：20
-  - 设定状态：必填
-  - 作用：触发几率
+  - Type: int
+  - Default: 20
+  - Set Status: Required
+  - Role: Trigger probability
 - drop
-  - 类型：double
-  - 默认：0
-  - 设定状态：必填
-  - 作用：南瓜掉落几率
+  - Type: double
+  - Default: 0
+  - Set Status: Required
+  - Role: Pumpkin Drop Chance
 - consumption
-  - 类型：int
-  - 默认：0
-  - 设定状态：附加
-  - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
+  - Type: int
+  - Default: 0
+  - Set status: additional
+  - Role: Consumption, see the [New Consumption System] (https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
 
-**示例**
+**Example**
 `/rpgitem power testpumpkin pumpkin 1 1`
 
 ## Rainbow
-**指令：**
+**instruction:**
 `/rpgitem power {Item} rainbow [cooldownTime] [count] [isFire]`
 
-**效果：**
-  给 {Item} 添加彩虹技能,[cooldownTime]为游戏刻. [count]为发射彩色羊毛方块数量. [isFire]为是否发射火焰方块替代羊毛
+**effect:**
+  Add Rainbow skill to {Item}, [cooldownTime] for game engrave. [count] is the number of colored squares to be fired. [IsFire] is whether fire box is fired in place of wool
 
-**属性：**
+**Attributes:**
 - cooldownTime
-  - 类型：int 
-  - 默认：20
-  - 设定状态：可选
-  - 作用：冷却时间
+  - Type: int
+  - Default: 20
+  - Setting status: optional
+  - Role: Cooling time
 - count
-  - 类型：int
-  - 默认：5
-  - 设定状态：可选
-  - 作用：发射数量
+  - Type: int
+  - Default: 5
+  - Setting status: optional
+  - Role: Number of shots
 - isFire
-  - 类型：boolean
-  - 默认：false
-  - 设定状态：可选
-  - 作用：是否替换发射物为火焰
+  - Type: boolean
+  - Default: false
+  - Setting status: optional
+  - Role: whether to replace the fire as a flame
 - consumption
-  - 类型：int
-  - 默认：0
-  - 设定状态：附加
-  - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
+  - Type: int
+  - Default: 0
+  - Set status: additional
+  - Role: Consumption, see the [New Consumption System] (https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
 
-**示例**
+**Example**
 `/rpgitem power testpumpkin rainbow`
 
 ## RealDamage
-**指令：**
+**instruction:**
 `/rpgitem power {Item} realdamage {cooldownTime} {realDamage}`
 
-**效果：**
-  给 {Item} 添加真实伤害技能, {cooldownTime}为游戏刻. 被击中的生物将受到{realDamage}真实伤害但至少会剩<minDamage>点生命值.
+**effect:**
+  Adds real damage ability to {Item}, {cooldownTime} is engraved for the game. Creatures that are hit will have real damage from {realDamage} but at least <minDamage> points remaining.
 
-**属性：**
+**Attributes:**
 - cooldownTime
-  - 类型：int 
-  - 默认：20
-  - 设定状态：必填
-  - 作用：冷却时间
+  - Type: int
+  - Default: 20
+  - Set Status: Required
+  - Role: Cooling time
 - realDamage
-  - 类型：double
-  - 默认：0
-  - 设定状态：必填
-  - 作用：真实伤害数值
+  - Type: double
+  - Default: 0
+  - Set Status: Required
+  - Role: Real damage value
 - minDamage
-  - 类型：double
-  - 默认：0
-  - 设定状态：附加
-  - 作用：目标最小残留血量
+  - Type: double
+  - Default: 0
+  - Set status: additional
+  - Role: Target minimum residual blood volume
 - consumption
-  - 类型：int
-  - 默认：0
-  - 设定状态：附加
-  - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
+  - Type: int
+  - Default: 0
+  - Set status: additional
+  - Role: Consumption, see the [New Consumption System] (https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
 
-**示例**
+**Example**
 `/rpgitem power testrealdamage realdamage 1 10`
 
 ## Rescue
-**指令：**
+**instruction:**
 `/rpgitem power {Item} rescue [cooldownTime] [healthTrigger] [useBed] [inPlace]`
 
-**效果：**
-  给 {Item} 添加拯救技能，冷却时间为[cooldownTime]游戏刻，在玩家血量低于[healthTrigger]触发，[useBed]为true的时候拯救传送回出身点，[inPlace]为true的时候原地复活并无敌。优先级[inPlace]>[useBed]
+**effect:**
+  Adds salvation skills to {Item}, cooling time is [cooldownTime] game moments, saves when the player's blood volume is lower than the [healthTrigger] trigger, [useBed] is true, and returns to the origin when [inPlace] is true. Resurrection is invincible. Priority [inPlace]> [useBed]
 
-**属性：**
+**Attributes:**
 - cooldownTime
-  - 类型：int 
-  - 默认：20
-  - 设定状态：可选
-  - 作用：冷却时间
+  - Type: int
+  - Default: 20
+  - Setting status: optional
+  - Role: Cooling time
 - healthTrigger
-  - 类型：int
-  - 默认：4
-  - 设定状态：可选
-  - 作用：拯救触发最小血量
+  - Type: int
+  - Default: 4
+  - Setting status: optional
+  - Role: Rescue triggers minimum blood volume
 - useBed
-  - 类型：boolean
-  - 默认：true
-  - 设定状态：可选
-  - 作用：是否传送回出身点
+  - Type: boolean
+  - Default: true
+  - Setting status: optional
+  - Role: whether to send back to the body
 - inPlace
-  - 类型：boolean
-  - 默认：false
-  - 设定状态：可选
-  - 作用：是否原地复活
+  - Type: boolean
+  - Default: false
+  - Setting status: optional
+  - Role: whether to revive in situ
 - damageTrigger
-  - 类型：double
-  - 默认：1024
-  - 设定状态：附加
-  - 作用：多少伤害以上触发
+  - Type: double
+  - Default: 1024
+  - Set status: additional
+  - Effect: How much damage is triggered above
 - consumption
-  - 类型：int
-  - 默认：0
-  - 设定状态：附加
-  - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
+  - Type: int
+  - Default: 0
+  - Set status: additional
+  - Role: Consumption, see the [New Consumption System] (https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
 
-**示例**
+**Example**
 `/rpgitem power testrescue rescue`
 
 ## Rumble
-**指令：**
+**instruction:**
 `/rpgitem power {Item} rumble {cooldownTime} {power} {distance}`
 
-**效果：**
-  给 {Item} 添加添加土遁技能，冷却时间为{cooldownTime},有效推进范围为{distance}，将土遁推进范围内触碰到的第一个实体周围产生爆炸并将周围小范围内的相同实体以{power}的击飞等级击飞上天
+**effect:**
+  Adds bandit ability to {Item}, cooldown time is {cooldownTime}, effective range is {distance}, explosion around the first entity touched by the bandit advances and will be the same around small area The entity hits the sky with a {power} strike level.
 
-**属性：**
+**Attributes:**
 - cooldownTime
-  - 类型：int 
-  - 默认：20
-  - 设定状态：必填
-  - 作用：冷却时间
+  - Type: int
+  - Default: 20
+  - Set Status: Required
+  - Role: Cooling time
 - power
-  - 类型：int
-  - 默认：2
-  - 设定状态：必填
-  - 作用：击飞等级
+  - Type: int
+  - Default: 2
+  - Set Status: Required
+  - Role: Hit level
 - distance
-  - 类型：int
-  - 默认：15
-  - 设定状态：必填
-  - 作用：推进距离
+  - Type: int
+  - Default: 15
+  - Set Status: Required
+  - Role: advance distance
 - consumption
-  - 类型：int
-  - 默认：0
-  - 设定状态：附加
-  - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
+  - Type: int
+  - Default: 0
+  - Set status: additional
+  - Role: Consumption, see the [New Consumption System] (https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
 
-**示例**
+**Example**
 `/rpgitem power testrumble rumble 100 4 10`
 
 ## SkyHook
-**指令：**
+**instruction:**
 `/rpgitem power {Item} skyhook {railMaterial} {hookDistance}`
 
-**效果：**
- 给 {Item}添加天钩技能. 天钩技能允许使用者钩到{hookDistance}距离以内的指定{railMaterial}材质方块并向那个方向突进
+**effect:**
+ Adds a hook skill to {Item}. The hook ability allows the user to hook into a specified {railMaterial} material square within a distance of {hookDistance} and advance in that direction.
 
-**属性：**
+**Attributes:**
 - railMaterial
-  - 类型：String 
-  - 默认：无
-  - 设定状态：必填
-  - 作用：可以指向的材质id
+  - Type: String
+  - Default: None
+  - Set Status: Required
+  - Role: Material ID that can be pointed to
 - hookDistance
-  - 类型：int 
-  - 默认：10
-  - 设定状态：必填
-  - 作用：改材质方块距离玩家的最小距离
+  - Type: int
+  - Default: 10
+  - Set Status: Required
+  - Role: Change the minimum distance from the material block to the player
 - cooldownTime
-  - 类型：int 
-  - 默认：20
-  - 设定状态：必填
-  - 作用：冷却时间
+  - Type: int
+  - Default: 20
+  - Set Status: Required
+  - Role: Cooling time
 - hookingTickCost
-  - 类型：int
-  - 默认：0
-  - 设定状态：附加
-  - 作用：每次勾取过程中飞行1游戏刻的消耗量
+  - Type: int
+  - Default: 0
+  - Set status: additional
+  - Role: The consumption of flying 1 game in each tick
 - consumption
-  - 类型：int
-  - 默认：0
-  - 设定状态：附加
-  - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
+  - Type: int
+  - Default: 0
+  - Set status: additional
+  - Role: Consumption, see the [New Consumption System] (https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
 
-**示例**
+**Example**
 `/rpgitem power testskyhook skyhook 1 10`
 
 ## TNTCannon
-**指令：**
+**instruction:**
 `/rpgitem power {Item} tntcannon [cooldownTime]`
 
-**效果：**
- 给 {Item}添加发射tnt的功能，冷却时间为[cooldownTime]
+**effect:**
+ Adding tnt to {Item} with cooldown [cooldownTime]
 
-**属性：**
+**Attributes:**
 - cooldownTime
-  - 类型：long 
-  - 默认：20
-  - 设定状态：可选
-  - 作用：冷却时间
+  - Type: long
+  - Default: 20
+  - Setting status: optional
+  - Role: Cooling time
 - consumption
-  - 类型：int
-  - 默认：0
-  - 设定状态：附加
-  - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
+  - Type: int
+  - Default: 0
+  - Set status: additional
+  - Role: Consumption, see the [New Consumption System] (https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
 
-**示例**
+**Example**
 `/rpgitem power testtntcannon tntcannon`
 
 ## Teleport
-**指令：**
+**instruction:**
 `/rpgitem power {Item} teleport [cooldownTime] [distance]`
 
-**效果：**
- 给{Item}添加传送技能, 冷却时间[cooldownTime]游戏刻 右键传送距离为[distance]格. 传送方向为你所面向的方向
+**effect:**
+ Add a transfer skill to {Item}, CooldownTime [cooldownTime] game moment Right-handed transmission distance is [distance] grid. The direction of transmission is the direction you are facing.
 
 **feture**
- 这个技能当载体的材质为弓箭的时候，会变成传送到射出去的箭矢落地的位置，并且若弓箭落地的位置和玩家的距离大于[distance]会提示太远了
+ This skill is used when the material of the carrier is a bow and arrow, it will become the position where the arrow is sent to the shooter, and if the distance from the player to the ground is greater than [distance], it will prompt too far.
 
-**属性：**
+**Attributes:**
 - cooldownTime
-  - 类型：long 
-  - 默认：20
-  - 设定状态：可选
-  - 作用：冷却时间
+  - Type: long
+  - Default: 20
+  - Setting status: optional
+  - Role: Cooling time
 - distance
-  - 类型：int 
-  - 默认：5
-  - 设定状态：可选
-  - 作用：传送距离
+  - Type: int
+  - Default: 5
+  - Setting status: optional
+  - Role: transmission distance
 - consumption
-  - 类型：int
-  - 默认：0
-  - 设定状态：附加
-  - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
+  - Type: int
+  - Default: 0
+  - Set status: additional
+  - Role: Consumption, see the [New Consumption System] (https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
 
-**示例**
+**Example**
 `/rpgitem power testteleport teleport 20 10`
 
 ## TippedArrow
-**指令：**
+**instruction:**
 `/rpgitem power {Item} tippedarrow {cooldownTime} {type} {duration} {amplifier} `
 
-**效果：**
- 给 {Item} 添加药箭技能, 效果{type}时长{duration}为游戏刻, 等级为{amplifier},冷却时间{cooldownTime}游戏刻. 右键发射. 有效的药水效果：详见[药水系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/%E8%8D%AF%E6%B0%B4%E6%95%88%E6%9E%9C)章节
+**effect:**
+ Adds drug arrow skill to {Item}, effect {type} duration{duration} is game engraved, level is {amplifier}, cooldown time is {cooldownTime} game moment. Right shot launch. Effective potion effect: see [Potion system] for details ( https://github.com/NyaaCat/RPGitems-reloaded/wiki/%E8%8D%AF%E6%B0%B4%E6%95%88%E6%9E%9C) Chapter
 
-**属性：**
+**Attributes:**
 - cooldownTime
-  - 类型：long 
-  - 默认：20
-  - 设定状态：必选
-  - 作用：冷却时间
+  - Type: long
+  - Default: 20
+  - Set status: Required
+  - Role: Cooling time
 - type
-  - 类型：String 
-  - 默认：null
-  - 设定状态：必选
-  - 作用：药水效果类型
+  - Type: String
+  - Default: null
+  - Set status: Required
+  - Role: potion effect type
 - duration
-  - 类型：int 
-  - 默认：15
-  - 设定状态：必选
-  - 作用：持续时间
+  - Type: int
+  - Default: 15
+  - Set status: Required
+  - Role: Duration
 - amplifier
-  - 类型：int 
-  - 默认：1
-  - 设定状态：必选
-  - 作用：效果等级
+  - Type: int
+  - Default: 1
+  - Set status: Required
+  - Role: Effect Level
 - consumption
-  - 类型：int
-  - 默认：0
-  - 设定状态：附加
-  - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
+  - Type: int
+  - Default: 0
+  - Set status: additional
+  - Role: Consumption, see the [New Consumption System] (https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
 
-**示例**
+**Example**
 `/rpgitem power testtippedarrow tippedarrow 20 speed 40 1`
 
 ## Torch
-**指令：**
+**instruction:**
 `/rpgitem power {Item} torch {cooldownTime}`
 
-**效果：**
- 给 {Item} 添加照亮技能，冷却时间为{cooldownTime}，对着指向的区域扔一堆火把，火把会投掷到对应的方块上
+**effect:**
+ Adds lighting ability to {Item}, cooling time is {cooldownTime}, throws a bunch of torches at the pointed area, and the torch will be thrown on the corresponding square
 
-**属性：**
+**Attributes:**
 - cooldownTime
-  - 类型：long 
-  - 默认：20
-  - 设定状态：必选
-  - 作用：冷却时间
+  - Type: long
+  - Default: 20
+  - Set status: Required
+  - Role: Cooling time
 - consumption
-  - 类型：int
-  - 默认：0
-  - 设定状态：附加
-  - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
+  - Type: int
+  - Default: 0
+  - Set status: additional
+  - Role: Consumption, see the [New Consumption System] (https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
 
-**示例**
+**Example**
 `/rpgitem power testtorch torch 20`
 
-# 特殊技能（command系列）
+# Special skills (command series)
 
 ## aoecommand
 
-**指令：**
+**instruction:**
 `/rpgitem power {Item} aoecommand {cooldown} {isRight} {display} {command} {rm} {r} {facing} [permission]`
 
-**效果：**
-给 {Item}添加AOE指令技能, 冷却时间为 {cooldown}. 若{isRight}为right则右键触发否则为left左键触发，工具提示为 {display}. {command}会在{isRight}后对范围({rm} ~ {r} 在 {facing} 视角)内的实体运行 并需要给对应角色运行此{command}的 {permission}
+**effect:**
+Add AOE command skill to {Item}. Cooling time is {cooldown}. If {isRight} is right, right-click trigger otherwise left click. Tooltip is {display}. {command} will be after {isRight} ({rm} ~ {r} entities running within the {facing} perspective) need to run {permission} for this {command} for the corresponding role
 
-**属性**
+**Attributes**
 - cooldownTime
-  - 类型：long
-  - 设定状态：必选
-  - 作用：设定技能冷却时间
+  - Type: long
+  - Set status: Required
+  - Role: Set skill cooldown
 - isRight
-  - 类型：left/right
-  - 设定状态：必选
-  - 作用：设定左键或者右键
+  - Type: left/right
+  - Set status: Required
+  - Role: Set left or right
 - display
-  - 类型：string
-  - 设定状态：必选
-  - 作用：设定技能描述字符
+  - Type: string
+  - Set status: Required
+  - Function: Set skill description characters
 - command
-  - 类型：string
-  - 设定状态：必选
-  - 作用：设定技能触发时的指令（可为任何minecraft指令方块或者聊天框中输入的可执行指令）
-  - 特殊转换：可在指令中替换成某些特殊数值的固定字符串
-    - 使用者：
-      - `{player}` : 可转换为当前使用者名字
-      - `{player.x}`: 可转换为当前使用者的x坐标
-      - `{player.y}`: 可转换为当前使用者的y坐标
-      - `{player.z}`: 可转换为当前使用者的z坐标
-      - `{player.yaw}`: 可转换为当前使用者视线水平转角
-      - `{player.pitch}`: 可转换喂当前使用者的视线仰角
-    - 被执行者：
-      - `{entity}`: 每个被执行者的名字（注意是名字例如是僵尸，那就叫`僵尸`）
-      - `{entity.x}` : 每个被执行者的x坐标
-      - `{entity.y}` : 每个被执行者的y坐标
-      - `{entity.z}` : 每个被执行者的z坐标
-      - `{entity.yaw}` : 每个被执行者的视线水平转角
-      - `{entity.pitch}` : 每个被执行者的视线仰角
-      - `{entity.uuid}` : 每个被执行者的uuid
-    - #### 转换不支持运算，例如`{player.yaw}+90`不可行
+  - Type: string
+  - Set status: Required
+  - Role: Sets the command when the skill is triggered (can be any minecraft command box or executable command entered in the chat box)
+  - Special conversions: fixed strings that can be replaced with certain special values ​​in instructions
+    - User:
+      - `{player}` : Can be converted to current user name
+      - `{player.x}`: convertible to the current user's x coordinate
+      - `{player.y}`: Can be converted to the current user's y-coordinate
+      - `{player.z}`: can be converted to the current user's z coordinate
+      - `{player.yaw}`: Can be converted to the current user's horizon
+      - `{player.pitch}`: Can be converted to feed the current user's line of sight elevation
+    - Performed by:
+      - `{entity}`: the name of each executed person (note that the name is, for example, a zombie, it is called `zombie`)
+      - `{entity.x}` : the x coordinate of each performee
+      - `{entity.y}` : the y coordinate of each performee
+      - `{entity.z}` : the z coordinate of each performee
+      - `{entity.yaw}` : horizontal angle of view of each subject’s gaze
+      - `{entity.pitch}` : The elevation of the gaze of each subject
+      - `{entity.uuid}` : uuid of each performer
+    - #### conversion does not support operations, eg `{player.yaw}+90` is not feasible
 - rm
-  - 类型：int
-  - 默认：0
-  - 设定状态：必选
-  - 作用：索敌范围的最小半径
+  - Type: int
+  - Default: 0
+  - Set status: Required
+  - Role: The minimum radius of the enemy's range
 - r
-  - 类型：int
-  - 默认：10
-  - 设定状态：必选
-  - 作用：索敌范围的最大半径
+  - Type: int
+  - Default: 10
+  - Set status: Required
+  - Function: The maximum radius of the enemy enemy range
 - facing
-  - 类型：int
-  - 默认：30
-  - 设定状态：必选
-  - 作用:使用者当前视线偏转角度（圆锥型范围）
+  - Type: int
+  - Default: 30
+  - Set status: Required
+  - Function: User's current line of sight deflection angle (cone range)
 - permission
-  - 类型：string
-  - 设定状态：可选
-  - 作用：使用者执行{command}时候需要的权限节点（仅支持单节点，多节点不支持，为`*`的话就是赋予op权限）
+  - Type: string
+  - Setting status: optional
+  - Role: Permissions node required by the user when executing {command} (only single node is supported, multiple nodes are not supported, `*` is assigned op permission)
 - c
-  - 类型：int
-  - 设定状态：附加
-  - 默认：100
-  - 作用：设定最大捕获的被执行者数量
+  - Type: int
+  - Set status: additional
+  - Default: 100
+  - Role: Set the maximum number of trapped performers
 - mustsee
-  - 类型：boolean
-  - 设定状态：附加
-  - 默认：false
-  - 作用：只适用于被玩家视线看到的实体
+  - Type: boolean
+  - Set status: additional
+  - Default: false
+  - Role: Applies only to entities that are viewed by the player
 - selfapplication
-  - 类型：boolean
-  - 设定状态：附加
-  - 默认：false
-  - 作用：指令是否作用于使用者本身
+  - Type: boolean
+  - Set status: additional
+  - Default: false
+  - Role: whether the instruction acts on the user itself
 - type
-  - 类型：entity/player/mobs
-  - 设定状态：附加
-  - 默认：entity
-  - 作用：指令作用者类型
+  - Type: entity/player/mobs
+  - Set status: additional
+  - Default: entity
+  - Role: Command Action Type
 - consumption
-  - 类型：int
-  - 设定状态：附加
-  - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
+  - Type: int
+  - Set status: additional
+  - Role: Consumption, see the [New Consumption System] (https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
 
-**示例**
+**Example**
 ```
 /rpgitem testaoecommand power aoecommand 20 right `say hello` `/say {entity} hello` 0 20 360 minecraft.command.say
 ```
-**效果**：让使用者为中心0-20范围内的所有LivingEntity类型的实体说一声：(实体名字) hello。
+**Effective**: Let the user speak for all entities of type LivingEntity in the 0-20 range: (entity name) hello.
 
-**注释1**：注意这个指令的使用者是使用者本人，如果使用相对位置 `~` 符号的话也只是根据使用者当前位置进行计算而非每个被执行者的位置。并且执行指令的次数为当前技能捕获到的被执行者的个数相同。
+**Note 1**: Note that the user of this instruction is the user himself. If the relative position `~` symbol is used, it is calculated based on the user's current position rather than the position of each executed person. And the number of times the instruction is executed is the same as the number of executed persons captured by the current skill.
 
-**注释2**：有些指令（例如`execute`）拥有可以越权的权限，需要特别注意。
+**Note 2**: Some instructions (such as ʻexecute`) have permissions that can be overridden and require special attention.
 
 
 ## command
 
-**指令：**
+**instruction:**
 `/rpgitem power {Item} command {cooldown} {isRight} {display} {command} [permission]`
 
-**效果：**
-给 {Item} 添加指令技能, 冷却时间为 {cooldown}. 工具提示为{display}. {command}  会在 {isRight}（left/right）后运行, 并给予运行此  {command} 的 [permission]. ***注意***: 如果你想在 {display} 或 {command} 或 [permission] 打空格, 那么要在字符串周围加 `符号. 例如: `/say Hello`'
+**effect:**
+Adds a command skill to {Item} with a cooldown of {cooldown}. The tooltip is {display}. {command} will be run after {isRight}(left/right) and given the [permission] to run this {command}. ***Note ***: If you want to use spaces in {display} or {command} or [permission], then add the ` symbol around the string. For example: `/say Hello`
 
 - cooldownTime
-  - 类型：long
-  - 设定状态：必选
-  - 作用：设定技能冷却时间
+  - Type: long
+  - Set status: Required
+  - Role: Set skill cooldown
 - isRight
-  - 类型：left/right
-  - 设定状态：必选
-  - 作用：设定左键或者右键
+  - Type: left/right
+  - Set status: Required
+  - Role: Set left or right
 - display
-  - 类型：string
-  - 设定状态：必选
-  - 作用：设定技能描述字符
+  - Type: string
+  - Set status: Required
+  - Function: Set skill description characters
 - command
-  - 类型：string
-  - 设定状态：必选
-  - 作用：设定技能触发时的指令（可为任何minecraft指令方块或者聊天框中输入的可执行指令）
-  - 特殊转换：可在指令中替换成某些特殊数值的固定字符串
-    - 使用者：
-      - `{player}` : 可转换为当前使用者名字
-      - `{yaw}`: 可转换为当前使用者视线水平转角
-      - `{pitch}`: 可转换喂当前使用者的视线仰角
-    - #### 转换不支持运算，例如`{yaw}+90`不可行
+  - Type: string
+  - Set status: Required
+  - Role: Sets the command when the skill is triggered (can be any minecraft command box or executable command entered in the chat box)
+  - Special conversions: fixed strings that can be replaced with certain special values ​​in instructions
+    - User:
+      - `{player}` : Can be converted to current user name
+      - `{yaw}`: Can be converted to the current user's horizontal line of sight
+      - `{pitch}`: Can be converted to feed the current user's line of sight elevation
+    - #### conversion does not support operations, eg `{yaw}+90` is not feasible
 - consumption
-  - 类型：int
-  - 设定状态：附加
-  - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
+  - Type: int
+  - Set status: additional
+  - Role: Consumption, see the [New Consumption System] (https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
 
-**示例**
+**Example**
 ```
 /rpgitem testcommand power command 20 right `say hello` `/say hello` minecraft.command.say
 ```
-**效果**：让使用者在聊天频道打出hello。
+**Effective**: Let users play hello on the chat channel.
 
-**注释**：有些指令（例如`execute`）拥有可以越权的权限，需要特别注意。
+**Notes**: Some instructions (such as `execute`) have permissions that can be overridden and require special attention.
 
 ## commandhit
 
-**指令：**
+**instruction:**
 `/rpgitem power {Item} commandhit {cooldown} {display} {command} [permission]`
 
-**效果：**
-给 {Item} 添加击中指令技能. 冷却时间为 {cooldown}. 工具提示为 {display} . {command} 会在击中目标后执行,并给予运行{command} 的 [permission]. 
-***注意***: 如果你想在 {display} 或 {command} 或 [permission] 输入空格, 那么要在字符串周围加`符号. 例如: `/say Hello`'
+**effect:**
+Add a hit command skill to {Item}. The cooldown is {cooldown}. The tooltip is {display} . {command} will be executed after hitting the target and given the {permission} of {command}.
+***Note ***: If you want to enter spaces in {display} or {command} or [permission], then add the ` symbol around the string. For example: `/say Hello`
 - cooldownTime
-  - 类型：long
-  - 设定状态：必选
-  - 作用：设定技能冷却时间
+  - Type: long
+  - Set status: Required
+  - Role: Set skill cooldown
 - isRight
-  - 类型：left/right
-  - 设定状态：必选
-  - 作用：设定左键或者右键
+  - Type: left/right
+  - Set status: Required
+  - Role: Set left or right
 - display
-  - 类型：string
-  - 设定状态：必选
-  - 作用：设定技能描述字符
+  - Type: string
+  - Set status: Required
+  - Function: Set skill description characters
 - command
-  - 类型：string
-  - 设定状态：必选
-  - 作用：设定技能触发时的指令（可为任何minecraft指令方块或者聊天框中输入的可执行指令）
-  - 特殊转换：可在指令中替换成某些特殊数值的固定字符串
-    - 使用者：
-      - `{player}` : 可转换为当前使用者名字
-      - `{player.x}`: 可转换为当前使用者的x坐标
-      - `{player.y}`: 可转换为当前使用者的y坐标
-      - `{player.z}`: 可转换为当前使用者的z坐标
-      - `{player.yaw}`: 可转换为当前使用者视线水平转角
-      - `{player.pitch}`: 可转换喂当前使用者的视线仰角
-    - 被执行者：
-      - `{entity}`: 每个被执行者的名字（注意是名字例如是僵尸，那就叫`僵尸`）
-      - `{entity.x}` : 每个被执行者的x坐标
-      - `{entity.y}` : 每个被执行者的y坐标
-      - `{entity.z}` : 每个被执行者的z坐标
-      - `{entity.yaw}` : 每个被执行者的视线水平转角
-      - `{entity.pitch}` : 每个被执行者的视线仰角
-      - `{entity.uuid}` : 每个被执行者的uuid
-    - #### 转换不支持运算，例如`{player.yaw}+90`不可行
+  - Type: string
+  - Set status: Required
+  - Role: Sets the command when the skill is triggered (can be any minecraft command box or executable command entered in the chat box)
+  - Special conversions: fixed strings that can be replaced with certain special values ​​in instructions
+    - User:
+      - `{player}` : Can be converted to current user name
+      - `{player.x}`: convertible to the current user's x coordinate
+      - `{player.y}`: Can be converted to the current user's y-coordinate
+      - `{player.z}`: can be converted to the current user's z coordinate
+      - `{player.yaw}`: Can be converted to the current user's horizon
+      - `{player.pitch}`: Can be converted to feed the current user's line of sight elevation
+    - Performed by:
+      - `{entity}`: the name of each executed person (note that the name is, for example, a zombie, it is called `zombie`)
+      - `{entity.x}` : the x coordinate of each performee
+      - `{entity.y}` : the y coordinate of each performee
+      - `{entity.z}` : the z coordinate of each performee
+      - `{entity.yaw}` : horizontal angle of view of each subject’s gaze
+      - `{entity.pitch}` : The elevation of the gaze of each subject
+      - `{entity.uuid}` : uuid of each performer
+    - #### conversion does not support operations, eg `{player.yaw}+90` is not feasible
 - minDamage
-  - 类型:int
-  - 设定状态：附加
-  - 默认：0
-  - 作用：最小触发伤害
+  - Type: int
+  - Set status: additional
+  - Default: 0
+  - Role: Minimal trigger damage
 - consumption
-  - 类型：int
-  - 设定状态：附加
-  - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
+  - Type: int
+  - Set status: additional
+  - Role: Consumption, see the [New Consumption System] (https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system) chapter
 
-**示例**
+**Example**
 ```
 /rpgitem testcommandhit power commandhit 20 `say hello` `/say {entity} hello` minecraft.command.say
 ```
-**效果**：让使用者在聊天频道里向被攻击者打出hello。
+**Effect**: Let users play hello to the attacked person in the chat channel.
 
-**注释**：有些指令（例如`execute`）拥有可以越权的权限，需要特别注意。
+**Notes**: Some instructions (such as `execute`) have permissions that can be overridden and require special attention.
