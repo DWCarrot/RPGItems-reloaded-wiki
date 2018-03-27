@@ -168,16 +168,41 @@ Add or remove item flags.
 
 #### `/rpgitem [ITEM] permission [permission node] [enabled|boolean]`
 
+Set item permission node. If `enabled` is `true`, only players with corresponding permission node can use this item.
+
 #### `/rpgitem [ITEM] quality` | `/rpgitem [ITEM] quality [value]`
+
+Set item quality. Currently no actual usage in plugin.
+
+Possible values:
+
+* `trash`
+* `common`
+* `uncommon`
+* `rare`
+* `epic`
+* `legendary`
 
 #### `/rpgitem [ITEM] recipe [chance|int]`
 
+Set the item has a chance of `1/[chance]` to be crafted via craft table.
+
 #### `/rpgitem [ITEM] remove`
+
+Remove the item from plugin.
 
 #### `/rpgitem [ITEM] removepower [power]`
 
+Remove the power from item. If the item have multiple specified power, the last will be removed.
+
 #### `/rpgitem [ITEM] toggleArmorLore`
+
+Toggle item armor information and hand/type text to be shown/hidden.
 
 #### `/rpgitem [ITEM] togglePowerLore`
 
+Toggle item power description to be shown/hidden. Hide power lore can make item description looks cleaner.
+
 #### `/rpgitem [ITEM] worldguard`
+
+Set item to work with worldguard.
