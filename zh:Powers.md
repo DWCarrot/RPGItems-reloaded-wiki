@@ -1004,6 +1004,54 @@
 **示例**
 `/rpgitem power testtorch torch 20`
 
+## Throw
+**指令：**
+`/rpgitem power {Item} throw {display} {cooldownTime} {left/right} {speed} {entity} [entityData]`
+
+**效果：**
+为 {Item} 添加发射实体技能，冷却时间为{cooldownTime} 游戏刻。{left/right}键发射以{speed}速度飞行的 {entity}，并付带 [entityData]
+
+**属性：**
+- display
+  - 类型：string
+  - 默认: 空
+  - 设定状态：必填
+  - 作用： power 在 lore 中的展示字符
+- cooldownTime
+  - 类型：long
+  - 默认：20
+  - 设定状态：必填
+  - 作用：冷却时间
+- left/right
+  - 类型：String
+  - 默认：right
+  - 设定状态：必填
+  - 作用：左右键触发
+- speed
+  - 类型：double
+  - 默认：1
+  - 设定状态：必填
+  - 作用：发射物速度
+- entity
+  - 类型：string
+  - 默认：空
+  - 设定状态：必填
+  - 作用：设置发射的实体
+- entityData
+  - 类型：string (json)
+  - 默认：空 `{}`
+  - 设定状态：必填
+  - 作用：设置发射的实体 entityData
+- consumption
+  - 类型：int
+  - 默认：0
+  - 设定状态：附加
+  - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
+
+**示例**
+`/rpgitem power testprojectile projectile 1 true arrow 10 10 2 `
+
+
 # 特殊技能（command系列）
 
 ## aoecommand
