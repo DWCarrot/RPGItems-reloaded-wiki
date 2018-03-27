@@ -1,3 +1,8 @@
+# THIS PAGE WILL BE DELETED IN THE FUTURE
+
+Please refer to new WIP documents.
+
+
 `/rpgitem help [String]`
 ------------------------
 
