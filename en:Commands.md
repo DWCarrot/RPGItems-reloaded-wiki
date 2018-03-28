@@ -193,7 +193,7 @@ Remove the item from plugin.
 
 #### `/rpgitem [ITEM] removepower [power]`
 
-Remove the power from item. If the item have multiple specified power, the last will be removed.
+Remove the power from item. If the item have multiple specified power, the first match (pit fall) will be removed.
 
 #### `/rpgitem [ITEM] toggleArmorLore`
 
