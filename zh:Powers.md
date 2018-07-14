@@ -856,7 +856,7 @@
 **示例**
 `/rpgitem testrumble power rumble 100 4 10`
 
-##Repair
+## Repair
 **指令：**
 `/rpgitem {item} power repair {durability} {material} {display} {isRight} {isSneak}`
 
