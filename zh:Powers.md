@@ -1,6 +1,6 @@
 # 技能(Power)指令集
 
-`/rpgitem power {item} {power} [properties……]`
+`/rpgitem {item} power {power} [properties……]`
 **属性**
 - item：道具id e.g.： testitem->一个id为testitem的道具
 - power：技能id  e.g.： potionself->给自己一个buff
@@ -9,12 +9,12 @@
     - 必选：必须在创建power的时候就指定，用`{}`表示
     - 可选：可以在创建power的时候指定，用`[]`表示
     - 附加：只能通过set设置,不会显示在指令设定的属性中，使用`<>`表示
-  - 作用：技能初始化可配参数 e.g.：以上面potionself为例 可配参数有[cooldown] [duration] [amplifier] [effect],整条指令类似这样：`/rpgitem power testpotionself 20 100 1 speed` 右键使用之后给玩家一个持续5秒的等级2的速度buff（cd：1s）。各个参数单位请看下方详细power变量设定。
+  - 作用：技能初始化可配参数 e.g.：以上面potionself为例 可配参数有[cooldown] [duration] [amplifier] [effect],整条指令类似这样：`/rpgitem testpotionself power 20 100 1 speed` 右键使用之后给玩家一个持续5秒的等级2的速度buff（cd：1s）。各个参数单位请看下方详细power变量设定。
 
 # 普通技能
 ## AOE
 **指令：**
-`/rpgitem power {Item} aoe {cooldown} {range} {effect} {duration} {amlifier} [selfapplication]`
+`/rpgitem {Item} power aoe {cooldown} {range} {effect} {duration} {amlifier} [selfapplication]`
 
 **效果：**
 为 [Item]添加范围效果，冷却时间为 [Cooldown]ticks 右键使用将应用效果 [Effect] 到 [range]# 范围内的所有实体，时长为 [Duration]ticks，效果等级为 [Amplifier]. 如果 [Self] 没有设置，默认此效果也将应用到释放者
@@ -54,13 +54,13 @@
   - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
 
 **示例**
-`/rpgitem power testaoe aoe 10 10 speed 100 0 true`
+`/rpgitem testaoe power aoe 10 10 speed 100 0 true`
 
 
 
 ## Arrow 
 **指令：**  
-`/rpgitem power {Item} arrow [Cooldown]`  
+`/rpgitem {Item} power arrow [Cooldown]`  
 
 **效果：**
 给 [Item] 添加火箭技能, 冷却时间 [Cooldown]ticks. 右键发射
@@ -76,11 +76,11 @@
   - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
 
 **示例**
-`/rpgitem power testarrow arrow 20`
+`/rpgitem testarrow power arrow 20`
 
 ## Attract
 **指令：**  
-`/rpgitem power {Item} attract {radius} {maxspeed}`  
+`/rpgitem {Item} power attract {radius} {maxspeed}`  
 
 **效果：**
 为 {Item} 添加技能。拿在手上时将生物拉扯到玩家附近。半径 {radius} 格子，最大速度 {maxspeed}
@@ -95,11 +95,11 @@
   - 设定状态：必选
   - 作用：设定技能最大拉扯速度
 **示例**
-`/rpgitem power testarrow attract 20 0.1`
+`/rpgitem testarrow power attract 20 0.1`
 
 ## Color 
 **指令：**  
-`/rpgitem power {Item} color [Cooldown] [glass] [clay] [wool]`  
+`/rpgitem {Item} power color [Cooldown] [glass] [clay] [wool]`  
 
 **效果：**
  改变粘土，玻璃和羊毛的颜色 ([Cooldown] 秒冷却)
@@ -127,11 +127,11 @@
   - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
 
 **示例**
-`/rpgitem power testarrow color 100 true false true`
+`/rpgitem testarrow power color 100 true false true`
 
 ## Consume
 **指令：**
-`/rpgitem power {Item} consume`
+`/rpgitem {Item} power consume`
 
 **效果：**
   设置 [Item]为消耗品. 按键按下后消耗该物品
@@ -151,11 +151,11 @@
   - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
 
 **示例**
-`/rpgitem power testconsume consume`
+`/rpgitem testconsume power consume`
 
 ## ConsumeHit
 **指令：**
-`/rpgitem power {Item} consumehit`
+`/rpgitem {Item} power consumehit`
 
 **效果：**
   设置 [Item]为攻击时的消耗品. 冷却时间默认为0，可通过setter修改。
@@ -167,11 +167,11 @@
   - 作用：设定技能冷却时间
 
 **示例**
-`/rpgitem power testconsumehit consumehit`
+`/rpgitem testconsumehit power consumehit`
 
 ## Deflect
 **指令：**
-`/rpgitem power {Item} deflect [facing] [initiative] [cooldownTime] [passive] [cooldownTimePassive]`
+`/rpgitem {Item} power deflect [facing] [initiative] [cooldownTime] [passive] [cooldownTimePassive]`
 
 **效果：**
   反弹射来的箭与火球（弹反）！
@@ -229,11 +229,11 @@
   - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
 
 **示例**
-`/rpgitem power testdeflect  deflect`
+`/rpgitem testdeflect power deflect`
 
 ## Fire
 **指令：**
-`/rpgitem power {Item} fire {cooldownTime} {distance} {burnduration} `
+`/rpgitem {Item} power fire {cooldownTime} {distance} {burnduration} `
 
 **效果：**
   给 {item} 添加火焰技能，能在右键时候发射火焰，并在接触第一个方块时候造成一条距离为{distance}持续时间为{burnduration}火墙，冷却时间 {cooldownTime}ticks. 
@@ -260,12 +260,12 @@
   - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
 
 **示例**
-`/rpgitem power testfire fire 10 10 20`
+`/rpgitem testfire power fire 10 10 20`
 
 
 ## Fireball
 **指令：**
-`/rpgitem power {Item} fireball [cooldownTime] `
+`/rpgitem {Item} power fireball [cooldownTime] `
 
 **效果：**
   发射小火球 [cooldownTime]tick冷却时间。
@@ -283,11 +283,11 @@
   - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
 
 **示例**
-`/rpgitem power testfire fireball`
+`/rpgitem testfire power fireball`
 
 ## Flame
 **指令：**
-`/rpgitem power {Item} Flame [burnTime] `
+`/rpgitem {Item} power Flame [burnTime] `
 
 **效果：**
   对目标造成 [burnTime]tick的点燃时间。
@@ -305,11 +305,11 @@
   - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
 
 **示例**
-`/rpgitem power testflame Flame`
+`/rpgitem testflame power Flame`
 
 ## Food
 **指令：**
-`/rpgitem power {Item} food {foodpoints} `
+`/rpgitem {Item} power food {foodpoints} `
 
 **效果：**
    给 {Item} 添加可食用功能, 吃掉时变化 {foodpoints}点饥饿值.
@@ -322,11 +322,11 @@
   - 作用：变化的饥饿值
 
 **示例**
-`/rpgitem power testflame food 10`
+`/rpgitem testflame power food 10`
 
 ## ForceField
 **指令：**
-`/rpgitem power {Item} forcefield {cooldownTime} {radius} {height} {base} {ttl}`
+`/rpgitem {Item} power forcefield {cooldownTime} {radius} {height} {base} {ttl}`
 
 **效果：**
    在你周围设置可以阻止一切实体进入的一个半径 {radius}，高度 {height}，深度 {base} 并持续 {ttl}秒的力场，冷却时间{cooldownTime}tick的由屏障组成的空心圆柱。
@@ -365,11 +365,11 @@
 
 
 **示例**
-`/rpgitem power testforcefield forcefield 10 10 10 0 40`
+`/rpgitem testforcefield power forcefield 10 10 10 0 40`
 
 ## Ice
 **指令：**
-`/rpgitem power {Item} ice [cooldownTime]`
+`/rpgitem {Item} power ice [cooldownTime]`
 
 **效果：**
    给 {Item} 添加冰块射击技能 冷却时间 [cooldownTime]tick. 右键发射冰块, 制造出大量冰块冲击目标, 冰块会慢慢消失
@@ -388,11 +388,11 @@
 
 
 **示例**
-`/rpgitem power testice knockup 10`
+`/rpgitem testice power knockup 10`
 
 ## Knockup（失效待修复）
 **指令：**
-`/rpgitem power {Item} knockup [chance] [power]`
+`/rpgitem {Item} power knockup [chance] [power]`
 
 **效果：**
    给 {Item} 添加击飞技能, 几率为 1/[chance] 威力为[power]. 击飞技能会把目标击飞
@@ -416,11 +416,11 @@
 
 
 **示例**
-`/rpgitem power testknockup knockup`
+`/rpgitem testknockup power knockup`
 
 ## LifeSteal
 ** 指令：**
-`/rpgitem power {Item} lifesteal [chance]`
+`/rpgitem {Item} power lifesteal [chance]`
 
 **效果：**
    给 {Item} 添加生命偷取技能, 偷取几率为 [chance]
@@ -439,11 +439,11 @@
 
 
 **示例**
-`/rpgitem power testlifesteal lifesteal`
+`/rpgitem testlifesteal power lifesteal`
 
 ## Lightning
 **指令：**
-`/rpgitem power {Item} lightning [chance]`
+`/rpgitem {Item} power lightning [chance]`
 
 **效果：**
    给 {Item} 添加闪电技能, 默认几率为1/[chance]. 攻击目标时一定几率生成闪电
@@ -462,11 +462,11 @@
 
 
 **示例**
-`/rpgitem power testlightning lifesteal`
+`/rpgitem testlightning power lifesteal`
 
 ## Particle
 **指令：**
-`/rpgitem power {Item} particle {effect}`
+`/rpgitem {Item} power particle {effect}`
 
 **效果：**
    向 {Item}添加粒子效果. 当右键时，在玩家周围产生粒子。 {effect} 可以是 SMOKE/ENDER_SIGNAL/MOBSPAWNER_FLAMES 之一
@@ -485,11 +485,11 @@
 
 
 **示例**
-`/rpgitem power testparticle  particle FLAME`
+`/rpgitem testparticle power particle FLAME`
 
 ## ParticleTick
 **指令：**
-`/rpgitem power {Item} particletick {effect} [interval]`
+`/rpgitem {Item} power particletick {effect} [interval]`
 
 **效果：**
   向 {Item} 添加粒子效果. 当持有时，在玩家周围产生粒子。  间隔为[interval]tick。{effect} 可以是 SMOKE/ENDER_SIGNAL/MOBSPAWNER_FLAMES 之一。
@@ -513,11 +513,11 @@
 
 
 **示例**
-`/rpgitem power testparticletick particletick FLAME 20`
+`/rpgitem testparticletick power particletick FLAME 20`
 
 ## PotionHit
 **指令：**
-`/rpgitem power {Item} potionhit {chance} {dration} {amplifier} {type}`
+`/rpgitem {Item} power potionhit {chance} {dration} {amplifier} {type}`
 
 **效果：**
   '攻击时有 1/{chance}% 的几率使目标获得药水效果. {type} 为药水效果  {dration}为持续时间单位为游戏刻, {amplifier}
@@ -551,11 +551,11 @@
   - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
 
 **示例**
-`/rpgitem power testpotionhit potionhit 1 100 1 speed `
+`/rpgitem testpotionhit power potionhit 1 100 1 speed `
 
 ## PotionSelf
 **指令：**
-`/rpgitem power {Item} potionself {cooldownTime} {duration} {amplifier} {type}`
+`/rpgitem {Item} power potionself {cooldownTime} {duration} {amplifier} {type}`
 
 **效果：**
   右键获得等级{amplifier}的{type}药水效果持续{duration}游戏刻{cooldownTime}游戏刻，冷却时间。 可用药水效果:详见[药水系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/%E8%8D%AF%E6%B0%B4%E6%95%88%E6%9E%9C)章节
@@ -588,11 +588,11 @@
   - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
 
 **示例**
-`/rpgitem power testpotionself potionself 100 100 1 speed `
+`/rpgitem testpotionself power potionself 100 100 1 speed `
 
 ## PotionTick
 **指令：**
-`/rpgitem power {Item} potiontick {amplifier} {effect} [interval] [duration]`
+`/rpgitem {Item} power potiontick {amplifier} {effect} [interval] [duration]`
 
 **效果：**
   持有/穿戴时获得时长为[duration]游戏刻的等级为{amplifier}的{effect}效果并每次经过[interval]游戏刻再次赋予。 可用药水效果:详见[药水系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/%E8%8D%AF%E6%B0%B4%E6%95%88%E6%9E%9C)章节
@@ -625,11 +625,11 @@
   - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
 
 **示例**
-`/rpgitem power testpotiontick potiontick 1 speed `
+`/rpgitem testpotiontick power potiontick 1 speed `
 
 ## Projectile
 **指令：**
-`/rpgitem power {Item} projectile {cooldownTime} {cone} {projectileType} [range] [amount] [speed]`
+`/rpgitem {Item} power projectile {cooldownTime} {cone} {projectileType} [range] [amount] [speed]`
 
 **效果：**
 {cone}为true： 为 {Item} 添加发射实体技能，冷却时间为{cooldownTime} 游戏刻。右键发射[amount] 个以[speed]速度飞行的 {projectileType}类型的实体。以玩家方向为中心，角度 [range] 呈圆锥形随机分散。可接受的类型：skull, fireball, snowball, smallfireball, arrow, llamaspit
@@ -689,11 +689,11 @@
   - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
 
 **示例**
-`/rpgitem power testprojectile projectile 1 true arrow 10 10 2 `
+`/rpgitem testprojectile power projectile 1 true arrow 10 10 2 `
 
 ## Pumpkin
 **指令：**
-`/rpgitem power {Item} pumpkin {chance} {drop}`
+`/rpgitem {Item} power pumpkin {chance} {drop}`
 
 **效果：**
    1/{chance}% 几率使敌人戴上南瓜头，南瓜头有1/{drop}%几率掉落
@@ -716,7 +716,7 @@
   - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
 
 **示例**
-`/rpgitem power testpumpkin pumpkin 1 1`
+`/rpgitem testpumpkin power pumpkin 1 1`
 
 ## Rainbow
 **指令：**
@@ -748,11 +748,11 @@
   - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
 
 **示例**
-`/rpgitem power testpumpkin rainbow`
+`/rpgitem testpumpkin power rainbow`
 
 ## RealDamage
 **指令：**
-`/rpgitem power {Item} realdamage {cooldownTime} {realDamage}`
+`/rpgitem{Item}  power realdamage {cooldownTime} {realDamage}`
 
 **效果：**
   给 {Item} 添加真实伤害技能, {cooldownTime}为游戏刻. 被击中的生物将受到{realDamage}真实伤害但至少会剩<minDamage>点生命值.
@@ -780,7 +780,7 @@
   - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
 
 **示例**
-`/rpgitem power testrealdamage realdamage 1 10`
+`/rpgitem testrealdamage power realdamage 1 10`
 
 ## Rescue
 **指令：**
@@ -854,7 +854,7 @@
   - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
 
 **示例**
-`/rpgitem power testrumble rumble 100 4 10`
+`/rpgitem testrumble power rumble 100 4 10`
 
 ##Repair
 **指令：**
@@ -929,11 +929,11 @@
   - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
 
 **示例**
-`/rpgitem power testskyhook skyhook 1 10`
+`/rpgitem testskyhook power  skyhook 1 10`
 
 ## TNTCannon
 **指令：**
-`/rpgitem power {Item} tntcannon [cooldownTime]`
+`/rpgitem {Item} power tntcannon [cooldownTime]`
 
 **效果：**
  给 {Item}添加发射tnt的功能，冷却时间为[cooldownTime]
@@ -951,11 +951,11 @@
   - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
 
 **示例**
-`/rpgitem power testtntcannon tntcannon`
+`/rpgitem testtntcannon power tntcannon`
 
 ## Teleport
 **指令：**
-`/rpgitem power {Item} teleport [cooldownTime] [distance]`
+`/rpgitem {Item} power teleport [cooldownTime] [distance]`
 
 **效果：**
  给{Item}添加传送技能, 冷却时间[cooldownTime]游戏刻 右键传送距离为[distance]格. 传送方向为你所面向的方向
@@ -981,11 +981,11 @@
   - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
 
 **示例**
-`/rpgitem power testteleport teleport 20 10`
+`/rpgitem testteleport power teleport 20 10`
 
 ## TippedArrow
 **指令：**
-`/rpgitem power {Item} tippedarrow {cooldownTime} {type} {duration} {amplifier} `
+`/rpgitem {Item} power tippedarrow {cooldownTime} {type} {duration} {amplifier} `
 
 **效果：**
  给 {Item} 添加药箭技能, 效果{type}时长{duration}为游戏刻, 等级为{amplifier},冷却时间{cooldownTime}游戏刻. 右键发射. 有效的药水效果：详见[药水系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/%E8%8D%AF%E6%B0%B4%E6%95%88%E6%9E%9C)章节
@@ -1018,11 +1018,11 @@
   - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
 
 **示例**
-`/rpgitem power testtippedarrow tippedarrow 20 speed 40 1`
+`/rpgitem testtippedarrow power tippedarrow 20 speed 40 1`
 
 ## Torch
 **指令：**
-`/rpgitem power {Item} torch {cooldownTime}`
+`/rpgitem {Item} power torch {cooldownTime}`
 
 **效果：**
  给 {Item} 添加照亮技能，冷却时间为{cooldownTime}，对着指向的区域扔一堆火把，火把会投掷到对应的方块上
@@ -1040,11 +1040,11 @@
   - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
 
 **示例**
-`/rpgitem power testtorch torch 20`
+`/rpgitem testtorch power torch 20`
 
 ## Throw
 **指令：**
-`/rpgitem power {Item} throw {display} {cooldownTime} {left/right} {speed} {entity} [entityData]`
+`/rpgitem {Item} power throw {display} {cooldownTime} {left/right} {speed} {entity} [entityData]`
 
 **效果：**
 为 {Item} 添加发射实体技能，冷却时间为{cooldownTime} 游戏刻。{left/right}键发射以{speed}速度飞行的 {entity}，并付带 [entityData]
@@ -1087,14 +1087,14 @@
   - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
 
 **示例**
-`/rpgitem power testthrow throw ThrowCreeper 20 right 2 creeper {ignited:1,Fuse:5}`
+`/rpgitem testthrow power throw ThrowCreeper 20 right 2 creeper {ignited:1,Fuse:5}`
 
 # 特殊技能（command系列）
 
 ## aoecommand
 
 **指令：**
-`/rpgitem power {Item} aoecommand {cooldown} {isRight} {display} {command} {rm} {r} {facing} [permission]`
+`/rpgitem {Item} power aoecommand {cooldown} {isRight} {display} {command} {rm} {r} {facing} [permission]`
 
 **效果：**
 给 {Item}添加AOE指令技能, 冷却时间为 {cooldown}. 若{isRight}为right则右键触发否则为left左键触发，工具提示为 {display}. {command}会在{isRight}后对范围({rm} ~ {r} 在 {facing} 视角)内的实体运行 并需要给对应角色运行此{command}的 {permission}
@@ -1191,7 +1191,7 @@
 ## command
 
 **指令：**
-`/rpgitem power {Item} command {cooldown} {isRight} {display} {command} [permission]`
+`/rpgitem {Item} power command {cooldown} {isRight} {display} {command} [permission]`
 
 **效果：**
 给 {Item} 添加指令技能, 冷却时间为 {cooldown}. 工具提示为{display}. {command}  会在 {isRight}（left/right）后运行, 并给予运行此  {command} 的 [permission]. ***注意***: 如果你想在 {display} 或 {command} 或 [permission] 打空格, 那么要在字符串周围加 `符号. 例如: `/say Hello`'
@@ -1234,7 +1234,7 @@
 ## commandhit
 
 **指令：**
-`/rpgitem power {Item} commandhit {cooldown} {display} {command} [permission]`
+`/rpgitem {Item} power commandhit {cooldown} {display} {command} [permission]`
 
 **效果：**
 给 {Item} 添加击中指令技能. 冷却时间为 {cooldown}. 工具提示为 {display} . {command} 会在击中目标后执行,并给予运行{command} 的 [permission]. 
