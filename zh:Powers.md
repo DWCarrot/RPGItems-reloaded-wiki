@@ -784,7 +784,7 @@
 
 ## Rescue
 **指令：**
-`/rpgitem power {Item} rescue [cooldownTime] [healthTrigger] [useBed] [inPlace]`
+`/rpgitem {Item} power rescue [cooldownTime] [healthTrigger] [useBed] [inPlace]`
 
 **效果：**
   给 {Item} 添加拯救技能，冷却时间为[cooldownTime]游戏刻，在玩家血量低于[healthTrigger]触发，[useBed]为true的时候拯救传送回出身点，[inPlace]为true的时候原地复活并无敌。优先级[inPlace]>[useBed]
@@ -822,11 +822,11 @@
   - 作用：消耗量，详见 [新消耗系统](https://github.com/NyaaCat/RPGitems-reloaded/wiki/New-durability-system)章节
 
 **示例**
-`/rpgitem power testrescue rescue`
+`/rpgitem testrescue power rescue`
 
 ## Rumble
 **指令：**
-`/rpgitem power {Item} rumble {cooldownTime} {power} {distance}`
+`/rpgitem {Item} power rumble {cooldownTime} {power} {distance}`
 
 **效果：**
   给 {Item} 添加添加土遁技能，冷却时间为{cooldownTime},有效推进范围为{distance}，将土遁推进范围内触碰到的第一个实体周围产生爆炸并将周围小范围内的相同实体以{power}的击飞等级击飞上天
@@ -856,9 +856,47 @@
 **示例**
 `/rpgitem power testrumble rumble 100 4 10`
 
+##Repair
+**指令：**
+`/rpgitem {item} power repair {durability} {material} {display} {isRight} {isSneak}`
+
+**效果：**
+ 给{item}添加修复技能，携带对应的{material}的时候可以在设定是否左右键{isRight}之后点击对应的按键并是否需要点击shift（{isSneak}）情况下进行消耗/增加{durability}数值的耐久
+
+**属性：**
+- durability
+  - 类型：int
+  - 默认：20
+  - 设定状态：必填
+  - 作用：设定耐久值
+- material
+  - 类型：Srting
+  - 默认：无
+  - 设定状态：必填
+  - 作用：设定消费物品
+- display
+  - 类型：String
+  - 默认：无
+  - 设定状态：必填
+  - 作用：设定技能显示名字
+- isRight
+  - 类型：Boolean
+  - 默认：true
+  - 设定状态：必填
+  - 作用：是否要使用右键
+- isSneak
+  - 类型：Boolean
+  - 默认：false
+  -设定状态：必填
+  -作用：是否要按shift
+
+**示例**
+`/rpgitem testrepair power repair 10 DIAMOND repair right false`
+
+
 ## SkyHook
 **指令：**
-`/rpgitem power {Item} skyhook {railMaterial} {hookDistance}`
+`/rpgitem {Item} power skyhook {railMaterial} {hookDistance}`
 
 **效果：**
  给 {Item}添加天钩技能. 天钩技能允许使用者钩到{hookDistance}距离以内的指定{railMaterial}材质方块并向那个方向突进
