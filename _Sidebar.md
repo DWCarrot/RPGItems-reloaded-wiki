@@ -15,61 +15,53 @@
 
 ## Powers
 
-<details><summary>Command Powers</summary><ul>
-  <li>aoecommand</li>
-  <li>command</li>
-  <li>commandhit</li>
-  <li>deathcommand</li>
-  <li>delayedcommand</li>
-</ul></details>
-<details><summary>Potion Powers</summary><ul>
-<li>aoe</li>
-<li>potionhit</li>
-<li>potionself</li>
-<li>potiontick</li>
-</ul></details>
-<details><summary>Battle Powers</summary><ul>
-<li>attract</li>
-<li>deflect</li>
-<li>forcefield</li>
-<li>realdamage</li>
-</ul></details>
-<details><summary>Projectiles</summary><ul>
-<li>projectile</li>
-<li>fireball</li>
-<li>ice</li>
-<li>arrow</li>
-<li>shulkerbullet</li>
-<li>throw</li>
-<li>throwable</li>
-<li>rainbow</li>
-<li>tntcanon</li>
-<li>tippedarrow</li>
-<li>torch</li>
-</ul></details>
-<details><summary>Fire Powers</summary><ul>
-<li>fire</li>
-<li>flame</li>
-</ul></details>
-<details><summary>Magic Powers</summary><ul>
-<li>Lifesteal</li>
-<li>Lightning</li>
-<li>rumble</li>
-</ul></details>
-<details><summary>Particle Powers</summary><ul>
-<li>particle</li>
-<li>particletick</li>
-</ul></details>
-<details><summary>Utility Powers</summary><ul>
-<li>consume</li>
-<li>consumehit</li>
-<li>food</li>
-<li>color</li>
-<li>pumpkin</li>
-<li>rescue</li>
-<li>skyhook</li>
-<li>teleport</li>
-</ul></details>
+#### Command Powers
+  * aoecommand
+  * command
+  * commandhit
+  * deathcommand
+  * delayedcommand
+#### Potion Powers
+  * aoe
+  * potionhit
+  * potionself
+  * potiontick
+#### Battle Powers
+  * attract
+  * deflect
+  * forcefield
+  * realdamage
+#### Projectiles
+  * projectile
+  * fireball
+  * ice
+  * arrow
+  * shulkerbullet
+  * throw
+  * throwable
+  * rainbow
+  * tntcanon
+  * tippedarrow
+  * torch
+#### Fire Powers
+  * fire
+  * flame
+#### Magic Powers
+  * Lifesteal
+  * Lightning
+  * rumble
+#### Particle Powers
+  * particle
+  * particletick
+#### Utility Powers
+  * consume
+  * consumehit
+  * food
+  * color
+  * pumpkin
+  * rescue
+  * skyhook
+  * teleport
 
 ## References
 
