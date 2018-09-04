@@ -34,56 +34,56 @@
 </details>
 <details><summary>Battle Powers</summary>
 
-  * attract
-  * deflect
-  * forcefield
-  * realdamage
+  * [attract](./Power:-Attract)
+  * [deflect](./Power:-Deflect)
+  * [forcefield](./Power:-ForceField)
+  * [realdamage](./Power:-RealDamage)
 
 </details>
 <details><summary>Projectiles</summary>
 
-  * projectile
-  * fireball
-  * ice
-  * arrow
-  * shulkerbullet
-  * throw
-  * throwable
-  * rainbow
-  * tntcanon
-  * tippedarrow
-  * torch
+  * [projectile](./Power:-Projectile)
+  * [fireball](./Power:-Fireball)
+  * [ice](./Power:-Ice)
+  * [arrow](./Power:-Arrow)
+  * [shulkerbullet](./Power:-Shulkerbullet)
+  * [throw](./Power:-Throw)
+  * [throwable](./Power:-Throwable)
+  * [rainbow](./Power:-Rainbow)
+  * [tntcanon](./Power:-TNTCanon)
+  * [tippedarrow](./Power:-TippedArrow)
+  * [torch](./Power:-Torch)
 
 </details>
 <details><summary>Fire Powers</summary>
 
-  * fire
-  * flame
+  * [fire](./Power:-Fire)
+  * [flame](./Power:-Flame)
 
 </details>
 <details><summary>Magic Powers</summary>
 
-  * Lifesteal
-  * Lightning
-  * rumble
+  * [Lifesteal](./Power:-Lifesteal)
+  * [Lightning](./Power:-Lightning)
+  * [rumble](./Power:-Rumble)
 
 </details>
 <details><summary>Particle Powers</summary>
 
-  * particle
-  * particletick
+  * [particle](./Power:-Particle)
+  * [particletick](./Power:-ParticleTick)
 
 </details>
 <details><summary>Utility Powers</summary>
 
-  * consume
-  * consumehit
-  * food
-  * color
-  * pumpkin
-  * rescue
-  * skyhook
-  * teleport
+  * [consume](./Power:-Consume)
+  * [consumehit](./Power:-ConsumeHit)
+  * [food](./Power:-Food)
+  * [color](./Power:-Color)
+  * [pumpkin](Power:-Pumpkin)
+  * [rescue](./Power:-Rescue)
+  * [skyhook](./Power:-Skyhook)
+  * [teleport](./Power:-Teleport)
 
 </details>
 
