@@ -10,6 +10,8 @@
 
 * General Commands
 * Item customization
+* [Durability Mechanism](Durability-Mechanism)
+* [Getter and Setter](Getter-and-Setter)
 
 ### Powers
 
