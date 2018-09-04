@@ -2,16 +2,16 @@
 
 ## Get started
 
-* [Installation](Get-Started:-Installation)
-* [Configuration](Get-Started:-Configuration)
-* [Additional Resources](Get-Started:-Additional-Resources)
+* [Installation](./Get-Started:-Installation)
+* [Configuration](./Get-Started:-Configuration)
+* [Additional Resources](./Get-Started:-Additional-Resources)
 
 ## Commands
 
-* [General Commands](Commands:-General-Commands)
-* [Item customization](Commands:-Item-Customization)
-* [Durability Mechanism](Commands:-Durability-Mechanism)
-* [Getter and Setter](Commands:-Getter-and-Setter)
+* [General Commands](./Commands:-General-Commands)
+* [Item customization](./Commands:-Item-Customization)
+* [Durability Mechanism](./Commands:-Durability-Mechanism)
+* [Getter and Setter](./Commands:-Getter-and-Setter)
 
 ## Powers
 
