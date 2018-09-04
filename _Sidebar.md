@@ -89,7 +89,7 @@
 
 ## References
 
-* Potion Effects
+* [Potion Effects](References:-Potion-Effects)
 * Particles
 
 ## Tutorial
