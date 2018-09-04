@@ -1,37 +1,37 @@
 * [Home](https://github.com/NyaaCat/RPGitems-reloaded/wiki)
 
-### Get started
+## Get started
 
 * Installation
 * Configuration
 * Additional Resources
 
-### Commands
+## Commands
 
 * General Commands
 * Item customization
 * [Durability Mechanism](Durability-Mechanism)
 * [Getter and Setter](Getter-and-Setter)
 
-### Powers
+## Powers
 
-* Command Powers
+##### Command Powers
   * aoecommand
   * command
   * commandhit
   * deathcommand
   * delayedcommand
-* Potion Powers
+##### Potion Powers
   * aoe
   * potionhit
   * potionself
   * potiontick
-* Battle Powers
+##### Battle Powers
   * attract
   * deflect
   * forcefield
   * realdamage
-* Projectiles
+##### Projectiles
   * projectile
   * fireball
   * ice
@@ -43,17 +43,17 @@
   * tntcanon
   * tippedarrow
   * torch
-* Fire Powers
+##### Fire Powers
   * fire
   * flame
-* Magic Powers
+##### Magic Powers
   * Lifesteal
   * Lightning
   * rumble
-* Particle Powers
+##### Particle Powers
   * particle
   * particletick
-* Utility Powers
+##### Utility Powers
   * consume
   * consumehit
   * food
@@ -63,12 +63,12 @@
   * skyhook
   * teleport
 
-### References
+## References
 
 * Potion Effects
 * Particles
 
-### Tutorial
+## Tutorial
 
 * [Basic Item Creation](Tutorials)
 * [入门教程](入门教程)
