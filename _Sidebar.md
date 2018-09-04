@@ -4,6 +4,7 @@
 
 * [Installation](./Get-Started:-Installation)
 * [Configuration](./Get-Started:-Configuration)
+* [Durability Mechanism](./Get-Started:-Durability-Mechanism)
 * [Additional Resources](./Get-Started:-Additional-Resources)
 * [Developers](./Developers)
 
@@ -11,7 +12,6 @@
 
 * [General Commands](./Commands:-General-Commands)
 * [Item customization](./Commands:-Item-Customization)
-* [Durability Mechanism](./Commands:-Durability-Mechanism)
 * [Getter and Setter](./Commands:-Getter-and-Setter)
 
 ## Powers
