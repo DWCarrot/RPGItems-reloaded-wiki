@@ -15,8 +15,29 @@
 
 ### Powers
 
+The pages are about to merge.
+
+E.g., potions page contains potionhit/potionself/etc
+
+* aoe
 * aoecommand
 * arrow
+* attract
+* color
+* consume
+* consumehit
+* deflect
+* fire
+* fireball
+* flame
+* food
+* forcefield
+* ice
+* knockup
+* lifesteal
+* lightning
+* particle
+* particletick
 
 ### References
 
