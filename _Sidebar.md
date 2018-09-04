@@ -15,23 +15,33 @@
 
 ## Powers
 
-#### Command Powers
+<details><summary>Command Powers</summary>
+
   * aoecommand
   * command
   * commandhit
   * deathcommand
   * delayedcommand
-#### Potion Powers
+
+</details>
+<details><summary>Potion Powers</summary>
+
   * aoe
   * potionhit
   * potionself
   * potiontick
-#### Battle Powers
+
+</details>
+<details><summary>Battle Powers</summary>
+
   * attract
   * deflect
   * forcefield
   * realdamage
-#### Projectiles
+
+</details>
+<details><summary>Projectiles</summary>
+
   * projectile
   * fireball
   * ice
@@ -43,17 +53,29 @@
   * tntcanon
   * tippedarrow
   * torch
-#### Fire Powers
+
+</details>
+<details><summary>Fire Powers</summary>
+
   * fire
   * flame
-#### Magic Powers
+
+</details>
+<details><summary>Magic Powers</summary>
+
   * Lifesteal
   * Lightning
   * rumble
-#### Particle Powers
+
+</details>
+<details><summary>Particle Powers</summary>
+
   * particle
   * particletick
-#### Utility Powers
+
+</details>
+<details><summary>Utility Powers</summary>
+
   * consume
   * consumehit
   * food
@@ -62,6 +84,8 @@
   * rescue
   * skyhook
   * teleport
+
+</details>
 
 ## References
 
