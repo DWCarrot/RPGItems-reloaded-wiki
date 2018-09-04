@@ -5,6 +5,7 @@
 * [Installation](./Get-Started:-Installation)
 * [Configuration](./Get-Started:-Configuration)
 * [Additional Resources](./Get-Started:-Additional-Resources)
+* [Developers](./Developers)
 
 ## Commands
 
@@ -91,8 +92,6 @@
 
 * [Potion Effects](./References:-Potion-Effects)
 * Particles
-
-## [Developers](Developers)
 
 ## Tutorial
 
