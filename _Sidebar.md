@@ -17,19 +17,19 @@
 
 <details><summary>Command Powers</summary>
 
-  * aoecommand
-  * command
-  * commandhit
-  * deathcommand
-  * delayedcommand
+  * [aoecommand](./Power:-AOECommand)
+  * [command](./Power:-Command)
+  * [commandhit](./Power:-CommandHit)
+  * [deathcommand](./Power:-DeathCommand)
+  * [delayedcommand](./Power:-DelayedCommand)
 
 </details>
 <details><summary>Potion Powers</summary>
 
-  * aoe
-  * potionhit
-  * potionself
-  * potiontick
+  * [aoe](./Power:-AOE)
+  * [potionhit](./Power:-PotionHit)
+  * [potionself](./Power:-PotionSelf)
+  * [potiontick](./Power:-PotionTick)
 
 </details>
 <details><summary>Battle Powers</summary>
