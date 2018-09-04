@@ -92,7 +92,7 @@
 * [Potion Effects](./References:-Potion-Effects)
 * Particles
 
-## Developers
+## [Developers](Developers)
 
 ## Tutorial
 
