@@ -20,7 +20,7 @@ Clone `ITEM` as `ITEM2`, use to quickly create a bunch of similar items or a ser
 
 #### `/rpgitem [ITEM] cost [options]`
 
-Set item cost values. See [New Durability System](/NyaaCat/RPGitems-reloaded/wiki/New-durability-system).
+Set item cost values. See [Durability Mechanism](./Commands:-Durability-Mechanism).
 
 Available options:
 
