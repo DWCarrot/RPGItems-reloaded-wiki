@@ -1,6 +1,8 @@
-Here is the document for RPGitems plugin.
+Welcome to RPGItems Wiki.
 
-Documents now under construction, please check origin files for now.
+Current stable version - 3.5 for 1.11/1.12
+
+Version 3.6 for 1.13 is on its way but still considered as unstable. Starting from this version you need NyaaCore, LangUtils and Vault to work.
 
 ***
 
