@@ -81,7 +81,7 @@
   * [consumehit](./Power:-ConsumeHit)
   * [food](./Power:-Food)
   * [color](./Power:-Color)
-  * [pumpkin](Power:-Pumpkin)
+  * [pumpkin](./Power:-Pumpkin)
   * [rescue](./Power:-Rescue)
   * [skyhook](./Power:-Skyhook)
   * [teleport](./Power:-Teleport)
