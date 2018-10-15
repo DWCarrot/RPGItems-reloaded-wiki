@@ -14,6 +14,8 @@ Give you the item or give specified player an amount of such items.
 
 Show/set item armour value. The armour reduce a percent of damage taken.
 
+Note: Multiple armor with such attributes calculates as "times". E.g., helmet armour 10%, leggings armour 15%, total damage taken = damage amount x 0.9 x 0.85.
+
 #### `/rpgitem [ITEM] clone [ITEM2]`
 
 Clone `ITEM` as `ITEM2`, use to quickly create a bunch of similar items or a series items.
