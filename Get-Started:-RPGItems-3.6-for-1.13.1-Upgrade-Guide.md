@@ -11,12 +11,23 @@ The upgrade is automatic and should change any behavior of items (except those w
 
 ## New Features
 
-TBD
+* Trigger system
+* Condition system
+* Extension system
+* New command interface
+* Smart tab completion
+* Separated item config
+* New powers
 
 ## Changes From v3.5
 
 TBD
 
+## Things removed since v3.5
+
+* Item quality is removed. Color of display name is preserved. The item quality has no impact to gameplay in 3.5.
+* Item lore is migrated to item description. It will become beginning lines of lore and will be auto wrapped.
+
 ## Known Issue
 
-N/A
+Power Color is not implemented now.
