@@ -18,6 +18,7 @@ The upgrade is automatic and should change any behavior of items (except those w
 * Smart tab completion
 * Separated item config
 * New powers
+* New properities for existing powers
 
 ## Changes From v3.5
 
