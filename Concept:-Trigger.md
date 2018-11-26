@@ -4,7 +4,7 @@
 
 "Trigger" is a new concept introduced in RPGItems 3.6. Actually, the idea of trigger dates back to earlier version of RPGItems (like `isRight` property of power `command`), and it becomes more powerful in RPGItems 3.6.
 
-When a player holding RPGItem fires some event (e.g. right click \ attack another entity \ projectile hit), RPGItem will execute powers added to the item, this process is called "Trigger". In earlier version of RPGItems there are set triggers for a power and can't change. In 3.6, you can set a list of available triggers for a power. One trigger can fire multiple powers at a time, and a power of an item can be fired by multiple trigger.
+When a player holding RPGItem fires some event (e.g. right clicks / attacks another entity / projectile hits), RPGItem will execute powers added to the item, this process is called "Trigger". In earlier version of RPGItems there are set triggers for a power and can't change. In 3.6, you can set a list of available triggers for a power. One trigger can fire multiple powers at a time, and a power of an item can be fired by multiple trigger.
 
 For triggers of each power, you can consult the wiki for the power [WIP], or help yourself by tab-completing in game.
 
@@ -67,6 +67,8 @@ Built-in triggers:
   Triggers when player pickup RPGItem from offhand slot in inventory
 * `TICK`  
   Triggers every tick for RPGItem player holds/equips
+
+Extensions may add new triggers to RPGItems, you can consult their document for detail. Unknown trigger on item will be ignored and removed with a warning.
 
 ## Extension Development: Add Triggers
 
