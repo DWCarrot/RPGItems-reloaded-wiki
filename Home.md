@@ -10,7 +10,7 @@ Version 3.6 for 1.13 is on its way but still considered as unstable. Starting fr
 
 Items will be automatically updated on first start of 1.13 version. `items.yml` will be renamed to `items.bak` and each item saved into `items/` separately.
 
-If you need to update command/throw related powers (command format, nbt, item/entity names, etc.), follow the following procedure:
+If you need to update command/throw related powers (command format, nbt, item/entity names, etc.), follow these procedure:
 
 1. Install Nodejs (tested working v10.13.0 LTS).
 2. Run `git clone https://github.com/Librazy/spu.git && cd spu && git checkout work && npm i && npm run restful`.
