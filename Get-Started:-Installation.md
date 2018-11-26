@@ -1,6 +1,6 @@
 # Installation of RPGItems v3.6+
 
-1. Install Vault and LangUtils
+1. Install Vault, LangUtils and NyaaCore
 2. Install RPGItems v3.6+ from release page
 3. [Optional] Install Protocollib and rpgitems-ext-nyaacat for some additional powers
 
