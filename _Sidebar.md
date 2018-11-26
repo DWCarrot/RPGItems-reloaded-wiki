@@ -99,3 +99,5 @@
 * [入门教程](入门教程)
 
 ## Advanced Usage
+
+* [Trigger](./Concept:-Trigger)
