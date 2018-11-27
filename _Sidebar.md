@@ -1,5 +1,41 @@
 * [Home](https://github.com/NyaaCat/RPGitems-reloaded/wiki)
 
+<details><summary>中文</summary>
+
+## 入门
+
+* [入门教程](./入门教程)
+
+## 命令
+
+* 通用命令
+* 物品命令
+* 属性设置
+
+## 技能
+
+[技能列表](./技能列表)
+
+## 参考
+
+* [药水效果](./药水效果列表)
+* 粒子效果
+
+## 教程
+
+* [Basic Item Creation](Tutorials)
+* [入门教程](入门教程)
+
+## 机制详解
+
+* [触发](./机制详解：触发)
+* 条件
+* [耐久](./机制详解：耐久)
+
+</details>
+
+<details open><summary>English</summary>
+
 ## Get started
 
 * [Installation](./Get-Started:-Installation)
@@ -101,3 +137,7 @@
 ## Advanced Usage
 
 * [Trigger](./Concept:-Trigger)
+* Condition
+* Du
+
+</details>
