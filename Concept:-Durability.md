@@ -1,11 +1,13 @@
-**To set durability like the old way:**
+An item has four properties related to durability:
 
-```
-/rpgitem some_item durability 100
-/rpgitem some_item durabilitybound 0 100
-/rpgitem some_item defaultdurability 100
-```
--------
+* `durability`: The maximum durability for an item.   
+   Set by `/rpgitem {item} durability {value}`.
+* `durabilityMax`: The durability upper-bound for an item that powers can't increase durability to value great than it.  
+   Set by `/rpgitem {item} durability bound {durabilityMin} {durabilityMax}`.
+* `durabilityMin`: The durability lower-bound for an item that powers can't decrease durability to value less than it.  
+   See above for configuring.
+* `defaultDurability`: The initial durability for item.
+   Set by `/rpgitem {item} default {value}`.
 
 An item will lose durability when:
 * break a block will reduce item.blockBreakingCost(default 1) durability 
@@ -23,5 +25,5 @@ e.g.
 After some event be handled, if item's durability is below or equal 0, it will consume itself.
 
 If the item have PowerUnbreakable, it won't lost its last 1 durability. When some tried to reduce durability more or equal to current durability, it will cancel the event 
-(can't break blocks, can't damage entities or fail to trigger powers, and your armour with its last durability can't protect you from damage). 
+(can't break blocks, can't damage entities or fail to trigger powers, and your armor with its last durability can't protect you from damage). 
 
