@@ -40,7 +40,6 @@
 
 * [Installation](./Get-Started:-Installation)
 * [Configuration](./Get-Started:-Configuration)
-* [Durability Mechanism](./Get-Started:-Durability-Mechanism)
 * [Additional Resources](./Get-Started:-Additional-Resources)
 * [Developers](./Developers)
 
@@ -132,12 +131,11 @@
 ## Tutorial
 
 * [Basic Item Creation](Tutorials)
-* [入门教程](入门教程)
 
 ## Advanced Usage
 
 * [Trigger](./Concept:-Trigger)
 * Condition
-* Du
+* [Durability](./Concept:-Durability)
 
 </details>
