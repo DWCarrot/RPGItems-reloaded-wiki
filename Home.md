@@ -12,4 +12,4 @@ RPGItem v3.6.490 released. This can be treated as the first 'mid-stable' 3.6 ver
 
 ## More versions
 
-For other version for 1.12 and below, see [Installation]https://github.com/NyaaCat/RPGitems-reloaded/wiki/Get-Started:-Installation)
+For other version for 1.12 and below, see [Installation](https://github.com/NyaaCat/RPGitems-reloaded/wiki/Get-Started:-Installation).
