@@ -6,7 +6,7 @@ An item has four properties related to durability:
    Set by `/rpgitem {item} durability bound {durabilityMin} {durabilityMax}`.
 * `durabilityMin`: The durability lower-bound for an item that powers can't decrease durability to value less than it.  
    See above for configuring.
-* `defaultDurability`: The initial durability for item.
+* `defaultDurability`: The initial durability for item.  
    Set by `/rpgitem {item} default {value}`.
 
 An item will lose durability when:
