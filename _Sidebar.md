@@ -21,7 +21,6 @@
 
 ## 教程
 
-* [Basic Item Creation](Tutorials)
 * [入门教程](入门教程)
 
 ## 机制详解
