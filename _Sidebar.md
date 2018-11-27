@@ -1,5 +1,3 @@
-* [Home](https://github.com/NyaaCat/RPGitems-reloaded/wiki)
-
 <details><summary>中文</summary>
 
 ## 入门
@@ -33,6 +31,8 @@
 * [耐久](./机制详解：耐久)
 
 </details>
+
+***
 
 <details open><summary>English</summary>
 
