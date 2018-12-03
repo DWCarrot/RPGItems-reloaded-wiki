@@ -134,7 +134,7 @@
 ## Advanced Usage
 
 * [Trigger](./Concept:-Trigger)
-* Condition
+* [Condition](./Concept:-Condition)
 * [Durability](./Concept:-Durability)
 
 </details>
