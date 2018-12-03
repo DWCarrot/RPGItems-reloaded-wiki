@@ -45,8 +45,8 @@
 ## Commands
 
 * [General Commands](./Commands:-General-Commands)
-* [Item customization](./Commands:-Item-Customization)
-* [Getter and Setter](./Commands:-Getter-and-Setter)
+* [Item Customization](./Commands:-Item-Customization)
+* [Power Properties](./Commands:-Power-Properties)
 
 ## Powers
 
