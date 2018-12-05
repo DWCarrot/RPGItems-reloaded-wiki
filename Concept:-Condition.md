@@ -34,6 +34,32 @@ Durability condition checks if an items RPGItem durability is in given range. Th
 * Can be static: Must
 * Can be critical: Yes
 
-TBD
+This condition checks whether the player is wearing the required material, item stack, rpgitem or (to be added) rpgitem group. If any/all (controlled by `matchAllSlot`) of `slots` match the `material` `itemStack` `rpgitem` and (to be added) rpgitem group, it returns true. All of `material` `itemStack` `rpgitem` will be checked if set, and match empty slot only if none of them are set.
 
-TBC
+Available `material`s are listed here <https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html>.  
+Besides the above mentioned Materials, `itemStack` also accepts `HAND` as value (the item in main hand).  
+`rpgitem` accepts name or uid of a RPGItem.
+
+### Last Result Condition
+
+* Name: `rpgitems:lastresultcondition`
+* Can be static: No
+* Can be critical: Yes
+
+Checks whether result of last power is in `okResults`. If no power has been fired before, it fails if `failOnNoResult`.
+
+### Scoreboard Condition
+
+* Name: `rpgitems:lastresultcondition`
+* Can be static: Yes
+* Can be critical: Yes
+
+It is a scoreboard-based condition, return true if the player's `score`, `tag`, and `team` meet it. 
+
+`score` uses a syntax like `score_name:min,max another_score_name:min,max`.
+`tag` uses a syntax like `MUST_HAVE,!MUST_NOT_HAVE`.
+`team` uses a syntax like `MUST_ON,!MUST_NOT_ON`. Only the first `MUST_ON` spec takes effect.
+
+## Complex Conditions
+
+TBD
