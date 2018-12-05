@@ -56,9 +56,9 @@ Checks whether result of last power is in `okResults`. If no power has been fire
 
 It is a scoreboard-based condition, return true if the player's `score`, `tag`, and `team` meet it. 
 
-`score` uses a syntax like `score_name:min,max another_score_name:min,max`.
-`tag` uses a syntax like `MUST_HAVE,!MUST_NOT_HAVE`.
-`team` uses a syntax like `MUST_ON,!MUST_NOT_ON`. Only the first `MUST_ON` spec takes effect.
+`score` uses a syntax like `score_name:min,max another_score_name:min,max`.  
+`tag` uses a syntax like `MUST_HAVE,!MUST_NOT_HAVE`.  
+`team` uses a syntax like `MUST_ON,!MUST_NOT_ON`. Only the first `MUST_ON` spec takes effect.  
 
 ## Complex Conditions
 
