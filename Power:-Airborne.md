@@ -6,9 +6,17 @@ Do `percentage`% more but less than `cap` damage when gliding.
 
 ## Properties
 
-* `percentage`  
+* `percentage`
+
+  * Type: int
+  * Default: 50
+
   Damage increase percentage.
-* `cap`  
+* `cap`
+
+  * Type: double
+  * Default: 300
+
   Maximum damage should this power do.
 
 ## Example
