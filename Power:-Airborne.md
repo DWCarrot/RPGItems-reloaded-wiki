@@ -12,6 +12,7 @@ Do `percentage`% more but less than `cap` damage when gliding.
   * Default: 50
 
   Damage increase percentage.
+
 * `cap`
 
   * Type: double
