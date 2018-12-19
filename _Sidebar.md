@@ -37,94 +37,94 @@
 
 ## Get started
 
-* [Installation](./Get-Started:-Installation)
-* [Configuration](./Get-Started:-Configuration)
-* [Additional Resources](./Get-Started:-Additional-Resources)
+* [Installation](./Installation)
+* [Configuration](./Configuration)
+* [Additional Resources](./Additional-Resources)
 * [Developers](./Developers)
 
 ## Commands
 
-* [General Commands](./Commands:-General-Commands)
-* [Item Customization](./Commands:-Item-Customization)
-* [Power Properties](./Commands:-Power-Properties)
+* [General Commands](./General-Commands)
+* [Item Customization](./Item-Customization)
+* [Power Properties](./Power-Properties)
 
 ## Powers
 
 <details><summary>Command Powers</summary>
 
-  * [aoecommand](./Power:-AOECommand)
-  * [command](./Power:-Command)
-  * [commandhit](./Power:-CommandHit)
-  * [deathcommand](./Power:-DeathCommand)
-  * [delayedcommand](./Power:-DelayedCommand)
+  * [aoecommand](./AOECommand)
+  * [command](./Command)
+  * [commandhit](./CommandHit)
+  * [deathcommand](./DeathCommand)
+  * [delayedcommand](./DelayedCommand)
 
 </details>
 <details><summary>Potion Powers</summary>
 
-  * [aoe](./Power:-AOE)
-  * [potionhit](./Power:-PotionHit)
-  * [potionself](./Power:-PotionSelf)
-  * [potiontick](./Power:-PotionTick)
+  * [aoe](./AOE)
+  * [potionhit](./PotionHit)
+  * [potionself](./PotionSelf)
+  * [potiontick](./PotionTick)
 
 </details>
 <details><summary>Battle Powers</summary>
 
-  * [attract](./Power:-Attract)
-  * [deflect](./Power:-Deflect)
-  * [forcefield](./Power:-ForceField)
-  * [realdamage](./Power:-RealDamage)
+  * [attract](./Attract)
+  * [deflect](./Deflect)
+  * [forcefield](./ForceField)
+  * [realdamage](./RealDamage)
 
 </details>
 <details><summary>Projectiles</summary>
 
-  * [projectile](./Power:-Projectile)
-  * [fireball](./Power:-Fireball)
-  * [ice](./Power:-Ice)
-  * [arrow](./Power:-Arrow)
-  * [shulkerbullet](./Power:-Shulkerbullet)
-  * [throw](./Power:-Throw)
-  * [throwable](./Power:-Throwable)
-  * [rainbow](./Power:-Rainbow)
-  * [tntcanon](./Power:-TNTCanon)
-  * [tippedarrow](./Power:-TippedArrow)
-  * [torch](./Power:-Torch)
+  * [projectile](./Projectile)
+  * [fireball](./Fireball)
+  * [ice](./Ice)
+  * [arrow](./Arrow)
+  * [shulkerbullet](./Shulkerbullet)
+  * [throw](./Throw)
+  * [throwable](./Throwable)
+  * [rainbow](./Rainbow)
+  * [tntcanon](./TNTCanon)
+  * [tippedarrow](./TippedArrow)
+  * [torch](./Torch)
 
 </details>
 <details><summary>Fire Powers</summary>
 
-  * [fire](./Power:-Fire)
-  * [flame](./Power:-Flame)
+  * [fire](./Fire)
+  * [flame](./Flame)
 
 </details>
 <details><summary>Magic Powers</summary>
 
-  * [Lifesteal](./Power:-Lifesteal)
-  * [Lightning](./Power:-Lightning)
-  * [rumble](./Power:-Rumble)
+  * [Lifesteal](./Lifesteal)
+  * [Lightning](./Lightning)
+  * [rumble](./Rumble)
 
 </details>
 <details><summary>Particle Powers</summary>
 
-  * [particle](./Power:-Particle)
-  * [particletick](./Power:-ParticleTick)
+  * [particle](./Particle)
+  * [particletick](./ParticleTick)
 
 </details>
 <details><summary>Utility Powers</summary>
 
-  * [consume](./Power:-Consume)
-  * [consumehit](./Power:-ConsumeHit)
-  * [food](./Power:-Food)
-  * [color](./Power:-Color)
-  * [pumpkin](./Power:-Pumpkin)
-  * [rescue](./Power:-Rescue)
-  * [skyhook](./Power:-Skyhook)
-  * [teleport](./Power:-Teleport)
+  * [consume](./Consume)
+  * [consumehit](./ConsumeHit)
+  * [food](./Food)
+  * [color](./Color)
+  * [pumpkin](./Pumpkin)
+  * [rescue](./Rescue)
+  * [skyhook](./Skyhook)
+  * [teleport](./Teleport)
 
 </details>
 
 ## References
 
-* [Potion Effects](./References:-Potion-Effects)
+* [Potion Effects](./Potion-Effects)
 * Particles
 
 ## Tutorial
@@ -133,8 +133,8 @@
 
 ## Advanced Usage
 
-* [Trigger](./Concept:-Trigger)
-* [Condition](./Concept:-Condition)
-* [Durability](./Concept:-Durability)
+* [Trigger](./Trigger)
+* [Condition](./Condition)
+* [Durability](./Durability)
 
 </details>
