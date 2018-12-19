@@ -1,4 +1,4 @@
-<!-- --- title: Powers: AOE -->
+# Powers: AOE
 
 **Full Name:** rpgitems:aoe
 
