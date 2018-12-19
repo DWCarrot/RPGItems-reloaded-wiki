@@ -1,5 +1,3 @@
-# Powers: AOE
-
 **Full Name:** rpgitems:aoe
 
 ## Description
