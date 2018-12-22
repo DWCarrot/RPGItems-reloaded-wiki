@@ -9,7 +9,7 @@ Full Name: rpgitems:explosion
 
 Providing Plugin: RPGItems
 
-Default Trigger: PROJECTILE_HIT. All available Trigger: HIT, LEFT_CLICK, LOCATION, PROJECTILE_HIT, RIGHT_CLICK
+Default Trigger: PROJECTILE_HIT. All available Trigger: LOCATION, LEFT_CLICK, PROJECTILE_HIT, RIGHT_CLICK, HIT.
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

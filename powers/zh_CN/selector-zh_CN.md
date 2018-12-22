@@ -1,27 +1,26 @@
-# Power: 选择器
+# 技能：选择器
 
 <!-- 本文件是通过游戏内 `/rpgitem gen-wiki` 命令生成的。 -->
 <!-- 请只在对应的 "beginCustomXXXX" 与 "endCustomXXXX" 间编辑。  -->
 <!-- 如果您想修改技能或其属性的描述， -->
 <!-- 请修改 "resources/lang/zh_CN.yml" 中对应的项。 -->
 
-Full Name: rpgitems:selector
+全名：rpgitems:selector
 
-Providing Plugin: RPGItems
+来源插件：RPGItems
 
-**Is a marker power**.
-
+**标识技能**。
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->
 
-## Description
+## 说明
 
 对AOE技能的选择器
 <!-- beginCustomDescription -->
 <!-- endCustomDescription -->
 
-## Properties
+## 属性
 
 * display
 
@@ -117,12 +116,12 @@ Providing Plugin: RPGItems
 <!-- beginCustomProperties -->
 <!-- endCustomProperties -->
 
-## Example
+## 示例
 
 <!-- beginCustomExample -->
 <!-- endCustomExample -->
 
-## Note
+## 说明
 
 <!-- beginCustomNote -->
 <!-- endCustomNote -->

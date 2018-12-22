@@ -1,27 +1,26 @@
-# Power: 闪电
+# 技能：闪电
 
 <!-- 本文件是通过游戏内 `/rpgitem gen-wiki` 命令生成的。 -->
 <!-- 请只在对应的 "beginCustomXXXX" 与 "endCustomXXXX" 间编辑。  -->
 <!-- 如果您想修改技能或其属性的描述， -->
 <!-- 请修改 "resources/lang/zh_CN.yml" 中对应的项。 -->
 
-Full Name: rpgitems:lightning
+全名：rpgitems:lightning
 
-Providing Plugin: RPGItems
+来源插件：RPGItems
 
-Default Trigger: PROJECTILE_HIT, HIT. All available Trigger: PROJECTILE_HIT, HIT, LOCATION
-
+默认触发：HIT, PROJECTILE_HIT。 可用触发：LOCATION, HIT, PROJECTILE_HIT。
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->
 
-## Description
+## 说明
 
 在击中处降下一道闪电
 <!-- beginCustomDescription -->
 <!-- endCustomDescription -->
 
-## Properties
+## 属性
 
 * chance
 
@@ -41,12 +40,12 @@ Default Trigger: PROJECTILE_HIT, HIT. All available Trigger: PROJECTILE_HIT, HIT
 <!-- beginCustomProperties -->
 <!-- endCustomProperties -->
 
-## Example
+## 示例
 
 <!-- beginCustomExample -->
 <!-- endCustomExample -->
 
-## Note
+## 说明
 
 <!-- beginCustomNote -->
 <!-- endCustomNote -->

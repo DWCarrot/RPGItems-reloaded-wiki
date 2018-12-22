@@ -9,7 +9,7 @@ Full Name: rpgitems-ext-nyaacat:throwable
 
 Providing Plugin: rpgitems-ext-nyaacat
 
-Default Trigger: PROJECTILE_HIT, RIGHT_CLICK. All available Trigger: LEFT_CLICK, PROJECTILE_HIT, RIGHT_CLICK
+Default Trigger: PROJECTILE_HIT, RIGHT_CLICK. All available Trigger: LEFT_CLICK, PROJECTILE_HIT, RIGHT_CLICK.
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

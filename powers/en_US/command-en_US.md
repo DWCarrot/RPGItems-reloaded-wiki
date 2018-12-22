@@ -9,7 +9,7 @@ Full Name: rpgitems:command
 
 Providing Plugin: RPGItems
 
-Default Trigger: RIGHT_CLICK. All available Trigger: SPRINT, LEFT_CLICK, SNEAK, HURT, RIGHT_CLICK
+Default Trigger: RIGHT_CLICK. All available Trigger: LEFT_CLICK, HURT, SPRINT, SNEAK, RIGHT_CLICK.
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

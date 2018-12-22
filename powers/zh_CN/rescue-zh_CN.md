@@ -1,27 +1,26 @@
-# Power: 拯救
+# 技能：拯救
 
 <!-- 本文件是通过游戏内 `/rpgitem gen-wiki` 命令生成的。 -->
 <!-- 请只在对应的 "beginCustomXXXX" 与 "endCustomXXXX" 间编辑。  -->
 <!-- 如果您想修改技能或其属性的描述， -->
 <!-- 请修改 "resources/lang/zh_CN.yml" 中对应的项。 -->
 
-Full Name: rpgitems:rescue
+全名：rpgitems:rescue
 
-Providing Plugin: RPGItems
+来源插件：RPGItems
 
-Trigger: HIT_TAKEN, HURT
-
+触发：HIT_TAKEN, HURT。
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->
 
-## Description
+## 说明
 
 受到过量伤害或者血量即将低于指定值时拯救玩家
 <!-- beginCustomDescription -->
 <!-- endCustomDescription -->
 
-## Properties
+## 属性
 
 * healthTrigger
 
@@ -69,12 +68,12 @@ Trigger: HIT_TAKEN, HURT
 <!-- beginCustomProperties -->
 <!-- endCustomProperties -->
 
-## Example
+## 示例
 
 <!-- beginCustomExample -->
 <!-- endCustomExample -->
 
-## Note
+## 说明
 
 <!-- beginCustomNote -->
 <!-- endCustomNote -->

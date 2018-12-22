@@ -1,27 +1,26 @@
-# Power: 颜色
+# 技能：颜色
 
 <!-- 本文件是通过游戏内 `/rpgitem gen-wiki` 命令生成的。 -->
 <!-- 请只在对应的 "beginCustomXXXX" 与 "endCustomXXXX" 间编辑。  -->
 <!-- 如果您想修改技能或其属性的描述， -->
 <!-- 请修改 "resources/lang/zh_CN.yml" 中对应的项。 -->
 
-Full Name: rpgitems:color
+全名：rpgitems:color
 
-Providing Plugin: RPGItems
+来源插件：RPGItems
 
-Default Trigger: LEFT_CLICK, RIGHT_CLICK. All available Trigger: LEFT_CLICK, RIGHT_CLICK
-
+默认触发：RIGHT_CLICK, LEFT_CLICK。 可用触发：RIGHT_CLICK, LEFT_CLICK。
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->
 
-## Description
+## 说明
 
 暂时不可用
 <!-- beginCustomDescription -->
 <!-- endCustomDescription -->
 
-## Properties
+## 属性
 
 * glass
 
@@ -62,12 +61,12 @@ Default Trigger: LEFT_CLICK, RIGHT_CLICK. All available Trigger: LEFT_CLICK, RIG
 <!-- beginCustomProperties -->
 <!-- endCustomProperties -->
 
-## Example
+## 示例
 
 <!-- beginCustomExample -->
 <!-- endCustomExample -->
 
-## Note
+## 说明
 
 <!-- beginCustomNote -->
 <!-- endCustomNote -->

@@ -9,7 +9,7 @@ Full Name: rpgitems:potiontick
 
 Providing Plugin: RPGItems
 
-Trigger: TICK
+Trigger: TICK.
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

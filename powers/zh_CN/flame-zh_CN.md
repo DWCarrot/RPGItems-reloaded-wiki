@@ -1,27 +1,26 @@
-# Power: 火焰附加
+# 技能：火焰附加
 
 <!-- 本文件是通过游戏内 `/rpgitem gen-wiki` 命令生成的。 -->
 <!-- 请只在对应的 "beginCustomXXXX" 与 "endCustomXXXX" 间编辑。  -->
 <!-- 如果您想修改技能或其属性的描述， -->
 <!-- 请修改 "resources/lang/zh_CN.yml" 中对应的项。 -->
 
-Full Name: rpgitems:flame
+全名：rpgitems:flame
 
-Providing Plugin: RPGItems
+来源插件：RPGItems
 
-Trigger: HIT, LIVINGENTITY
-
+触发：HIT, LIVINGENTITY。
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->
 
-## Description
+## 说明
 
 点燃被击中的目标
 <!-- beginCustomDescription -->
 <!-- endCustomDescription -->
 
-## Properties
+## 属性
 
 * cost
 
@@ -41,12 +40,12 @@ Trigger: HIT, LIVINGENTITY
 <!-- beginCustomProperties -->
 <!-- endCustomProperties -->
 
-## Example
+## 示例
 
 <!-- beginCustomExample -->
 <!-- endCustomExample -->
 
-## Note
+## 说明
 
 <!-- beginCustomNote -->
 <!-- endCustomNote -->

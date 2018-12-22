@@ -1,27 +1,26 @@
-# Power: 传送信标
+# 技能：传送信标
 
 <!-- 本文件是通过游戏内 `/rpgitem gen-wiki` 命令生成的。 -->
 <!-- 请只在对应的 "beginCustomXXXX" 与 "endCustomXXXX" 间编辑。  -->
 <!-- 如果您想修改技能或其属性的描述， -->
 <!-- 请修改 "resources/lang/zh_CN.yml" 中对应的项。 -->
 
-Full Name: rpgitems:translocator
+全名：rpgitems:translocator
 
-Providing Plugin: RPGItems
+来源插件：RPGItems
 
-Trigger: PICKUP_OFF_HAND, SWAP_TO_OFFHAND, PLACE_OFF_HAND, SWAP_TO_MAINHAND
-
+触发：SWAP_TO_OFFHAND, PICKUP_OFF_HAND, SWAP_TO_MAINHAND, PLACE_OFF_HAND。
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->
 
-## Description
+## 说明
 
 投掷信标，之后传送到信标位置
 <!-- beginCustomDescription -->
 <!-- endCustomDescription -->
 
-## Properties
+## 属性
 
 * setupCost
 
@@ -48,12 +47,12 @@ Trigger: PICKUP_OFF_HAND, SWAP_TO_OFFHAND, PLACE_OFF_HAND, SWAP_TO_MAINHAND
 <!-- beginCustomProperties -->
 <!-- endCustomProperties -->
 
-## Example
+## 示例
 
 <!-- beginCustomExample -->
 <!-- endCustomExample -->
 
-## Note
+## 说明
 
 <!-- beginCustomNote -->
 <!-- endCustomNote -->

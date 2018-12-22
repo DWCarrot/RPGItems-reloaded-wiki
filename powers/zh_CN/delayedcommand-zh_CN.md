@@ -1,27 +1,26 @@
-# Power: 延迟命令
+# 技能：延迟命令
 
 <!-- 本文件是通过游戏内 `/rpgitem gen-wiki` 命令生成的。 -->
 <!-- 请只在对应的 "beginCustomXXXX" 与 "endCustomXXXX" 间编辑。  -->
 <!-- 如果您想修改技能或其属性的描述， -->
 <!-- 请修改 "resources/lang/zh_CN.yml" 中对应的项。 -->
 
-Full Name: rpgitems:delayedcommand
+全名：rpgitems:delayedcommand
 
-Providing Plugin: RPGItems
+来源插件：RPGItems
 
-Default Trigger: RIGHT_CLICK. All available Trigger: SNEAK, LEFT_CLICK, RIGHT_CLICK, SPRINT, HURT
-
+默认触发：RIGHT_CLICK。 可用触发：RIGHT_CLICK, SPRINT, LEFT_CLICK, SNEAK, HURT。
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->
 
-## Description
+## 说明
 
 在一段时间后执行命令
 <!-- beginCustomDescription -->
 <!-- endCustomDescription -->
 
-## Properties
+## 属性
 
 * delay
 
@@ -67,12 +66,12 @@ Default Trigger: RIGHT_CLICK. All available Trigger: SNEAK, LEFT_CLICK, RIGHT_CL
 <!-- beginCustomProperties -->
 <!-- endCustomProperties -->
 
-## Example
+## 示例
 
 <!-- beginCustomExample -->
 <!-- endCustomExample -->
 
-## Note
+## 说明
 
 <!-- beginCustomNote -->
 <!-- endCustomNote -->

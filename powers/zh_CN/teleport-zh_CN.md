@@ -1,27 +1,26 @@
-# Power: 传送
+# 技能：传送
 
 <!-- 本文件是通过游戏内 `/rpgitem gen-wiki` 命令生成的。 -->
 <!-- 请只在对应的 "beginCustomXXXX" 与 "endCustomXXXX" 间编辑。  -->
 <!-- 如果您想修改技能或其属性的描述， -->
 <!-- 请修改 "resources/lang/zh_CN.yml" 中对应的项。 -->
 
-Full Name: rpgitems:teleport
+全名：rpgitems:teleport
 
-Providing Plugin: RPGItems
+来源插件：RPGItems
 
-Default Trigger: RIGHT_CLICK, PROJECTILE_HIT. All available Trigger: RIGHT_CLICK, PROJECTILE_HIT
-
+默认触发：RIGHT_CLICK, PROJECTILE_HIT。 可用触发：RIGHT_CLICK, PROJECTILE_HIT。
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->
 
-## Description
+## 说明
 
 传送到视线方向或者弹射物击中位置
 <!-- beginCustomDescription -->
 <!-- endCustomDescription -->
 
-## Properties
+## 属性
 
 * cost
 
@@ -55,12 +54,12 @@ Default Trigger: RIGHT_CLICK, PROJECTILE_HIT. All available Trigger: RIGHT_CLICK
 <!-- beginCustomProperties -->
 <!-- endCustomProperties -->
 
-## Example
+## 示例
 
 <!-- beginCustomExample -->
 <!-- endCustomExample -->
 
-## Note
+## 说明
 
 <!-- beginCustomNote -->
 <!-- endCustomNote -->

@@ -1,27 +1,26 @@
-# Power: 弹射物
+# 技能：弹射物
 
 <!-- 本文件是通过游戏内 `/rpgitem gen-wiki` 命令生成的。 -->
 <!-- 请只在对应的 "beginCustomXXXX" 与 "endCustomXXXX" 间编辑。  -->
 <!-- 如果您想修改技能或其属性的描述， -->
 <!-- 请修改 "resources/lang/zh_CN.yml" 中对应的项。 -->
 
-Full Name: rpgitems:projectile
+全名：rpgitems:projectile
 
-Providing Plugin: RPGItems
+来源插件：RPGItems
 
-Default Trigger: RIGHT_CLICK. All available Trigger: SNEAK, LEFT_CLICK, RIGHT_CLICK, SPRINT, HIT_TAKEN, HIT, LIVINGENTITY
-
+默认触发：RIGHT_CLICK。 可用触发：HIT_TAKEN, RIGHT_CLICK, HIT, LIVINGENTITY, SPRINT, LEFT_CLICK, SNEAK。
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->
 
-## Description
+## 说明
 
 发射弹射物
 <!-- beginCustomDescription -->
 <!-- endCustomDescription -->
 
-## Properties
+## 属性
 
 * projectileType
 
@@ -116,12 +115,12 @@ Default Trigger: RIGHT_CLICK. All available Trigger: SNEAK, LEFT_CLICK, RIGHT_CL
 <!-- beginCustomProperties -->
 <!-- endCustomProperties -->
 
-## Example
+## 示例
 
 <!-- beginCustomExample -->
 <!-- endCustomExample -->
 
-## Note
+## 说明
 
 <!-- beginCustomNote -->
 <!-- endCustomNote -->

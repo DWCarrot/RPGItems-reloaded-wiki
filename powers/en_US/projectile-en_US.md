@@ -9,7 +9,7 @@ Full Name: rpgitems:projectile
 
 Providing Plugin: RPGItems
 
-Default Trigger: RIGHT_CLICK. All available Trigger: SPRINT, HIT, LEFT_CLICK, SNEAK, LIVINGENTITY, HIT_TAKEN, RIGHT_CLICK
+Default Trigger: RIGHT_CLICK. All available Trigger: LEFT_CLICK, SPRINT, SNEAK, HIT_TAKEN, RIGHT_CLICK, HIT, LIVINGENTITY.
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

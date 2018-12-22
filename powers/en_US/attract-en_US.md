@@ -9,7 +9,7 @@ Full Name: rpgitems:attract
 
 Providing Plugin: RPGItems
 
-Default Trigger: RIGHT_CLICK. All available Trigger: TICK, LEFT_CLICK, RIGHT_CLICK
+Default Trigger: RIGHT_CLICK. All available Trigger: TICK, LEFT_CLICK, RIGHT_CLICK.
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

@@ -1,27 +1,26 @@
-# Power: 属性修改
+# 技能：属性修改
 
 <!-- 本文件是通过游戏内 `/rpgitem gen-wiki` 命令生成的。 -->
 <!-- 请只在对应的 "beginCustomXXXX" 与 "endCustomXXXX" 间编辑。  -->
 <!-- 如果您想修改技能或其属性的描述， -->
 <!-- 请修改 "resources/lang/zh_CN.yml" 中对应的项。 -->
 
-Full Name: rpgitems:attributemodifier
+全名：rpgitems:attributemodifier
 
-Providing Plugin: RPGItems
+来源插件：RPGItems
 
-**Is a marker power**.
-
+**标识技能**。
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->
 
-## Description
+## 说明
 
 修改玩家/物品属性
 <!-- beginCustomDescription -->
 <!-- endCustomDescription -->
 
-## Properties
+## 属性
 
 * amount
 
@@ -53,7 +52,7 @@ Providing Plugin: RPGItems
 * uuidMost
 
   * 类型：int
-  * 默认：-1006023272
+  * 默认：1654410351
 
   UUID 前半部分
 
@@ -67,7 +66,7 @@ Providing Plugin: RPGItems
 * uuidLeast
 
   * 类型：int
-  * 默认：1519199499
+  * 默认：-2103311274
 
   UUID 后半部分
 
@@ -75,12 +74,12 @@ Providing Plugin: RPGItems
 <!-- beginCustomProperties -->
 <!-- endCustomProperties -->
 
-## Example
+## 示例
 
 <!-- beginCustomExample -->
 <!-- endCustomExample -->
 
-## Note
+## 说明
 
 <!-- beginCustomNote -->
 <!-- endCustomNote -->

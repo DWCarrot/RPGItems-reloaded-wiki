@@ -9,7 +9,7 @@ Full Name: rpgitems:aoe
 
 Providing Plugin: RPGItems
 
-Default Trigger: RIGHT_CLICK. All available Trigger: HIT, LEFT_CLICK, RIGHT_CLICK
+Default Trigger: RIGHT_CLICK. All available Trigger: LEFT_CLICK, RIGHT_CLICK, HIT.
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

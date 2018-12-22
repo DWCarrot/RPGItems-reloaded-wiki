@@ -1,27 +1,26 @@
-# Power: 范围效果
+# 技能：范围效果
 
 <!-- 本文件是通过游戏内 `/rpgitem gen-wiki` 命令生成的。 -->
 <!-- 请只在对应的 "beginCustomXXXX" 与 "endCustomXXXX" 间编辑。  -->
 <!-- 如果您想修改技能或其属性的描述， -->
 <!-- 请修改 "resources/lang/zh_CN.yml" 中对应的项。 -->
 
-Full Name: rpgitems:aoe
+全名：rpgitems:aoe
 
-Providing Plugin: RPGItems
+来源插件：RPGItems
 
-Default Trigger: RIGHT_CLICK. All available Trigger: LEFT_CLICK, RIGHT_CLICK, HIT
-
+默认触发：RIGHT_CLICK。 可用触发：RIGHT_CLICK, HIT, LEFT_CLICK。
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->
 
-## Description
+## 说明
 
 对周围实体施放状态效果。可使用选择器。
 <!-- beginCustomDescription -->
 <!-- endCustomDescription -->
 
-## Properties
+## 属性
 
 * cost
 
@@ -88,12 +87,12 @@ Default Trigger: RIGHT_CLICK. All available Trigger: LEFT_CLICK, RIGHT_CLICK, HI
 <!-- beginCustomProperties -->
 <!-- endCustomProperties -->
 
-## Example
+## 示例
 
 <!-- beginCustomExample -->
 <!-- endCustomExample -->
 
-## Note
+## 说明
 
 <!-- beginCustomNote -->
 <!-- endCustomNote -->

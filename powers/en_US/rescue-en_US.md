@@ -9,7 +9,7 @@ Full Name: rpgitems:rescue
 
 Providing Plugin: RPGItems
 
-Trigger: HURT, HIT_TAKEN
+Trigger: HURT, HIT_TAKEN.
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

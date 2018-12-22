@@ -9,7 +9,7 @@ Full Name: rpgitems:commandhit
 
 Providing Plugin: RPGItems
 
-Default Trigger: HIT. All available Trigger: SPRINT, HIT, LEFT_CLICK, SNEAK, LIVINGENTITY, HURT, RIGHT_CLICK
+Default Trigger: HIT. All available Trigger: LEFT_CLICK, HURT, SPRINT, SNEAK, RIGHT_CLICK, HIT, LIVINGENTITY.
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

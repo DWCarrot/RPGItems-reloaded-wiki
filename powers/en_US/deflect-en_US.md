@@ -9,7 +9,7 @@ Full Name: rpgitems:deflect
 
 Providing Plugin: RPGItems
 
-Default Trigger: HIT_TAKEN, RIGHT_CLICK. All available Trigger: LEFT_CLICK, HIT_TAKEN, RIGHT_CLICK
+Default Trigger: HIT_TAKEN, RIGHT_CLICK. All available Trigger: LEFT_CLICK, HIT_TAKEN, RIGHT_CLICK.
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

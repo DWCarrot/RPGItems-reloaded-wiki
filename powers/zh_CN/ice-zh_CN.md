@@ -1,27 +1,26 @@
-# Power: 冰冻
+# 技能：冰冻
 
 <!-- 本文件是通过游戏内 `/rpgitem gen-wiki` 命令生成的。 -->
 <!-- 请只在对应的 "beginCustomXXXX" 与 "endCustomXXXX" 间编辑。  -->
 <!-- 如果您想修改技能或其属性的描述， -->
 <!-- 请修改 "resources/lang/zh_CN.yml" 中对应的项。 -->
 
-Full Name: rpgitems:ice
+全名：rpgitems:ice
 
-Providing Plugin: RPGItems
+来源插件：RPGItems
 
-Trigger: SNEAK, LEFT_CLICK, RIGHT_CLICK, SPRINT
-
+触发：RIGHT_CLICK, SPRINT, LEFT_CLICK, SNEAK。
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->
 
-## Description
+## 说明
 
 发射一个冰方块，在击中处生成一个大冰块
 <!-- beginCustomDescription -->
 <!-- endCustomDescription -->
 
-## Properties
+## 属性
 
 * cost
 
@@ -47,12 +46,12 @@ Trigger: SNEAK, LEFT_CLICK, RIGHT_CLICK, SPRINT
 <!-- beginCustomProperties -->
 <!-- endCustomProperties -->
 
-## Example
+## 示例
 
 <!-- beginCustomExample -->
 <!-- endCustomExample -->
 
-## Note
+## 说明
 
 <!-- beginCustomNote -->
 <!-- endCustomNote -->

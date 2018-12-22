@@ -52,7 +52,7 @@ Add Attribute Modifier
 * uuidMost
 
   * Type: int
-  * Default: -243318743
+  * Default: 166937439
 
   UUID most
 
@@ -66,7 +66,7 @@ Add Attribute Modifier
 * uuidLeast
 
   * Type: int
-  * Default: -1348063030
+  * Default: 232395929
 
   UUID least
 

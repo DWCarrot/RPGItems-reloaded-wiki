@@ -1,27 +1,26 @@
-# Power: 粒子屏障
+# 技能：粒子屏障
 
 <!-- 本文件是通过游戏内 `/rpgitem gen-wiki` 命令生成的。 -->
 <!-- 请只在对应的 "beginCustomXXXX" 与 "endCustomXXXX" 间编辑。  -->
 <!-- 如果您想修改技能或其属性的描述， -->
 <!-- 请修改 "resources/lang/zh_CN.yml" 中对应的项。 -->
 
-Full Name: rpgitems:particlebarrier
+全名：rpgitems:particlebarrier
 
-Providing Plugin: RPGItems
+来源插件：RPGItems
 
-Default Trigger: TICK, RIGHT_CLICK. All available Trigger: TICK, LEFT_CLICK, RIGHT_CLICK
-
+默认触发：RIGHT_CLICK, TICK。 可用触发：RIGHT_CLICK, TICK, LEFT_CLICK。
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->
 
-## Description
+## 说明
 
 将受到的攻击转化为力量效果
 <!-- beginCustomDescription -->
 <!-- endCustomDescription -->
 
-## Properties
+## 属性
 
 * projected
 
@@ -62,12 +61,12 @@ Default Trigger: TICK, RIGHT_CLICK. All available Trigger: TICK, LEFT_CLICK, RIG
 <!-- beginCustomProperties -->
 <!-- endCustomProperties -->
 
-## Example
+## 示例
 
 <!-- beginCustomExample -->
 <!-- endCustomExample -->
 
-## Note
+## 说明
 
 <!-- beginCustomNote -->
 <!-- endCustomNote -->

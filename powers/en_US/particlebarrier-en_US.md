@@ -9,7 +9,7 @@ Full Name: rpgitems:particlebarrier
 
 Providing Plugin: RPGItems
 
-Default Trigger: TICK, RIGHT_CLICK. All available Trigger: TICK, LEFT_CLICK, RIGHT_CLICK
+Default Trigger: TICK, RIGHT_CLICK. All available Trigger: TICK, LEFT_CLICK, RIGHT_CLICK.
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

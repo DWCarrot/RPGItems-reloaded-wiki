@@ -9,7 +9,7 @@ Full Name: rpgitems:consumehit
 
 Providing Plugin: RPGItems
 
-Trigger: HIT
+Trigger: HIT.
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

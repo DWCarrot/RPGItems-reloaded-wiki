@@ -1,27 +1,26 @@
-# Power: 粒子效果
+# 技能：粒子效果
 
 <!-- 本文件是通过游戏内 `/rpgitem gen-wiki` 命令生成的。 -->
 <!-- 请只在对应的 "beginCustomXXXX" 与 "endCustomXXXX" 间编辑。  -->
 <!-- 如果您想修改技能或其属性的描述， -->
 <!-- 请修改 "resources/lang/zh_CN.yml" 中对应的项。 -->
 
-Full Name: rpgitems:particle
+全名：rpgitems:particle
 
-Providing Plugin: RPGItems
+来源插件：RPGItems
 
-Trigger: LEFT_CLICK, RIGHT_CLICK
-
+触发：RIGHT_CLICK, LEFT_CLICK。
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->
 
-## Description
+## 说明
 
 触发后生成粒子效果
 <!-- beginCustomDescription -->
 <!-- endCustomDescription -->
 
-## Properties
+## 属性
 
 * cost
 
@@ -109,12 +108,12 @@ Trigger: LEFT_CLICK, RIGHT_CLICK
 <!-- beginCustomProperties -->
 <!-- endCustomProperties -->
 
-## Example
+## 示例
 
 <!-- beginCustomExample -->
 <!-- endCustomExample -->
 
-## Note
+## 说明
 
 <!-- beginCustomNote -->
 <!-- endCustomNote -->

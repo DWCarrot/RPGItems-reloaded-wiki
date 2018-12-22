@@ -9,7 +9,7 @@ Full Name: rpgitems:particle
 
 Providing Plugin: RPGItems
 
-Trigger: LEFT_CLICK, RIGHT_CLICK
+Trigger: LEFT_CLICK, RIGHT_CLICK.
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

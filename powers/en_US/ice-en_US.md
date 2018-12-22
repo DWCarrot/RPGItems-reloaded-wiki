@@ -9,7 +9,7 @@ Full Name: rpgitems:ice
 
 Providing Plugin: RPGItems
 
-Trigger: SPRINT, LEFT_CLICK, SNEAK, RIGHT_CLICK
+Trigger: LEFT_CLICK, SPRINT, SNEAK, RIGHT_CLICK.
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

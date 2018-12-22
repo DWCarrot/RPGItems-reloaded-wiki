@@ -9,7 +9,7 @@ Full Name: rpgitems:economy
 
 Providing Plugin: RPGItems
 
-Default Trigger: HIT, LEFT_CLICK, RIGHT_CLICK. All available Trigger: HIT, LEFT_CLICK, RIGHT_CLICK
+Default Trigger: LEFT_CLICK, RIGHT_CLICK, HIT. All available Trigger: LEFT_CLICK, RIGHT_CLICK, HIT.
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

@@ -9,7 +9,7 @@ Full Name: rpgitems:fire
 
 Providing Plugin: RPGItems
 
-Default Trigger: RIGHT_CLICK. All available Trigger: SPRINT, LEFT_CLICK, SNEAK, RIGHT_CLICK
+Default Trigger: RIGHT_CLICK. All available Trigger: LEFT_CLICK, SPRINT, SNEAK, RIGHT_CLICK.
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

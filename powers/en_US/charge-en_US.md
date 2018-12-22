@@ -9,7 +9,7 @@ Full Name: rpgitems:charge
 
 Providing Plugin: RPGItems
 
-Trigger: HIT
+Trigger: HIT.
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

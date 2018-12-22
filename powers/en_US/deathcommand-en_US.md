@@ -9,7 +9,7 @@ Full Name: rpgitems:deathcommand
 
 Providing Plugin: RPGItems
 
-Trigger: HIT
+Trigger: HIT.
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

@@ -1,27 +1,26 @@
-# Power: 吸血
+# 技能：吸血
 
 <!-- 本文件是通过游戏内 `/rpgitem gen-wiki` 命令生成的。 -->
 <!-- 请只在对应的 "beginCustomXXXX" 与 "endCustomXXXX" 间编辑。  -->
 <!-- 如果您想修改技能或其属性的描述， -->
 <!-- 请修改 "resources/lang/zh_CN.yml" 中对应的项。 -->
 
-Full Name: rpgitems:lifesteal
+全名：rpgitems:lifesteal
 
-Providing Plugin: RPGItems
+来源插件：RPGItems
 
-Default Trigger: HIT. All available Trigger: HIT, LIVINGENTITY
-
+默认触发：HIT。 可用触发：HIT, LIVINGENTITY。
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->
 
-## Description
+## 说明
 
 按造成的攻击伤害回血
 <!-- beginCustomDescription -->
 <!-- endCustomDescription -->
 
-## Properties
+## 属性
 
 * chance
 
@@ -48,12 +47,12 @@ Default Trigger: HIT. All available Trigger: HIT, LIVINGENTITY
 <!-- beginCustomProperties -->
 <!-- endCustomProperties -->
 
-## Example
+## 示例
 
 <!-- beginCustomExample -->
 <!-- endCustomExample -->
 
-## Note
+## 说明
 
 <!-- beginCustomNote -->
 <!-- endCustomNote -->
