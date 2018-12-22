@@ -1,0 +1,73 @@
+# Power: 自身效果
+
+<!-- 本文件是通过游戏内 `/rpgitem gen-wiki` 命令生成的。 -->
+<!-- 请只在对应的 "beginCustomXXXX" 与 "endCustomXXXX" 间编辑。  -->
+<!-- 如果您想修改技能或其属性的描述， -->
+<!-- 请修改 "resources/lang/zh_CN.yml" 中对应的项。 -->
+
+Full Name: rpgitems:potionself
+
+Providing Plugin: RPGItems
+
+Default Trigger: RIGHT_CLICK. All available Trigger: SNEAK, LEFT_CLICK, RIGHT_CLICK, SPRINT, HIT_TAKEN, HIT
+
+
+<!-- beginCustomHeader -->
+<!-- endCustomHeader -->
+
+## Description
+
+对自身施放状态效果
+<!-- beginCustomDescription -->
+<!-- endCustomDescription -->
+
+## Properties
+
+* duration
+
+  * 类型：int
+  * **必填**
+
+  持续时间，游戏刻
+
+* cost
+
+  * 类型：int
+  * 默认：0
+
+  技能的耐久消耗量
+
+* cooldown
+
+  * 类型：long
+  * **必填**
+
+  技能的冷却时间，以游戏刻为单位
+
+* amplifier
+
+  * 类型：int
+  * **必填**
+
+  效果倍率
+
+* type
+
+  * 类型：PotionEffectType
+  * 默认：HEAL
+
+  状态效果
+
+
+<!-- beginCustomProperties -->
+<!-- endCustomProperties -->
+
+## Example
+
+<!-- beginCustomExample -->
+<!-- endCustomExample -->
+
+## Note
+
+<!-- beginCustomNote -->
+<!-- endCustomNote -->

@@ -1,0 +1,73 @@
+# Power: 钩爪
+
+<!-- 本文件是通过游戏内 `/rpgitem gen-wiki` 命令生成的。 -->
+<!-- 请只在对应的 "beginCustomXXXX" 与 "endCustomXXXX" 间编辑。  -->
+<!-- 如果您想修改技能或其属性的描述， -->
+<!-- 请修改 "resources/lang/zh_CN.yml" 中对应的项。 -->
+
+Full Name: rpgitems:skyhook
+
+Providing Plugin: RPGItems
+
+Trigger: RIGHT_CLICK
+
+
+<!-- beginCustomHeader -->
+<!-- endCustomHeader -->
+
+## Description
+
+发射钩爪钩住指定方块
+<!-- beginCustomDescription -->
+<!-- endCustomDescription -->
+
+## Properties
+
+* cost
+
+  * 类型：int
+  * 默认：0
+
+  技能的耐久消耗量
+
+* railMaterial
+
+  * 类型：Material
+  * **必填**
+
+  可以钩的材质
+
+* cooldown
+
+  * 类型：long
+  * 默认：20
+
+  技能的冷却时间，以游戏刻为单位
+
+* hookDistance
+
+  * 类型：int
+  * 默认：10
+
+  可以钩的距离
+
+* hookingTickCost
+
+  * 类型：int
+  * 默认：0
+
+  Cost per tick hooking
+
+
+<!-- beginCustomProperties -->
+<!-- endCustomProperties -->
+
+## Example
+
+<!-- beginCustomExample -->
+<!-- endCustomExample -->
+
+## Note
+
+<!-- beginCustomNote -->
+<!-- endCustomNote -->
