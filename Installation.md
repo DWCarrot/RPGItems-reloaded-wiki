@@ -6,7 +6,7 @@
 
 # Upgrade to RPGItems v3.6+ from v3.5
 
-See [RPGItems 3.6 for 1.13.2 Upgrade Guide](https://github.com/NyaaCat/RPGitems-reloaded/wiki/Get-Started:-RPGItems-3.6-for-1.13.2-Upgrade-Guide)
+See [RPGItems 3.6 for 1.13.2 Upgrade Guide](https://github.com/NyaaCat/RPGItems-reloaded/wiki/RPGItems-3.6-for-1.13.2-Upgrade-Guide)
 
 # Installation of RPGItems v3.5
 
