@@ -9,7 +9,7 @@
 
 来源插件：`RPGItems`
 
-触发：RIGHT_CLICK。
+触发：`RIGHT_CLICK`。
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

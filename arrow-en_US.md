@@ -9,8 +9,8 @@ Full Name: `rpgitems:arrow`
 
 Providing Plugin: `RPGItems`
 
-Default Trigger: RIGHT_CLICK.
-All available Trigger: ATTACHMENT, LEFT_CLICK, OFFHAND_CLICK, RIGHT_CLICK, SNEAK, SPRINT.
+Default Trigger: `RIGHT_CLICK`.  
+All available Trigger: `ATTACHMENT`, `LEFT_CLICK`, `OFFHAND_CLICK`, `RIGHT_CLICK`, `SNEAK`, `SPRINT`.
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

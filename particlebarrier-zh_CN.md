@@ -9,8 +9,8 @@
 
 来源插件：`RPGItems`
 
-默认触发：RIGHT_CLICK, TICK。
-可用触发：ATTACHMENT, LEFT_CLICK, OFFHAND_CLICK, RIGHT_CLICK, SNEAK, SPRINT, TICK。
+默认触发：`RIGHT_CLICK`, `TICK`。  
+可用触发：`ATTACHMENT`, `LEFT_CLICK`, `OFFHAND_CLICK`, `RIGHT_CLICK`, `SNEAK`, `SPRINT`, `TICK`。
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

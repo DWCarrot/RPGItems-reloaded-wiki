@@ -9,7 +9,7 @@ Full Name: `rpgitems:knockup`
 
 Providing Plugin: `RPGItems`
 
-Trigger: HIT.
+Trigger: `HIT`.
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

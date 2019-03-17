@@ -9,7 +9,7 @@ Full Name: `rpgitems:gunfu`
 
 Providing Plugin: `RPGItems`
 
-Trigger: PROJECTILE_LAUNCH.
+Trigger: `PROJECTILE_LAUNCH`.
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

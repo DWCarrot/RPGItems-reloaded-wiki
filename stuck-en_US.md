@@ -9,8 +9,8 @@ Full Name: `rpgitems:stuck`
 
 Providing Plugin: `RPGItems`
 
-Default Trigger: HIT.
-All available Trigger: HIT, RIGHT_CLICK.
+Default Trigger: `HIT`.  
+All available Trigger: `HIT`, `RIGHT_CLICK`.
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

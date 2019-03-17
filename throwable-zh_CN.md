@@ -9,8 +9,8 @@
 
 来源插件：`rpgitems-ext-nyaacat`
 
-默认触发：PROJECTILE_HIT, RIGHT_CLICK。
-可用触发：ATTACHMENT, LEFT_CLICK, OFFHAND_CLICK, PROJECTILE_HIT, RIGHT_CLICK, SNEAK, SPRINT。
+默认触发：`PROJECTILE_HIT`, `RIGHT_CLICK`。  
+可用触发：`ATTACHMENT`, `LEFT_CLICK`, `OFFHAND_CLICK`, `PROJECTILE_HIT`, `RIGHT_CLICK`, `SNEAK`, `SPRINT`。
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

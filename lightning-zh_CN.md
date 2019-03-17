@@ -9,8 +9,8 @@
 
 来源插件：`RPGItems`
 
-默认触发：HIT, PROJECTILE_HIT。
-可用触发：HIT, LOCATION, PROJECTILE_HIT。
+默认触发：`HIT`, `PROJECTILE_HIT`。  
+可用触发：`HIT`, `LOCATION`, `PROJECTILE_HIT`。
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

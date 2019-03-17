@@ -9,8 +9,8 @@ Full Name: `rpgitems:color`
 
 Providing Plugin: `RPGItems`
 
-Default Trigger: LEFT_CLICK, RIGHT_CLICK.
-All available Trigger: LEFT_CLICK, RIGHT_CLICK.
+Default Trigger: `LEFT_CLICK`, `RIGHT_CLICK`.  
+All available Trigger: `LEFT_CLICK`, `RIGHT_CLICK`.
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

@@ -9,7 +9,7 @@
 
 来源插件：`RPGItems`
 
-触发：HIT。
+触发：`HIT`。
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

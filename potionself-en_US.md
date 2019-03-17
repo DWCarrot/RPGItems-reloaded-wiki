@@ -9,8 +9,8 @@ Full Name: `rpgitems:potionself`
 
 Providing Plugin: `RPGItems`
 
-Default Trigger: RIGHT_CLICK.
-All available Trigger: ATTACHMENT, HIT, HIT_TAKEN, LEFT_CLICK, OFFHAND_CLICK, RIGHT_CLICK, SNEAK, SPRINT.
+Default Trigger: `RIGHT_CLICK`.  
+All available Trigger: `ATTACHMENT`, `HIT`, `HIT_TAKEN`, `LEFT_CLICK`, `OFFHAND_CLICK`, `RIGHT_CLICK`, `SNEAK`, `SPRINT`.
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

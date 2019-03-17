@@ -9,7 +9,7 @@
 
 来源插件：`RPGItems`
 
-触发：HIT_TAKEN, HURT。
+触发：`HIT_TAKEN`, `HURT`。
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

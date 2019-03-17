@@ -9,7 +9,7 @@
 
 来源插件：`RPGItems`
 
-触发：ATTACHMENT, LEFT_CLICK, OFFHAND_CLICK, RIGHT_CLICK, SNEAK, SPRINT。
+触发：`ATTACHMENT`, `LEFT_CLICK`, `OFFHAND_CLICK`, `RIGHT_CLICK`, `SNEAK`, `SPRINT`。
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

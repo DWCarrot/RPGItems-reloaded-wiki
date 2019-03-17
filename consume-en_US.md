@@ -9,8 +9,8 @@ Full Name: `rpgitems:consume`
 
 Providing Plugin: `RPGItems`
 
-Default Trigger: RIGHT_CLICK.
-All available Trigger: LEFT_CLICK, RIGHT_CLICK.
+Default Trigger: `RIGHT_CLICK`.  
+All available Trigger: `LEFT_CLICK`, `RIGHT_CLICK`.
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

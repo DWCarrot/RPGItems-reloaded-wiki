@@ -9,7 +9,7 @@
 
 来源插件：`RPGItems`
 
-触发：TICK。
+触发：`TICK`。
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

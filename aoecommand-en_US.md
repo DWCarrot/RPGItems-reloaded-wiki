@@ -9,8 +9,8 @@ Full Name: `rpgitems:aoecommand`
 
 Providing Plugin: `RPGItems`
 
-Default Trigger: RIGHT_CLICK.
-All available Trigger: ATTACHMENT, HURT, LEFT_CLICK, OFFHAND_CLICK, RIGHT_CLICK, SNEAK, SPRINT.
+Default Trigger: `RIGHT_CLICK`.  
+All available Trigger: `ATTACHMENT`, `HURT`, `LEFT_CLICK`, `OFFHAND_CLICK`, `RIGHT_CLICK`, `SNEAK`, `SPRINT`.
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

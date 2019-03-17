@@ -9,8 +9,8 @@ Full Name: `rpgitems-ext-nyaacat:castbackswing`
 
 Providing Plugin: `rpgitems-ext-nyaacat`
 
-Default Trigger: LEFT_CLICK.
-All available Trigger: ATTACHMENT, LEFT_CLICK, OFFHAND_CLICK, RIGHT_CLICK, SNEAK, SPRINT.
+Default Trigger: `LEFT_CLICK`.  
+All available Trigger: `ATTACHMENT`, `LEFT_CLICK`, `OFFHAND_CLICK`, `RIGHT_CLICK`, `SNEAK`, `SPRINT`.
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

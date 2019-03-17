@@ -9,7 +9,7 @@
 
 来源插件：`RPGItems`
 
-触发：PICKUP_OFF_HAND, PLACE_OFF_HAND, SWAP_TO_MAINHAND, SWAP_TO_OFFHAND。
+触发：`PICKUP_OFF_HAND`, `PLACE_OFF_HAND`, `SWAP_TO_MAINHAND`, `SWAP_TO_OFFHAND`。
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

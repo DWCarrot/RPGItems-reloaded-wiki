@@ -9,7 +9,7 @@ Full Name: `rpgitems:flame`
 
 Providing Plugin: `RPGItems`
 
-Trigger: HIT, LIVINGENTITY.
+Trigger: `HIT`, `LIVINGENTITY`.
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

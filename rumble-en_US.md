@@ -9,7 +9,7 @@ Full Name: `rpgitems:rumble`
 
 Providing Plugin: `RPGItems`
 
-Trigger: RIGHT_CLICK.
+Trigger: `RIGHT_CLICK`.
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

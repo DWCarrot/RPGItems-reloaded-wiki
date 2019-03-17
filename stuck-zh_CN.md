@@ -9,8 +9,8 @@
 
 来源插件：`RPGItems`
 
-默认触发：HIT。
-可用触发：HIT, RIGHT_CLICK。
+默认触发：`HIT`。  
+可用触发：`HIT`, `RIGHT_CLICK`。
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

@@ -9,8 +9,8 @@ Full Name: `rpgitems:scoreboard`
 
 Providing Plugin: `RPGItems`
 
-Default Trigger: RIGHT_CLICK.
-All available Trigger: ATTACHMENT, HIT, HIT_TAKEN, LEFT_CLICK, OFFHAND_CLICK, PICKUP_OFF_HAND, PLACE_OFF_HAND, PROJECTILE_HIT, RIGHT_CLICK, SNEAK, SPRINT, SWAP_TO_MAINHAND, SWAP_TO_OFFHAND, TICK.
+Default Trigger: `RIGHT_CLICK`.  
+All available Trigger: `ATTACHMENT`, `HIT`, `HIT_TAKEN`, `LEFT_CLICK`, `OFFHAND_CLICK`, `PICKUP_OFF_HAND`, `PLACE_OFF_HAND`, `PROJECTILE_HIT`, `RIGHT_CLICK`, `SNEAK`, `SPRINT`, `SWAP_TO_MAINHAND`, `SWAP_TO_OFFHAND`, `TICK`.
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

@@ -9,8 +9,8 @@
 
 来源插件：`RPGItems`
 
-默认触发：HIT。
-可用触发：ATTACHMENT, HIT, HURT, LEFT_CLICK, LIVINGENTITY, OFFHAND_CLICK, RIGHT_CLICK, SNEAK, SPRINT。
+默认触发：`HIT`。  
+可用触发：`ATTACHMENT`, `HIT`, `HURT`, `LEFT_CLICK`, `LIVINGENTITY`, `OFFHAND_CLICK`, `RIGHT_CLICK`, `SNEAK`, `SPRINT`。
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

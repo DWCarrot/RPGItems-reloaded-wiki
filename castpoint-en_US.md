@@ -9,8 +9,8 @@ Full Name: `rpgitems-ext-nyaacat:castpoint`
 
 Providing Plugin: `rpgitems-ext-nyaacat`
 
-Default Trigger: NYAAEXT_PACKET_LEFT_CLICK.
-All available Trigger: NYAAEXT_PACKET_LEFT_CLICK, NYAAEXT_PACKET_RIGHT_CLICK.
+Default Trigger: `NYAAEXT_PACKET_LEFT_CLICK`.  
+All available Trigger: `NYAAEXT_PACKET_LEFT_CLICK`, `NYAAEXT_PACKET_RIGHT_CLICK`.
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

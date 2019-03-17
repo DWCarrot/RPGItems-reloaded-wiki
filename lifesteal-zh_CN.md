@@ -9,8 +9,8 @@
 
 来源插件：`RPGItems`
 
-默认触发：HIT。
-可用触发：HIT, LIVINGENTITY。
+默认触发：`HIT`。  
+可用触发：`HIT`, `LIVINGENTITY`。
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

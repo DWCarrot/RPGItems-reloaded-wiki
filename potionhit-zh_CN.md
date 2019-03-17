@@ -9,7 +9,7 @@
 
 来源插件：`RPGItems`
 
-触发：HIT, LIVINGENTITY。
+触发：`HIT`, `LIVINGENTITY`。
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

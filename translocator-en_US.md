@@ -9,7 +9,7 @@ Full Name: `rpgitems:translocator`
 
 Providing Plugin: `RPGItems`
 
-Trigger: PICKUP_OFF_HAND, PLACE_OFF_HAND, SWAP_TO_MAINHAND, SWAP_TO_OFFHAND.
+Trigger: `PICKUP_OFF_HAND`, `PLACE_OFF_HAND`, `SWAP_TO_MAINHAND`, `SWAP_TO_OFFHAND`.
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

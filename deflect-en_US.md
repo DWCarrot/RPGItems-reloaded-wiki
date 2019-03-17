@@ -9,8 +9,8 @@ Full Name: `rpgitems:deflect`
 
 Providing Plugin: `RPGItems`
 
-Default Trigger: HIT_TAKEN, RIGHT_CLICK.
-All available Trigger: ATTACHMENT, HIT_TAKEN, LEFT_CLICK, OFFHAND_CLICK, RIGHT_CLICK, SNEAK, SPRINT.
+Default Trigger: `HIT_TAKEN`, `RIGHT_CLICK`.  
+All available Trigger: `ATTACHMENT`, `HIT_TAKEN`, `LEFT_CLICK`, `OFFHAND_CLICK`, `RIGHT_CLICK`, `SNEAK`, `SPRINT`.
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

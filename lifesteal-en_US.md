@@ -9,8 +9,8 @@ Full Name: `rpgitems:lifesteal`
 
 Providing Plugin: `RPGItems`
 
-Default Trigger: HIT.
-All available Trigger: HIT, LIVINGENTITY.
+Default Trigger: `HIT`.  
+All available Trigger: `HIT`, `LIVINGENTITY`.
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

@@ -9,8 +9,8 @@
 
 来源插件：`RPGItems`
 
-默认触发：LEFT_CLICK, RIGHT_CLICK。
-可用触发：LEFT_CLICK, RIGHT_CLICK。
+默认触发：`LEFT_CLICK`, `RIGHT_CLICK`。  
+可用触发：`LEFT_CLICK`, `RIGHT_CLICK`。
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->
@@ -54,7 +54,7 @@
 * triggers
 
   * 类型：Set&lt;Trigger&gt;
-  * 默认：RIGHT_CLICK,LEFT_CLICK
+  * 默认：LEFT_CLICK,RIGHT_CLICK
 
   技能的触发。
 

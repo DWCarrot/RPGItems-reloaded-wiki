@@ -9,8 +9,8 @@ Full Name: `rpgitems:economy`
 
 Providing Plugin: `RPGItems`
 
-Default Trigger: ATTACHMENT, HIT, LEFT_CLICK, OFFHAND_CLICK, RIGHT_CLICK, SNEAK, SPRINT.
-All available Trigger: ATTACHMENT, HIT, LEFT_CLICK, OFFHAND_CLICK, RIGHT_CLICK, SNEAK, SPRINT.
+Default Trigger: `ATTACHMENT`, `HIT`, `LEFT_CLICK`, `OFFHAND_CLICK`, `RIGHT_CLICK`, `SNEAK`, `SPRINT`.  
+All available Trigger: `ATTACHMENT`, `HIT`, `LEFT_CLICK`, `OFFHAND_CLICK`, `RIGHT_CLICK`, `SNEAK`, `SPRINT`.
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->
@@ -47,7 +47,7 @@ Deposit to or withdraw from player
 * triggers
 
   * Type: Set&lt;Trigger&gt;
-  * Default: HIT,LEFT_CLICK,OFFHAND_CLICK,SNEAK,ATTACHMENT,SPRINT,RIGHT_CLICK
+  * Default: ATTACHMENT,HIT,LEFT_CLICK,OFFHAND_CLICK,RIGHT_CLICK,SNEAK,SPRINT
 
   Triggers of this power.
 

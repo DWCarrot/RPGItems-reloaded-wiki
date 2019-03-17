@@ -9,8 +9,8 @@ Full Name: `rpgitems:lightning`
 
 Providing Plugin: `RPGItems`
 
-Default Trigger: HIT, PROJECTILE_HIT.
-All available Trigger: HIT, LOCATION, PROJECTILE_HIT.
+Default Trigger: `HIT`, `PROJECTILE_HIT`.  
+All available Trigger: `HIT`, `LOCATION`, `PROJECTILE_HIT`.
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

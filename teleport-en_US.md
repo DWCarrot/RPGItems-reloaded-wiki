@@ -9,8 +9,8 @@ Full Name: `rpgitems:teleport`
 
 Providing Plugin: `RPGItems`
 
-Default Trigger: PROJECTILE_HIT, RIGHT_CLICK.
-All available Trigger: PROJECTILE_HIT, RIGHT_CLICK.
+Default Trigger: `PROJECTILE_HIT`, `RIGHT_CLICK`.  
+All available Trigger: `PROJECTILE_HIT`, `RIGHT_CLICK`.
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

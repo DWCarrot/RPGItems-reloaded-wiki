@@ -9,8 +9,8 @@
 
 来源插件：`rpgitems-ext-nyaacat`
 
-默认触发：NYAAEXT_PACKET_LEFT_CLICK。
-可用触发：NYAAEXT_PACKET_LEFT_CLICK, NYAAEXT_PACKET_RIGHT_CLICK。
+默认触发：`NYAAEXT_PACKET_LEFT_CLICK`。  
+可用触发：`NYAAEXT_PACKET_LEFT_CLICK`, `NYAAEXT_PACKET_RIGHT_CLICK`。
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

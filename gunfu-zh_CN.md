@@ -9,7 +9,7 @@
 
 来源插件：`RPGItems`
 
-触发：PROJECTILE_LAUNCH。
+触发：`PROJECTILE_LAUNCH`。
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->
