@@ -48,9 +48,12 @@ Do more damage when gliding
 ## Example
 
 <!-- beginCustomExample -->
+```/rpgitem item power rpgitems:airborne percentage:100 cap:20```  
+Increase your damage by 100% but no more than 20.
 <!-- endCustomExample -->
 
 ## Note
 
 <!-- beginCustomNote -->
+If origin damage is already great than `cap`, this power is no-op.
 <!-- endCustomNote -->
