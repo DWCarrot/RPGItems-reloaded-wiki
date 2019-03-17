@@ -1,11 +1,5 @@
 # Powers
 
-* [MISSING_LANG<power.properties.castbackswing.main_name> (rpgitems-ext-nyaacat:castbackswing)](./castbackswing-zh_CN)
-  MISSING_LANG<power.properties.castbackswing.main_description>
-* [MISSING_LANG<power.properties.castpoint.main_name> (rpgitems-ext-nyaacat:castpoint)](./castpoint-zh_CN)
-  MISSING_LANG<power.properties.castpoint.main_description>
-* [MISSING_LANG<power.properties.throwable.main_name> (rpgitems-ext-nyaacat:throwable)](./throwable-zh_CN)
-  MISSING_LANG<power.properties.throwable.main_description>
 * [空中处决技 (rpgitems:airborne)](./airborne-zh_CN)
   空中或飞行时造成更多伤害
 * [And 条件 (rpgitems:andcondition)](./andcondition-zh_CN)
