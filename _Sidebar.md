@@ -12,7 +12,7 @@
 
 ## 技能
 
-[技能列表](./技能列表)
+[技能列表](./powers-zh_CN)
 
 ## 参考
 
@@ -50,77 +50,7 @@
 
 ## Powers
 
-<details><summary>Command Powers</summary>
-
-  * [aoecommand](./AOECommand)
-  * [command](./Command)
-  * [commandhit](./CommandHit)
-  * [deathcommand](./DeathCommand)
-  * [delayedcommand](./DelayedCommand)
-
-</details>
-<details><summary>Potion Powers</summary>
-
-  * [aoe](./AOE)
-  * [potionhit](./PotionHit)
-  * [potionself](./PotionSelf)
-  * [potiontick](./PotionTick)
-
-</details>
-<details><summary>Battle Powers</summary>
-
-  * [attract](./Attract)
-  * [deflect](./Deflect)
-  * [forcefield](./ForceField)
-  * [realdamage](./RealDamage)
-
-</details>
-<details><summary>Projectiles</summary>
-
-  * [projectile](./Projectile)
-  * [fireball](./Fireball)
-  * [ice](./Ice)
-  * [arrow](./Arrow)
-  * [shulkerbullet](./Shulkerbullet)
-  * [throw](./Throw)
-  * [throwable](./Throwable)
-  * [rainbow](./Rainbow)
-  * [tntcanon](./TNTCanon)
-  * [tippedarrow](./TippedArrow)
-  * [torch](./Torch)
-
-</details>
-<details><summary>Fire Powers</summary>
-
-  * [fire](./Fire)
-  * [flame](./Flame)
-
-</details>
-<details><summary>Magic Powers</summary>
-
-  * [Lifesteal](./Lifesteal)
-  * [Lightning](./Lightning)
-  * [rumble](./Rumble)
-
-</details>
-<details><summary>Particle Powers</summary>
-
-  * [particle](./Particle)
-  * [particletick](./ParticleTick)
-
-</details>
-<details><summary>Utility Powers</summary>
-
-  * [consume](./Consume)
-  * [consumehit](./ConsumeHit)
-  * [food](./Food)
-  * [color](./Color)
-  * [pumpkin](./Pumpkin)
-  * [rescue](./Rescue)
-  * [skyhook](./Skyhook)
-  * [teleport](./Teleport)
-
-</details>
+[List of powers](./powers-en_US)
 
 ## References
 
