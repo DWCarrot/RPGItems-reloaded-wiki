@@ -102,9 +102,11 @@ Apply effect to entities in range. PowerSelector is applicable.
 ## Example
 
 <!-- beginCustomExample -->
+```/rpgitem power item aoe cooldown:10 range:10 type:speed duration:100 amplifier:0 selfapplication:true```
 <!-- endCustomExample -->
 
 ## Note
 
 <!-- beginCustomNote -->
+You can use power selector to filter which entities will be affect by this power.
 <!-- endCustomNote -->
