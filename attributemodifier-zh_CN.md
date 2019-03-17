@@ -5,9 +5,9 @@
 <!-- 如果您想修改技能或其属性的描述， -->
 <!-- 请修改 "resources/lang/zh_CN.yml" 中对应的项。 -->
 
-全名：rpgitems:attributemodifier
+全名：`rpgitems:attributemodifier`
 
-来源插件：RPGItems
+来源插件：`RPGItems`
 
 **标识技能**。
 
@@ -52,7 +52,7 @@
 * uuidMost
 
   * 类型：int
-  * 默认：798574479
+  * 默认：-309444039
 
   UUID 前半部分
 
@@ -66,7 +66,7 @@
 * uuidLeast
 
   * 类型：int
-  * 默认：617767940
+  * 默认：1283592430
 
   UUID 后半部分
 

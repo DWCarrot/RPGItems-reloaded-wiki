@@ -5,11 +5,12 @@
 <!-- 如果您想修改技能或其属性的描述， -->
 <!-- 请修改 "resources/lang/zh_CN.yml" 中对应的项。 -->
 
-全名：rpgitems-ext-nyaacat:castbackswing
+全名：`rpgitems-ext-nyaacat:castbackswing`
 
-来源插件：rpgitems-ext-nyaacat
+来源插件：`rpgitems-ext-nyaacat`
 
-默认触发：LEFT_CLICK。 可用触发：RIGHT_CLICK, SPRINT, OFFHAND_CLICK, LEFT_CLICK, ATTACHMENT, SNEAK。
+默认触发：LEFT_CLICK。
+可用触发：ATTACHMENT, LEFT_CLICK, OFFHAND_CLICK, RIGHT_CLICK, SNEAK, SPRINT。
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

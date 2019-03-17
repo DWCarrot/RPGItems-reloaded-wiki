@@ -5,11 +5,12 @@
 <!-- 如果您想修改技能或其属性的描述， -->
 <!-- 请修改 "resources/lang/zh_CN.yml" 中对应的项。 -->
 
-全名：rpgitems:teleport
+全名：`rpgitems:teleport`
 
-来源插件：RPGItems
+来源插件：`RPGItems`
 
-默认触发：PROJECTILE_HIT, RIGHT_CLICK。 可用触发：PROJECTILE_HIT, RIGHT_CLICK。
+默认触发：PROJECTILE_HIT, RIGHT_CLICK。
+可用触发：PROJECTILE_HIT, RIGHT_CLICK。
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->
@@ -53,7 +54,7 @@
 * triggers
 
   * 类型：Set&lt;Trigger&gt;
-  * 默认：PROJECTILE_HIT,RIGHT_CLICK
+  * 默认：RIGHT_CLICK,PROJECTILE_HIT
 
   技能的触发。
 

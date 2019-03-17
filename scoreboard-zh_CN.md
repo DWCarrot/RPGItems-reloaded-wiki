@@ -5,11 +5,12 @@
 <!-- 如果您想修改技能或其属性的描述， -->
 <!-- 请修改 "resources/lang/zh_CN.yml" 中对应的项。 -->
 
-全名：rpgitems:scoreboard
+全名：`rpgitems:scoreboard`
 
-来源插件：RPGItems
+来源插件：`RPGItems`
 
-默认触发：RIGHT_CLICK。 可用触发：TICK, PLACE_OFF_HAND, HIT, RIGHT_CLICK, HIT_TAKEN, SPRINT, LEFT_CLICK, ATTACHMENT, PROJECTILE_HIT, PICKUP_OFF_HAND, SWAP_TO_MAINHAND, OFFHAND_CLICK, SWAP_TO_OFFHAND, SNEAK。
+默认触发：RIGHT_CLICK。
+可用触发：ATTACHMENT, HIT, HIT_TAKEN, LEFT_CLICK, OFFHAND_CLICK, PICKUP_OFF_HAND, PLACE_OFF_HAND, PROJECTILE_HIT, RIGHT_CLICK, SNEAK, SPRINT, SWAP_TO_MAINHAND, SWAP_TO_OFFHAND, TICK。
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

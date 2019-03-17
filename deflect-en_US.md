@@ -5,11 +5,12 @@
 <!-- If you want to edit description of this power or property, -->
 <!-- please edit corresponding section in "resources/lang/en_US.yml" -->
 
-Full Name: rpgitems:deflect
+Full Name: `rpgitems:deflect`
 
-Providing Plugin: RPGItems
+Providing Plugin: `RPGItems`
 
-Default Trigger: HIT_TAKEN, RIGHT_CLICK. All available Trigger: SPRINT, ATTACHMENT, SNEAK, HIT_TAKEN, RIGHT_CLICK, LEFT_CLICK, OFFHAND_CLICK.
+Default Trigger: HIT_TAKEN, RIGHT_CLICK.
+All available Trigger: ATTACHMENT, HIT_TAKEN, LEFT_CLICK, OFFHAND_CLICK, RIGHT_CLICK, SNEAK, SPRINT.
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

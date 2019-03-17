@@ -5,11 +5,12 @@
 <!-- If you want to edit description of this power or property, -->
 <!-- please edit corresponding section in "resources/lang/en_US.yml" -->
 
-Full Name: rpgitems-ext-nyaacat:castpoint
+Full Name: `rpgitems-ext-nyaacat:castpoint`
 
-Providing Plugin: rpgitems-ext-nyaacat
+Providing Plugin: `rpgitems-ext-nyaacat`
 
-Default Trigger: NYAAEXT_PACKET_LEFT_CLICK. All available Trigger: NYAAEXT_PACKET_LEFT_CLICK, NYAAEXT_PACKET_RIGHT_CLICK.
+Default Trigger: NYAAEXT_PACKET_LEFT_CLICK.
+All available Trigger: NYAAEXT_PACKET_LEFT_CLICK, NYAAEXT_PACKET_RIGHT_CLICK.
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

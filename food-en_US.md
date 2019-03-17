@@ -5,9 +5,9 @@
 <!-- If you want to edit description of this power or property, -->
 <!-- please edit corresponding section in "resources/lang/en_US.yml" -->
 
-Full Name: rpgitems:food
+Full Name: `rpgitems:food`
 
-Providing Plugin: RPGItems
+Providing Plugin: `RPGItems`
 
 Trigger: RIGHT_CLICK.
 

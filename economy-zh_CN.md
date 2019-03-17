@@ -5,11 +5,12 @@
 <!-- 如果您想修改技能或其属性的描述， -->
 <!-- 请修改 "resources/lang/zh_CN.yml" 中对应的项。 -->
 
-全名：rpgitems:economy
+全名：`rpgitems:economy`
 
-来源插件：RPGItems
+来源插件：`RPGItems`
 
-默认触发：HIT, RIGHT_CLICK, SPRINT, OFFHAND_CLICK, LEFT_CLICK, ATTACHMENT, SNEAK。 可用触发：HIT, RIGHT_CLICK, SPRINT, OFFHAND_CLICK, LEFT_CLICK, ATTACHMENT, SNEAK。
+默认触发：ATTACHMENT, HIT, LEFT_CLICK, OFFHAND_CLICK, RIGHT_CLICK, SNEAK, SPRINT。
+可用触发：ATTACHMENT, HIT, LEFT_CLICK, OFFHAND_CLICK, RIGHT_CLICK, SNEAK, SPRINT。
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->
@@ -46,7 +47,7 @@
 * triggers
 
   * 类型：Set&lt;Trigger&gt;
-  * 默认：HIT,RIGHT_CLICK,SPRINT,OFFHAND_CLICK,LEFT_CLICK,ATTACHMENT,SNEAK
+  * 默认：SNEAK,RIGHT_CLICK,HIT,LEFT_CLICK,ATTACHMENT,SPRINT,OFFHAND_CLICK
 
   技能的触发。
 

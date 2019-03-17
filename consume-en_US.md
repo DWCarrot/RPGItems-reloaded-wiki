@@ -5,11 +5,12 @@
 <!-- If you want to edit description of this power or property, -->
 <!-- please edit corresponding section in "resources/lang/en_US.yml" -->
 
-Full Name: rpgitems:consume
+Full Name: `rpgitems:consume`
 
-Providing Plugin: RPGItems
+Providing Plugin: `RPGItems`
 
-Default Trigger: RIGHT_CLICK. All available Trigger: RIGHT_CLICK, LEFT_CLICK.
+Default Trigger: RIGHT_CLICK.
+All available Trigger: LEFT_CLICK, RIGHT_CLICK.
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

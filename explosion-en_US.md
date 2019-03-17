@@ -5,11 +5,12 @@
 <!-- If you want to edit description of this power or property, -->
 <!-- please edit corresponding section in "resources/lang/en_US.yml" -->
 
-Full Name: rpgitems:explosion
+Full Name: `rpgitems:explosion`
 
-Providing Plugin: RPGItems
+Providing Plugin: `RPGItems`
 
-Default Trigger: PROJECTILE_HIT. All available Trigger: HIT, SPRINT, LOCATION, ATTACHMENT, PROJECTILE_HIT, SNEAK, RIGHT_CLICK, LEFT_CLICK, OFFHAND_CLICK.
+Default Trigger: PROJECTILE_HIT.
+All available Trigger: ATTACHMENT, HIT, LEFT_CLICK, LOCATION, OFFHAND_CLICK, PROJECTILE_HIT, RIGHT_CLICK, SNEAK, SPRINT.
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

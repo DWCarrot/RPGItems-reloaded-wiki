@@ -5,11 +5,12 @@
 <!-- If you want to edit description of this power or property, -->
 <!-- please edit corresponding section in "resources/lang/en_US.yml" -->
 
-Full Name: rpgitems:economy
+Full Name: `rpgitems:economy`
 
-Providing Plugin: RPGItems
+Providing Plugin: `RPGItems`
 
-Default Trigger: HIT, SPRINT, ATTACHMENT, SNEAK, RIGHT_CLICK, LEFT_CLICK, OFFHAND_CLICK. All available Trigger: HIT, SPRINT, ATTACHMENT, SNEAK, RIGHT_CLICK, LEFT_CLICK, OFFHAND_CLICK.
+Default Trigger: ATTACHMENT, HIT, LEFT_CLICK, OFFHAND_CLICK, RIGHT_CLICK, SNEAK, SPRINT.
+All available Trigger: ATTACHMENT, HIT, LEFT_CLICK, OFFHAND_CLICK, RIGHT_CLICK, SNEAK, SPRINT.
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->
@@ -46,7 +47,7 @@ Deposit to or withdraw from player
 * triggers
 
   * Type: Set&lt;Trigger&gt;
-  * Default: HIT,SPRINT,ATTACHMENT,SNEAK,RIGHT_CLICK,LEFT_CLICK,OFFHAND_CLICK
+  * Default: HIT,LEFT_CLICK,OFFHAND_CLICK,SNEAK,ATTACHMENT,SPRINT,RIGHT_CLICK
 
   Triggers of this power.
 

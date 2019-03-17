@@ -5,11 +5,12 @@
 <!-- 如果您想修改技能或其属性的描述， -->
 <!-- 请修改 "resources/lang/zh_CN.yml" 中对应的项。 -->
 
-全名：rpgitems:explosion
+全名：`rpgitems:explosion`
 
-来源插件：RPGItems
+来源插件：`RPGItems`
 
-默认触发：PROJECTILE_HIT。 可用触发：LOCATION, PROJECTILE_HIT, HIT, RIGHT_CLICK, SPRINT, OFFHAND_CLICK, LEFT_CLICK, ATTACHMENT, SNEAK。
+默认触发：PROJECTILE_HIT。
+可用触发：ATTACHMENT, HIT, LEFT_CLICK, LOCATION, OFFHAND_CLICK, PROJECTILE_HIT, RIGHT_CLICK, SNEAK, SPRINT。
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

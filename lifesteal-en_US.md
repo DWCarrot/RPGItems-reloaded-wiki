@@ -5,11 +5,12 @@
 <!-- If you want to edit description of this power or property, -->
 <!-- please edit corresponding section in "resources/lang/en_US.yml" -->
 
-Full Name: rpgitems:lifesteal
+Full Name: `rpgitems:lifesteal`
 
-Providing Plugin: RPGItems
+Providing Plugin: `RPGItems`
 
-Default Trigger: HIT. All available Trigger: HIT, LIVINGENTITY.
+Default Trigger: HIT.
+All available Trigger: HIT, LIVINGENTITY.
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

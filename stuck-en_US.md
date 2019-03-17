@@ -5,11 +5,12 @@
 <!-- If you want to edit description of this power or property, -->
 <!-- please edit corresponding section in "resources/lang/en_US.yml" -->
 
-Full Name: rpgitems:stuck
+Full Name: `rpgitems:stuck`
 
-Providing Plugin: RPGItems
+Providing Plugin: `RPGItems`
 
-Default Trigger: HIT. All available Trigger: HIT, RIGHT_CLICK.
+Default Trigger: HIT.
+All available Trigger: HIT, RIGHT_CLICK.
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

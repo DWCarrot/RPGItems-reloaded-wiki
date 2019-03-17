@@ -5,9 +5,9 @@
 <!-- If you want to edit description of this power or property, -->
 <!-- please edit corresponding section in "resources/lang/en_US.yml" -->
 
-Full Name: rpgitems:unbreakable
+Full Name: `rpgitems:unbreakable`
 
-Providing Plugin: RPGItems
+Providing Plugin: `RPGItems`
 
 **Is a marker power**.
 

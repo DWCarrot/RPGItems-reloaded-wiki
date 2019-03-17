@@ -5,11 +5,12 @@
 <!-- 如果您想修改技能或其属性的描述， -->
 <!-- 请修改 "resources/lang/zh_CN.yml" 中对应的项。 -->
 
-全名：rpgitems:lightning
+全名：`rpgitems:lightning`
 
-来源插件：RPGItems
+来源插件：`RPGItems`
 
-默认触发：PROJECTILE_HIT, HIT。 可用触发：LOCATION, PROJECTILE_HIT, HIT。
+默认触发：HIT, PROJECTILE_HIT。
+可用触发：HIT, LOCATION, PROJECTILE_HIT。
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->
@@ -39,7 +40,7 @@
 * triggers
 
   * 类型：Set&lt;Trigger&gt;
-  * 默认：PROJECTILE_HIT,HIT
+  * 默认：HIT,PROJECTILE_HIT
 
   技能的触发。
 

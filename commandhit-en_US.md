@@ -5,11 +5,12 @@
 <!-- If you want to edit description of this power or property, -->
 <!-- please edit corresponding section in "resources/lang/en_US.yml" -->
 
-Full Name: rpgitems:commandhit
+Full Name: `rpgitems:commandhit`
 
-Providing Plugin: RPGItems
+Providing Plugin: `RPGItems`
 
-Default Trigger: HIT. All available Trigger: HIT, SPRINT, ATTACHMENT, SNEAK, HURT, RIGHT_CLICK, LEFT_CLICK, OFFHAND_CLICK, LIVINGENTITY.
+Default Trigger: HIT.
+All available Trigger: ATTACHMENT, HIT, HURT, LEFT_CLICK, LIVINGENTITY, OFFHAND_CLICK, RIGHT_CLICK, SNEAK, SPRINT.
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

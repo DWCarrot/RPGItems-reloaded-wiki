@@ -5,11 +5,12 @@
 <!-- If you want to edit description of this power or property, -->
 <!-- please edit corresponding section in "resources/lang/en_US.yml" -->
 
-Full Name: rpgitems:teleport
+Full Name: `rpgitems:teleport`
 
-Providing Plugin: RPGItems
+Providing Plugin: `RPGItems`
 
-Default Trigger: PROJECTILE_HIT, RIGHT_CLICK. All available Trigger: PROJECTILE_HIT, RIGHT_CLICK.
+Default Trigger: PROJECTILE_HIT, RIGHT_CLICK.
+All available Trigger: PROJECTILE_HIT, RIGHT_CLICK.
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

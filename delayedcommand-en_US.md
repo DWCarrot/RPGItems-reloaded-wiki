@@ -5,11 +5,12 @@
 <!-- If you want to edit description of this power or property, -->
 <!-- please edit corresponding section in "resources/lang/en_US.yml" -->
 
-Full Name: rpgitems:delayedcommand
+Full Name: `rpgitems:delayedcommand`
 
-Providing Plugin: RPGItems
+Providing Plugin: `RPGItems`
 
-Default Trigger: RIGHT_CLICK. All available Trigger: SPRINT, ATTACHMENT, SNEAK, HURT, RIGHT_CLICK, LEFT_CLICK, OFFHAND_CLICK.
+Default Trigger: RIGHT_CLICK.
+All available Trigger: ATTACHMENT, HURT, LEFT_CLICK, OFFHAND_CLICK, RIGHT_CLICK, SNEAK, SPRINT.
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

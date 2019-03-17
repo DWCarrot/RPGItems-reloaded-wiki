@@ -5,11 +5,11 @@
 <!-- 如果您想修改技能或其属性的描述， -->
 <!-- 请修改 "resources/lang/zh_CN.yml" 中对应的项。 -->
 
-全名：rpgitems:rescue
+全名：`rpgitems:rescue`
 
-来源插件：RPGItems
+来源插件：`RPGItems`
 
-触发：HURT, HIT_TAKEN。
+触发：HIT_TAKEN, HURT。
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

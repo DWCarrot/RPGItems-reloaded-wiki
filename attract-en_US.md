@@ -5,11 +5,12 @@
 <!-- If you want to edit description of this power or property, -->
 <!-- please edit corresponding section in "resources/lang/en_US.yml" -->
 
-Full Name: rpgitems:attract
+Full Name: `rpgitems:attract`
 
-Providing Plugin: RPGItems
+Providing Plugin: `RPGItems`
 
-Default Trigger: RIGHT_CLICK. All available Trigger: SPRINT, ATTACHMENT, TICK, SNEAK, RIGHT_CLICK, LEFT_CLICK, OFFHAND_CLICK.
+Default Trigger: RIGHT_CLICK.
+All available Trigger: ATTACHMENT, LEFT_CLICK, OFFHAND_CLICK, RIGHT_CLICK, SNEAK, SPRINT, TICK.
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

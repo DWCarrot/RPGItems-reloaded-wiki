@@ -5,11 +5,12 @@
 <!-- 如果您想修改技能或其属性的描述， -->
 <!-- 请修改 "resources/lang/zh_CN.yml" 中对应的项。 -->
 
-全名：rpgitems-ext-nyaacat:castpoint
+全名：`rpgitems-ext-nyaacat:castpoint`
 
-来源插件：rpgitems-ext-nyaacat
+来源插件：`rpgitems-ext-nyaacat`
 
-默认触发：NYAAEXT_PACKET_LEFT_CLICK。 可用触发：NYAAEXT_PACKET_RIGHT_CLICK, NYAAEXT_PACKET_LEFT_CLICK。
+默认触发：NYAAEXT_PACKET_LEFT_CLICK。
+可用触发：NYAAEXT_PACKET_LEFT_CLICK, NYAAEXT_PACKET_RIGHT_CLICK。
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

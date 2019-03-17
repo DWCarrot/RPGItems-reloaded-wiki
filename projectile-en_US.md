@@ -5,11 +5,12 @@
 <!-- If you want to edit description of this power or property, -->
 <!-- please edit corresponding section in "resources/lang/en_US.yml" -->
 
-Full Name: rpgitems:projectile
+Full Name: `rpgitems:projectile`
 
-Providing Plugin: RPGItems
+Providing Plugin: `RPGItems`
 
-Default Trigger: RIGHT_CLICK. All available Trigger: HIT, SPRINT, ATTACHMENT, SNEAK, HIT_TAKEN, RIGHT_CLICK, LEFT_CLICK, OFFHAND_CLICK, LIVINGENTITY.
+Default Trigger: RIGHT_CLICK.
+All available Trigger: ATTACHMENT, HIT, HIT_TAKEN, LEFT_CLICK, LIVINGENTITY, OFFHAND_CLICK, RIGHT_CLICK, SNEAK, SPRINT.
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

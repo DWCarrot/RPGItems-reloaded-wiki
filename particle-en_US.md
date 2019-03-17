@@ -5,11 +5,11 @@
 <!-- If you want to edit description of this power or property, -->
 <!-- please edit corresponding section in "resources/lang/en_US.yml" -->
 
-Full Name: rpgitems:particle
+Full Name: `rpgitems:particle`
 
-Providing Plugin: RPGItems
+Providing Plugin: `RPGItems`
 
-Trigger: SPRINT, ATTACHMENT, SNEAK, RIGHT_CLICK, LEFT_CLICK, OFFHAND_CLICK.
+Trigger: ATTACHMENT, LEFT_CLICK, OFFHAND_CLICK, RIGHT_CLICK, SNEAK, SPRINT.
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

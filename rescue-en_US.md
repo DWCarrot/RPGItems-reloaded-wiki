@@ -5,11 +5,11 @@
 <!-- If you want to edit description of this power or property, -->
 <!-- please edit corresponding section in "resources/lang/en_US.yml" -->
 
-Full Name: rpgitems:rescue
+Full Name: `rpgitems:rescue`
 
-Providing Plugin: RPGItems
+Providing Plugin: `RPGItems`
 
-Trigger: HURT, HIT_TAKEN.
+Trigger: HIT_TAKEN, HURT.
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

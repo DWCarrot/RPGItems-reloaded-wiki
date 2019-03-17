@@ -5,11 +5,11 @@
 <!-- 如果您想修改技能或其属性的描述， -->
 <!-- 请修改 "resources/lang/zh_CN.yml" 中对应的项。 -->
 
-全名：rpgitems:translocator
+全名：`rpgitems:translocator`
 
-来源插件：RPGItems
+来源插件：`RPGItems`
 
-触发：PLACE_OFF_HAND, PICKUP_OFF_HAND, SWAP_TO_MAINHAND, SWAP_TO_OFFHAND。
+触发：PICKUP_OFF_HAND, PLACE_OFF_HAND, SWAP_TO_MAINHAND, SWAP_TO_OFFHAND。
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

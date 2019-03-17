@@ -5,11 +5,12 @@
 <!-- 如果您想修改技能或其属性的描述， -->
 <!-- 请修改 "resources/lang/zh_CN.yml" 中对应的项。 -->
 
-全名：rpgitems:lifesteal
+全名：`rpgitems:lifesteal`
 
-来源插件：RPGItems
+来源插件：`RPGItems`
 
-默认触发：HIT。 可用触发：HIT, LIVINGENTITY。
+默认触发：HIT。
+可用触发：HIT, LIVINGENTITY。
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

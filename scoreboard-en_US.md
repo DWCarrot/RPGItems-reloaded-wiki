@@ -5,11 +5,12 @@
 <!-- If you want to edit description of this power or property, -->
 <!-- please edit corresponding section in "resources/lang/en_US.yml" -->
 
-Full Name: rpgitems:scoreboard
+Full Name: `rpgitems:scoreboard`
 
-Providing Plugin: RPGItems
+Providing Plugin: `RPGItems`
 
-Default Trigger: RIGHT_CLICK. All available Trigger: ATTACHMENT, PROJECTILE_HIT, SNEAK, HIT_TAKEN, LEFT_CLICK, SWAP_TO_OFFHAND, HIT, SPRINT, PICKUP_OFF_HAND, PLACE_OFF_HAND, TICK, RIGHT_CLICK, OFFHAND_CLICK, SWAP_TO_MAINHAND.
+Default Trigger: RIGHT_CLICK.
+All available Trigger: ATTACHMENT, HIT, HIT_TAKEN, LEFT_CLICK, OFFHAND_CLICK, PICKUP_OFF_HAND, PLACE_OFF_HAND, PROJECTILE_HIT, RIGHT_CLICK, SNEAK, SPRINT, SWAP_TO_MAINHAND, SWAP_TO_OFFHAND, TICK.
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

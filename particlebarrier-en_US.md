@@ -5,11 +5,12 @@
 <!-- If you want to edit description of this power or property, -->
 <!-- please edit corresponding section in "resources/lang/en_US.yml" -->
 
-Full Name: rpgitems:particlebarrier
+Full Name: `rpgitems:particlebarrier`
 
-Providing Plugin: RPGItems
+Providing Plugin: `RPGItems`
 
-Default Trigger: TICK, RIGHT_CLICK. All available Trigger: SPRINT, ATTACHMENT, TICK, SNEAK, RIGHT_CLICK, LEFT_CLICK, OFFHAND_CLICK.
+Default Trigger: RIGHT_CLICK, TICK.
+All available Trigger: ATTACHMENT, LEFT_CLICK, OFFHAND_CLICK, RIGHT_CLICK, SNEAK, SPRINT, TICK.
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->
@@ -39,7 +40,7 @@ Spawn a barrier that redirecting energy of incoming attacks to strength
 * triggers
 
   * Type: Set&lt;Trigger&gt;
-  * Default: TICK,RIGHT_CLICK
+  * Default: RIGHT_CLICK,TICK
 
   Triggers of this power.
 

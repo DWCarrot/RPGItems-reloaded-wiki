@@ -5,11 +5,12 @@
 <!-- 如果您想修改技能或其属性的描述， -->
 <!-- 请修改 "resources/lang/zh_CN.yml" 中对应的项。 -->
 
-全名：rpgitems-ext-nyaacat:throwable
+全名：`rpgitems-ext-nyaacat:throwable`
 
-来源插件：rpgitems-ext-nyaacat
+来源插件：`rpgitems-ext-nyaacat`
 
-默认触发：PROJECTILE_HIT, RIGHT_CLICK。 可用触发：PROJECTILE_HIT, RIGHT_CLICK, SPRINT, OFFHAND_CLICK, LEFT_CLICK, ATTACHMENT, SNEAK。
+默认触发：PROJECTILE_HIT, RIGHT_CLICK。
+可用触发：ATTACHMENT, LEFT_CLICK, OFFHAND_CLICK, PROJECTILE_HIT, RIGHT_CLICK, SNEAK, SPRINT。
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

@@ -5,9 +5,9 @@
 <!-- If you want to edit description of this power or property, -->
 <!-- please edit corresponding section in "resources/lang/en_US.yml" -->
 
-Full Name: rpgitems:attributemodifier
+Full Name: `rpgitems:attributemodifier`
 
-Providing Plugin: RPGItems
+Providing Plugin: `RPGItems`
 
 **Is a marker power**.
 
@@ -52,7 +52,7 @@ Add Attribute Modifier
 * uuidMost
 
   * Type: int
-  * Default: 795166620
+  * Default: -120304979
 
   UUID most
 
@@ -66,7 +66,7 @@ Add Attribute Modifier
 * uuidLeast
 
   * Type: int
-  * Default: -99467792
+  * Default: -29401985
 
   UUID least
 

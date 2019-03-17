@@ -5,11 +5,12 @@
 <!-- If you want to edit description of this power or property, -->
 <!-- please edit corresponding section in "resources/lang/en_US.yml" -->
 
-Full Name: rpgitems-ext-nyaacat:castbackswing
+Full Name: `rpgitems-ext-nyaacat:castbackswing`
 
-Providing Plugin: rpgitems-ext-nyaacat
+Providing Plugin: `rpgitems-ext-nyaacat`
 
-Default Trigger: LEFT_CLICK. All available Trigger: SPRINT, ATTACHMENT, SNEAK, RIGHT_CLICK, LEFT_CLICK, OFFHAND_CLICK.
+Default Trigger: LEFT_CLICK.
+All available Trigger: ATTACHMENT, LEFT_CLICK, OFFHAND_CLICK, RIGHT_CLICK, SNEAK, SPRINT.
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

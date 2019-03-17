@@ -5,11 +5,12 @@
 <!-- 如果您想修改技能或其属性的描述， -->
 <!-- 请修改 "resources/lang/zh_CN.yml" 中对应的项。 -->
 
-全名：rpgitems:particlebarrier
+全名：`rpgitems:particlebarrier`
 
-来源插件：RPGItems
+来源插件：`RPGItems`
 
-默认触发：TICK, RIGHT_CLICK。 可用触发：TICK, RIGHT_CLICK, SPRINT, OFFHAND_CLICK, LEFT_CLICK, ATTACHMENT, SNEAK。
+默认触发：RIGHT_CLICK, TICK。
+可用触发：ATTACHMENT, LEFT_CLICK, OFFHAND_CLICK, RIGHT_CLICK, SNEAK, SPRINT, TICK。
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->
@@ -39,7 +40,7 @@
 * triggers
 
   * 类型：Set&lt;Trigger&gt;
-  * 默认：TICK,RIGHT_CLICK
+  * 默认：RIGHT_CLICK,TICK
 
   技能的触发。
 

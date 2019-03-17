@@ -5,11 +5,11 @@
 <!-- If you want to edit description of this power or property, -->
 <!-- please edit corresponding section in "resources/lang/en_US.yml" -->
 
-Full Name: rpgitems:translocator
+Full Name: `rpgitems:translocator`
 
-Providing Plugin: RPGItems
+Providing Plugin: `RPGItems`
 
-Trigger: SWAP_TO_OFFHAND, PICKUP_OFF_HAND, PLACE_OFF_HAND, SWAP_TO_MAINHAND.
+Trigger: PICKUP_OFF_HAND, PLACE_OFF_HAND, SWAP_TO_MAINHAND, SWAP_TO_OFFHAND.
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

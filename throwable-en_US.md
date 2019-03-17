@@ -5,11 +5,12 @@
 <!-- If you want to edit description of this power or property, -->
 <!-- please edit corresponding section in "resources/lang/en_US.yml" -->
 
-Full Name: rpgitems-ext-nyaacat:throwable
+Full Name: `rpgitems-ext-nyaacat:throwable`
 
-Providing Plugin: rpgitems-ext-nyaacat
+Providing Plugin: `rpgitems-ext-nyaacat`
 
-Default Trigger: PROJECTILE_HIT, RIGHT_CLICK. All available Trigger: SPRINT, ATTACHMENT, PROJECTILE_HIT, SNEAK, RIGHT_CLICK, LEFT_CLICK, OFFHAND_CLICK.
+Default Trigger: PROJECTILE_HIT, RIGHT_CLICK.
+All available Trigger: ATTACHMENT, LEFT_CLICK, OFFHAND_CLICK, PROJECTILE_HIT, RIGHT_CLICK, SNEAK, SPRINT.
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->

@@ -5,11 +5,11 @@
 <!-- 如果您想修改技能或其属性的描述， -->
 <!-- 请修改 "resources/lang/zh_CN.yml" 中对应的项。 -->
 
-全名：rpgitems:ice
+全名：`rpgitems:ice`
 
-来源插件：RPGItems
+来源插件：`RPGItems`
 
-触发：RIGHT_CLICK, SPRINT, OFFHAND_CLICK, LEFT_CLICK, ATTACHMENT, SNEAK。
+触发：ATTACHMENT, LEFT_CLICK, OFFHAND_CLICK, RIGHT_CLICK, SNEAK, SPRINT。
 
 <!-- beginCustomHeader -->
 <!-- endCustomHeader -->
