@@ -1,11 +1,5 @@
 # Powers
 
-* [MISSING_LANG<power.properties.castbackswing.main_name> (rpgitems-ext-nyaacat:castbackswing)](./castbackswing-en_US)
-  MISSING_LANG<power.properties.castbackswing.main_description>
-* [MISSING_LANG<power.properties.castpoint.main_name> (rpgitems-ext-nyaacat:castpoint)](./castpoint-en_US)
-  MISSING_LANG<power.properties.castpoint.main_description>
-* [MISSING_LANG<power.properties.throwable.main_name> (rpgitems-ext-nyaacat:throwable)](./throwable-en_US)
-  MISSING_LANG<power.properties.throwable.main_description>
 * [Airborne (rpgitems:airborne)](./airborne-en_US)
   Do more damage when gliding
 * [And Condition (rpgitems:andcondition)](./andcondition-en_US)
